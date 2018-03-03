@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 45px;
+  color: #5b5b5b;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #999999;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cover-page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85) ), url("https://cdn.discordapp.com/attachments/141691818440916992/311092056489459713/image.jpg");
+}
+
+.cover-logo-container {
+  height: 80vh;
+}
+
+.cover-logo {
+  padding-top: 40vh;
+  padding-left: 15%;
+  animation-name: fade-in;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+
+.frontPage-nav {
+   padding-top: 2%;
+   bottom:0;
+   width:90%;
+   height:10%;
+   padding-bottom: 50px;
+   margin-left: 5%;
+   animation-name: fade-in;
+   opacity: 0;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-delay: 0.5s;
+   animation-timing-function: linear;
+}
+
+.frontPage-ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.frontPage-li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  font-size: 20px;
+  color: lightGrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 25px;
+  text-align: center;
+  transition-property: color, font-weight;
+  transition-duration: 0.2s;
+}
+
+.frontPage-li:hover {
+  font-weight: bold;
+  color: #00ced1;
+}
+
+.frontPage-login {
+  list-style-type: none;
+  border-radius: 20px;
+  border: 2px solid #00ced1;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #00ced1;
+  text-transform: uppercase;
+  transition-property: color, font-weight, background-color;
+  transition-duration: 0.2s;
+}
+
+.frontPage-login:hover {
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+  background: linear-gradient( #5b5b5b,#2b2b2b);
+}
+
+.login-box {
+  width: 500px;
+  height: 500px;
+  background: none;
+  margin: auto;
+  padding: auto;
+  padding-top: 5%;
+}
+
+.login-input {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1.5px solid #00ced1;
+  text-align: center;
+  color: Grey;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.login-button {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #00ced1;
+  border: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  text-transform:uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.login-button:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.main-container {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  padding: auto;
+}
+
+.about-box {
+  width: 70%;
+  margin: auto;
+  padding-top:5%;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+.testing {
+  height: 5000px;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
