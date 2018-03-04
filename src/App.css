@@ -5,11 +5,12 @@
 }
 
 .App {
-  position: absolute;
+  /*
+  position: fixed;
   width: 100%;
   height: 100vh;
-  background: linear-gradient( #5b5b5b,#2b2b2b);
-  z-index: -1;
+  background: linear-gradient( lightGrey,grey);
+  */
 }
 
 h1 {
@@ -186,19 +187,91 @@ a:visited {
   font-size: 1.1em;
 }
 
+/*
 .dashboard-background {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  background: linear-gradient( #5b5b5b,#2b2b2b);
-  animation-name: fade-out;
+  animation-name: fade-in;
   opacity: 0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
   animation-timing-function: linear;
 }
+*/
+
+.toolbar-container {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);;
+  height: 7%;
+  animation-name: fade-in;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+
+.toolbar-container .logo {
+  width: 20%;
+  float: left;
+  height: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+  font-weight: lighter
+}
+
+.logo-subhead {
+  font-size: 10px;
+  color: #999999;
+}
+
+.toolbar-container .toolbar-nav-box {
+  width: 80%;
+  float: right;
+  height: 100%;
+}
+
+.toolbar-nav-box ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.toolbar-nav-box li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  font-size: 20px;
+  color: lightGrey;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  transition-property: color, font-weight;
+  transition-duration: 0.2s;
+}
+
+.toolbar-nav-box li:hover {
+  color: #00ced1;
+  font-weight: bold;
+}
+
+.students-chart-container {
+  width: 95%;
+  padding-top: 5%;
+  height: auto;
+  margin: auto;
+  animation-name: fade-in;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+
 
 .testing {
   height: 5000px;
