@@ -234,6 +234,10 @@ a:visited {
   height: 100%;
 }
 
+.toolbar {
+  background: red;
+}
+
 .toolbar-nav-box ul {
   display: flex;
   align-items: stretch; /* Default */

@@ -10,12 +10,13 @@ class dashboard extends Component {
 
   toolbarClickHandler = (chartType) => {
     this.setState({displayChart: chartType})
-    console.log(this.state);
   }
 
   render() {
     return (<div className='dashboard-background'>
-            <Toolbar clicked={this.toolbarClickHandler}/>
+              <div className='toolbar'> 
+                <Toolbar clicked={this.toolbarClickHandler}/> 
+              </div>
             <ChartSpace type={this.state.displayChart}/>
             </div>
     );
