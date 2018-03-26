@@ -9,11 +9,15 @@ class StudentDetailsPanel extends Component {
 
 
   render() {
+    //console.log(this.props.assignmentData)
     const numberOfAssignments = Object.keys(this.props.assignmentData).length
     return (
       <div className = "student-details-panel-container">
         <Grid container justify="center">  
-          <Grid item xs = {10}> <StudentProfileDisplay selectedStudentData = {this.props.selectedStudentData}/> </Grid>
+          <Grid item xs = {10}> 
+            <StudentProfileDisplay 
+              selectedStudentData = {this.props.selectedStudentData}/> 
+          </Grid>
           
           <Grid item xs = {10}> 
             <StudentAssignmentsCompleted 
