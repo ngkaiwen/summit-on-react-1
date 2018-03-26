@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Overview from './Charts/Overview';
 import Students from './Charts/Students';
 import StudentDetailsPage from "./StudentDetailsPage.js";
+import {firebaseHandle} from "../Config/firebaseAPI.js";
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import MainAppReducer from "../Redux/AppReducer.js";
+
+let store = createStore(MainAppReducer)
 
 class chartSpace extends Component {
 
@@ -12,6 +18,13 @@ class chartSpace extends Component {
     }
   }
 
+  componentWillMount(){
+    const dataLocation = "courses/";
+    var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
+    firebaseStudentsDataset.on("value",Snapshot => store.dispatch( {type:"SET_DATA",payload:Snapshot.val()} ));
+    store.dispatch({type:"SET_SELECTED_COURSE",payload:"-L5cmwU2yj2HRmfDvIUP"}) //Set course to BT3103 as default
+  }
+
   render() {
     //Renders or does not render a particular chart depending on which page was selected in the toolbar
     let ovw = (this.props.type === 'overview') ? <Overview selectedModule = {this.state.selectedModule}/> : null; 
@@ -19,12 +32,13 @@ class chartSpace extends Component {
     let stulst = (this.props.type === 'studentsList') ? <StudentDetailsPage selectedModule = {this.state.selectedModule}/> : null;
 
     return (
-      <div>
-        {ovw}
-        {stu}
-        {stulst}
-      </div>
-
+      <Provider store = {store}> 
+        <div>
+          {ovw}
+          {stu}
+          {stulst}
+        </div>
+      </Provider>
     );
   }
 }

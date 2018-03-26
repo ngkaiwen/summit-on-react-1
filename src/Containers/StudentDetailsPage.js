@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import StudentList from "../Components/StudentDetails/StudentList.js";
 import StudentDetailsPanel from "../Components/StudentDetails/StudentDetailsPanel.js";
-import {firebaseHandle} from "../Config/firebaseAPI.js";
+import { connect } from 'react-redux';
 
 class StudentDetailsPage extends Component {
 
@@ -10,28 +10,9 @@ class StudentDetailsPage extends Component {
     this.state = { // Initialise
       selectedStudent : null,
       selectedStudentData : {},
-      studentData : {},
-      assignmentData : {}
     }
 
-    this.updateStudentData = this.updateStudentData.bind(this);
     this.studentClickHandler = this.studentClickHandler.bind(this);
-  }
-  
-
-  //Update list of students whenever this component is about to mount
-  componentWillMount() {
-    const dataLocation = "courses/" + this.props.selectedModule;
-    var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
-    firebaseStudentsDataset.on("value",Snapshot => this.updateStudentData(Snapshot));
-  }
-
-  /*The updateStudentData function is used by the firebase handle (see componentWillMount function above)
-  to update the state of the StudentDetailsPage component (specifically, the studentData dictionary)
-  */
-  updateStudentData(Snapshot){ 
-    this.setState({studentData:Snapshot.val()["students"]})
-    this.setState({assignmentData:Snapshot.val()["assignments"]})
   }
 
   /*
@@ -41,23 +22,34 @@ class StudentDetailsPage extends Component {
   studentClickHandler(key) { 
     this.setState({ selectedStudent:key });
     console.log("Selected student with student ID: " + key);
-    this.setState({ selectedStudentData:this.state.studentData[key] });
+    this.setState({ selectedStudentData:this.props.studentData[key] });
   }
 
 
   //Render function
   render() {
-    
-    return (
-      <div>
-        <StudentList 
-          studentData={this.state.studentData} 
-          studentClickHandler = {this.studentClickHandler}
-          selectedModule = {""}/>
-        <StudentDetailsPanel selectedStudentData = {this.state.selectedStudentData} assignmentData = {this.state.assignmentData}/>
-      </div>
-      );
+    if (this.props.studentData!=null){
+      return (
+        <div>
+          <StudentList 
+            studentData={this.props.studentData}
+            studentClickHandler = {this.studentClickHandler}
+            selectedModule = {""}/>
+          <StudentDetailsPanel selectedStudentData = {this.state.selectedStudentData} assignmentData = {this.props.assignmentData}/>
+        </div>
+        );
+    }
+    else { return null }
   }
 }
 
-export default StudentDetailsPage;
+function mapStateToProps(state){
+    var courseData = state["all_raw_data"][state["selected_course"]]
+    if (courseData!=null){
+      return {studentData:courseData["students"],
+            assignmentData:courseData["assignments"] }
+    }
+    else { return {} }
+}
+
+export default connect(mapStateToProps)(StudentDetailsPage);

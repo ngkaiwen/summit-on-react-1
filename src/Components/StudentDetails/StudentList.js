@@ -28,6 +28,7 @@ class StudentList extends Component {
 
 
   render() {
+    //console.log(this.props.studentData)
     return (
     	<div className = "scrollable-list-container">
       		<List style = {{ maxHeight:'100%', overflow:"auto"}}>
