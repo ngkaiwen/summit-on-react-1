@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
-import "./StudentDetails.css";
 
 class StudentProfileDisplay extends Component {
 

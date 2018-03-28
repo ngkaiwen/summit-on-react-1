@@ -7,7 +7,8 @@ class StudentListItem extends Component {
   render() {
 
     return (
-      <ListItem button = {true} divider = {true} onClick = {() => this.props.studentClickHandler(this.props.id)}>
+      <ListItem onClick = {() => { this.props.studentClickHandler(this.props.id)}} button >
+
       	<Avatar src={this.props.picture}/>
       	<ListItemText primary = {this.props.name}/>
       </ListItem>

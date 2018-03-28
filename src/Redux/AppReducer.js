@@ -10,6 +10,7 @@ function MainAppReducer(state = initialState, action) {
 
 	switch (action.type) {
 		case "SET_SELECTED_COURSE":
+			console.log("Changed course to " + action.payload)
 			return {
 				...state,
 				selected_course: action.payload

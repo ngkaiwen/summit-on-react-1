@@ -7,8 +7,8 @@ const login = (props) => {
               <h1>SUMMIT</h1>
               <h3>LOG-IN</h3>
               <br></br>
-              <input value='UserName' className='login-input'></input>
-              <input value='Password' className='login-input'></input>
+              <input defaultValue='Username' className='login-input'></input>
+              <input defaultValue='Password' className='login-input'></input>
               <Link to='/dashboard'><button className='login-button'>Submit</button></Link>
             </div>
          </div>);

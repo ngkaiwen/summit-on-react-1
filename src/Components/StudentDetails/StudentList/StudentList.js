@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import StudentListItem from "./StudentListItem.js";
 import List from 'material-ui/List';
-import "./StudentDetails.css";
 
 class StudentList extends Component {
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import StudentList from "../Components/StudentDetails/StudentList.js";
-import StudentDetailsPanel from "../Components/StudentDetails/StudentDetailsPanel.js";
+import StudentList from "../Components/StudentDetails/StudentList/StudentList.js";
+import StudentDetailsPanel from "../Components/StudentDetails/StudentDetailsPanel/StudentDetailsPanel.js";
+import "../Components/StudentDetails/StudentDetails.css";
 import { connect } from 'react-redux';
 
 class StudentDetailsPage extends Component {
@@ -28,24 +29,23 @@ class StudentDetailsPage extends Component {
 
   //Render function
   render() {
-    if (this.props.studentData!=null){
+    if (this.props.studentData!=null){ //Check if the redux store has been updated with data from firebase
       return (
         <div>
           <StudentList 
             studentData={this.props.studentData}
-            studentClickHandler = {this.studentClickHandler}
-            selectedModule = {""}/>
+            studentClickHandler = {this.studentClickHandler}/>
           <StudentDetailsPanel selectedStudentData = {this.state.selectedStudentData} assignmentData = {this.props.assignmentData}/>
         </div>
         );
     }
-    else { return null }
+    else { return <div className = "empty"> Nothing to display here! </div> }
   }
 }
 
 function mapStateToProps(state){
-    var courseData = state["all_raw_data"][state["selected_course"]]
-    if (courseData!=null){
+    var courseData = state["all_raw_data"][state["selected_course"]] //Obtain data for the selected course
+    if (courseData!=null){ //Check if the redux store has been updated with data from firebase
       return {studentData:courseData["students"],
             assignmentData:courseData["assignments"] }
     }
