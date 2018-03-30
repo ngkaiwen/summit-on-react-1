@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TwoLevelPieChart from './TwoLevelPieChart'
+import TwoLevelPieChart from './Charts/TwoLevelPieChart'
 
 class overview extends Component {
 

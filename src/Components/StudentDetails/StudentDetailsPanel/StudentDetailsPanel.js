@@ -1,38 +1,50 @@
 import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
-import StudentProfileDisplay from "./StudentProfileDisplay.js";
-import StudentAssignmentsCompleted from "./StudentAssignmentsCompleted.js";
+import StudentProfileDisplay from "./StudentProfileDisplay/StudentProfileDisplay.js";
+import AssignmentCompletionStatus from "./AssignmentCompletionStatus/AssignmentCompletionStatus.js";
+import StudentCompletionTime from "./StudentCompletionTime/StudentCompletionTime.js";
+import SubmissionsOverTime from "./SubmissionsOverTime/SubmissionsOverTime.js";
 
 class StudentDetailsPanel extends Component {
 
 
   render() {
     //console.log(this.props.assignmentData)
-    const numberOfAssignments = Object.keys(this.props.assignmentData).length
-    return (
-      <div className = "student-details-panel-container">
-        <Grid container justify="center">  
-          <Grid item xs = {10}> 
-            <StudentProfileDisplay 
-              selectedStudentData = {this.props.selectedStudentData}/> 
-          </Grid>
-          
-          <Grid item xs = {10}> 
-            <StudentAssignmentsCompleted 
-              selectedStudentData = {this.props.selectedStudentData}
-              numberOfAssignments = {numberOfAssignments}/>
-          </Grid>
-          
-          <Grid item className="student-time-joined-display" xs = {10}> <Paper> Time since joining course </Paper> </Grid>
-          
-          <Grid item className="student-time-spent" xs = {10}> <Paper> Time spent on assignments </Paper> </Grid>
-          
-          <Grid item className="student-list-of-assignments-and-completion" xs = {10}> <Paper> List of assignments and completion</Paper> </Grid>
-        </Grid>
+    if (Object.keys(this.props.selectedStudentData).length === 0){ //Check if there is no selected student
+      return( <div className = "empty"> 
+        Select a student </div> )
+    }
+    else{
+      return (
+        <div className = "student-details-panel-container">
+          <Grid container justify="center">  
+            <Grid item xs = {10}> 
+              <StudentProfileDisplay selectedStudentData = {this.props.selectedStudentData}/> 
+            </Grid>
+            
+            <Grid item xs = {5}>
+                <div className = "first-row-pane-container">
+                  <SubmissionsOverTime selectedStudentData = {this.props.selectedStudentData}/>
+                </div>
+            </Grid>
 
-      </div>
-    )
+            <Grid item xs = {5}>
+                <div className = "first-row-pane-container">
+                  <AssignmentCompletionStatus selectedStudentData = {this.props.selectedStudentData}/>
+                </div>
+            </Grid>
+            
+            <Grid item xs = {10}>
+              <div className = "second-row-pane-container">
+                <StudentCompletionTime/>
+              </div>
+            </Grid>
+
+          </Grid>
+
+        </div>
+      )
+    }
   }
 }
 

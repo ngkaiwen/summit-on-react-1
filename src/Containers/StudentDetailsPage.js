@@ -11,6 +11,7 @@ class StudentDetailsPage extends Component {
     this.state = { // Initialise
       selectedStudent : null,
       selectedStudentData : {},
+      courseHasChanged : false
     }
 
     this.studentClickHandler = this.studentClickHandler.bind(this);
@@ -26,6 +27,12 @@ class StudentDetailsPage extends Component {
     this.setState({ selectedStudentData:this.props.studentData[key] });
   }
 
+  componentWillUpdate(nextProps){
+    if(nextProps.selectedCourse !== this.props.selectedCourse){
+      this.setState({selectedStudentData:{}}) //Blank the student details display if we have switched courses
+    }
+  }
+
 
   //Render function
   render() {
@@ -35,7 +42,9 @@ class StudentDetailsPage extends Component {
           <StudentList 
             studentData={this.props.studentData}
             studentClickHandler = {this.studentClickHandler}/>
-          <StudentDetailsPanel selectedStudentData = {this.state.selectedStudentData} assignmentData = {this.props.assignmentData}/>
+          <StudentDetailsPanel 
+            selectedStudentData = {this.state.selectedStudentData} 
+            assignmentData = {this.props.assignmentData}/>
         </div>
         );
     }
@@ -47,7 +56,8 @@ function mapStateToProps(state){
     var courseData = state["all_raw_data"][state["selected_course"]] //Obtain data for the selected course
     if (courseData!=null){ //Check if the redux store has been updated with data from firebase
       return {studentData:courseData["students"],
-            assignmentData:courseData["assignments"] }
+            assignmentData:courseData["assignments"],
+            selectedCourse:state["selected_course"] }
     }
     else { return {} }
 }
