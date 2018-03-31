@@ -60,6 +60,15 @@
 	font-size: 40px;	
 }
 
+.right-sub-pane-second-row{
+	float:right;
+	width:25%;
+	height:100%;
+	text-align: center;
+	padding-top: 15%;
+	font-size: 40px;	
+}
+
 .chart{
 	font-size: 12px;
 }

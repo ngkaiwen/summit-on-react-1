@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
 import StudentProfileDisplay from "./StudentProfileDisplay/StudentProfileDisplay.js";
 import AssignmentCompletionStatus from "./AssignmentCompletionStatus/AssignmentCompletionStatus.js";
-import StudentCompletionTime from "./StudentCompletionTime/StudentCompletionTime.js";
+import StudentCompletionTimePercentile from "./StudentCompletionTimePercentile/StudentCompletionTimePercentile.js";
 import SubmissionsOverTime from "./SubmissionsOverTime/SubmissionsOverTime.js";
 
 class StudentDetailsPanel extends Component {
@@ -36,7 +36,7 @@ class StudentDetailsPanel extends Component {
             
             <Grid item xs = {10}>
               <div className = "second-row-pane-container">
-                <StudentCompletionTime/>
+                <StudentCompletionTimePercentile selectedStudentData = {this.props.selectedStudentData}/>
               </div>
             </Grid>
 

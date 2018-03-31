@@ -4,7 +4,7 @@ import SubmissionsOverTimeChart from "./SubmissionsOverTimeChart.js"
 class SubmissionsOverTime extends Component {
 
   render() {
-    console.log(this.props.selectedStudentData)
+    //console.log(this.props.selectedStudentData)
   	const chartData = this.props.selectedStudentData["displayData"]["submissionsVStime"]
 
   	return ( 
