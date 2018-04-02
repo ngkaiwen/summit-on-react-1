@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import StudentList from "../Components/StudentDetails/StudentList/StudentList.js";
-import StudentDetailsPanel from "../Components/StudentDetails/StudentDetailsPanel/StudentDetailsPanel.js";
-import "../Components/StudentDetails/StudentDetails.css";
+import StudentList from "./StudentDetails/StudentList/StudentList.js";
+import StudentDetailsPanel from "./StudentDetails/StudentDetailsPanel/StudentDetailsPanel.js";
+import "./StudentDetails/StudentDetails.css";
 import { connect } from 'react-redux';
 
 class StudentDetailsPage extends Component {

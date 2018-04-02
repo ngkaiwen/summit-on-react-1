@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../Components/Navigation';
-import Login from '../Components/Login';
-import About from '../Components/About';
+import Navigation from './Navigation';
+import Login from './Login';
+import About from './About';
 
 class frontPage extends Component {
 

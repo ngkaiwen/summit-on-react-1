@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Overview from './Overview/Overview';
-import StudentDetailsPage from "./StudentDetailsPage.js";
+import StudentDetailsPage from './Students/StudentDetailsPage.js';
 
 class chartSpace extends Component {
 

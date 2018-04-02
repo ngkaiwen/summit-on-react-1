@@ -4,9 +4,9 @@ import MainAppReducer from "../Redux/AppReducer.js";
 import { Provider } from 'react-redux';
 import {firebaseHandle} from "../Config/firebaseAPI.js";
 
-import Toolbar from '../Components/Toolbar';
-import ChartSpace from './ChartSpace';
-import CourseSelectionDialog from "./CourseSelectionDialog.js"
+import Toolbar from './Toolbar';
+import ChartSpace from './ChartSpace/ChartSpace';
+import CourseSelectionDialog from "./CourseSelectionDialog/CourseSelectionDialog"
 import Button from 'material-ui/Button';
 import {Settings} from 'material-ui-icons';
 

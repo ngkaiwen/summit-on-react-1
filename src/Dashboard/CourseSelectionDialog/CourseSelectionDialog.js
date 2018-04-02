@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Dialog, { DialogTitle,DialogActions} from 'material-ui/Dialog';
 import Button from 'material-ui/Button';
 import { connect } from 'react-redux';
-import CourseList from "../Components/CourseSelectionDialog/CourseList.js";
-import "../Components/CourseSelectionDialog/CourseSelectionDialog.css";
+import CourseList from "./CourseSelectionDialog/CourseList.js";
+import "./CourseSelectionDialog/CourseSelectionDialog.css";
 
 class CourseSelectionDialog extends Component {
 
