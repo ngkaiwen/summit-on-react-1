@@ -3,6 +3,7 @@ import StudentList from "./StudentDetails/StudentList/StudentList.js";
 import StudentDetailsPanel from "./StudentDetails/StudentDetailsPanel/StudentDetailsPanel.js";
 import "./StudentDetails/StudentDetails.css";
 import { connect } from 'react-redux';
+import Spinner from '../../../Misc/Spinner';
 
 class StudentDetailsPage extends Component {
 
@@ -48,7 +49,7 @@ class StudentDetailsPage extends Component {
         </div>
         );
     }
-    else { return <div className = "empty"> Nothing to display here! </div> }
+    else { return <div style={{marginTop:"50vh"}}><Spinner /></div> }
   }
 }
 

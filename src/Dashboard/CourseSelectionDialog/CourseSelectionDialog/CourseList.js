@@ -8,7 +8,7 @@ class CourseList extends Component {
   	var listOfCourses = [] //Used to ultimately return the list of courses to the render function
   	const courseData = this.props.courseData //Declare commonly used variables to make the code a little bit simpler - instead of refering to the props each time we need to use both functions we can just call it directly
   	const courseClickHandler = this.props.courseClickHandler
-    
+		
   	for (var key in courseData){ //Run through all the courseData (loaded from firebase)
   		var thisCourse = courseData[key]["courseInfo"]
   		listOfCourses.push( //Push one CourseListItem component onto the listOfCourses for each course in courseData
@@ -21,7 +21,7 @@ class CourseList extends Component {
           selectedCourse = {this.props.selectedCourse}
   				/>
   		)
-  	}
+		}
   	return listOfCourses
   }
 

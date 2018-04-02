@@ -12,7 +12,7 @@ class StudentDetailsPanel extends Component {
     //console.log(this.props.assignmentData)
     if (Object.keys(this.props.selectedStudentData).length === 0){ //Check if there is no selected student
       return( <div className = "empty"> 
-        Select a student </div> )
+        PLEASE SELECT A STUDENT </div> )
     }
     else{
       return (

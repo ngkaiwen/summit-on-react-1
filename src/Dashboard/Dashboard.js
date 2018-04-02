@@ -56,7 +56,7 @@ class dashboard extends Component {
           <div className="courseSelectionDialogShow">
           <Button 
             variant="fab" 
-            color="primary" 
+           
             onClick = {this.dialogDisplayToggle}
             children = {<Settings/>} />
           </div>

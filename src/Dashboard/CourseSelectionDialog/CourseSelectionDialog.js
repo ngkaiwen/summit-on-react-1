@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Dialog, { DialogTitle,DialogActions} from 'material-ui/Dialog';
 import Button from 'material-ui/Button';
 import { connect } from 'react-redux';
-import CourseList from "./CourseSelectionDialog/CourseList.js";
-import "./CourseSelectionDialog/CourseSelectionDialog.css";
+import CourseList from './CourseSelectionDialog/CourseList';
+import './CourseSelectionDialog/CourseSelectionDialog.css';
+import Spinner from '../../Misc/Spinner';
 
 class CourseSelectionDialog extends Component {
 
@@ -31,10 +32,11 @@ class CourseSelectionDialog extends Component {
 
 	   	  	<DialogTitle>Course selection</DialogTitle>
 
-	   	  	<CourseList
+
+	   	  	{Object.keys(this.props.courseData).length !== 0 ? <CourseList
 	   	  		courseClickHandler = {this.courseClickHandler}
 	   	  		courseData = {this.props.courseData}
-            selectedCourse = {this.state.selectedCourse} />
+            selectedCourse = {this.state.selectedCourse} /> : <Spinner />}
 
           <DialogActions>
             <Button
