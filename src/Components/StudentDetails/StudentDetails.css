@@ -1,0 +1,84 @@
+.scrollable-list-container {
+  height: 90vh;
+  width: 20vw;
+  padding-top: 7vh;
+  float:left;
+}
+
+.student-details-panel-container{
+	float:right;
+	padding-top: 7vh;
+	padding-right: 1vw;
+	width:79vw;
+	height:93vh;
+	overflow:auto;
+	display:grid;
+}
+
+.student-profile-display {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:5vh;
+	
+}
+
+.first-row-pane-container {
+	border: 1px solid grey;
+	height:235px;
+}
+
+.second-row-pane-container {
+	border: 1px solid grey;
+	height:350px;
+}
+
+.pane-title {
+	height:30px;
+	border: 1px solid grey;
+	background:rgba(0, 0, 0, 0.7);
+  	padding-left: 10px;
+  	padding-top: 5px;
+  	color: #FFFFFF;
+}
+
+.central-sub-pane{
+	width:100%;
+}
+
+.left-sub-pane{
+	float:left;
+	width:75%;
+}
+
+.right-sub-pane{
+	float:right;
+	width:25%;
+	height:100%;
+	text-align: left;
+	padding-top: 20%;
+	font-size: 40px;	
+}
+
+.right-sub-pane-second-row{
+	float:right;
+	width:25%;
+	height:100%;
+	text-align: center;
+	padding-top: 15%;
+	font-size: 40px;	
+}
+
+.chart{
+	font-size: 12px;
+}
+
+.empty {
+	padding-top:45vh;
+	text-align:center;
+	font-size: 35px;
+}
+
+.test {
+	background:red;
+}
