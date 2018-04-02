@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import OverviewStu from './OvervieStu';
 import OverviewAss from './OverviewAss';
 
-class overview extends Component {
+class Overview extends Component {
 
 
   render() {
@@ -28,4 +28,4 @@ class overview extends Component {
     else { return {} }
   }
 
-export default connect(mapStateToProps)(overview);
+export default connect(mapStateToProps)(Overview);

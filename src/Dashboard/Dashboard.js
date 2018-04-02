@@ -45,7 +45,7 @@ class dashboard extends Component {
         
         <div className='dashboard'>
           
-          <div className='toolbar'> <Toolbar clicked={this.toolbarClickHandler}/> </div>
+          <div className='toolbar'> <Toolbar clicked={this.toolbarClickHandler} cur={this.state.displayPage}/> </div>
 
           <CourseSelectionDialog 
             open = {this.state.displayCourseSelectionDialog}
