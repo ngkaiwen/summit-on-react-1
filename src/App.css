@@ -227,9 +227,6 @@ a:visited {
   height: 100%;
 }
 
-.toolbar {
-  background: red;
-}
 
 .toolbar-nav-box ul {
   display: flex;
@@ -258,7 +255,6 @@ a:visited {
 
 .toolbar-nav-box li:hover {
   color: #00ced1;
-  font-weight: bold;
 }
 
 /* Students ================================================*/
@@ -300,6 +296,41 @@ a:visited {
 
 .Overview-container {
   overflow-x: hidden;
+}
+
+.Overview-heading {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+.Overview-container h1 {
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.Overview-container h2 {
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Overview-container h2 b {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.Overview-container h3{
+  color: #999999;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .Overview-grid-container {

@@ -2,7 +2,6 @@
 const initialState = {
 	all_raw_data: {},
 	selected_course: "",
-	all_chart_data : {}
 }
 
 //define a reducer with an initialized state action
