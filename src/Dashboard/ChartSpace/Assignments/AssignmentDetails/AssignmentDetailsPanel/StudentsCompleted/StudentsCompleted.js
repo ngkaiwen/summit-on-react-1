@@ -9,10 +9,10 @@ class StudentsCompleted extends Component {
         var listOfStudents = [] //Used to ultimately return the list of assignments to the render function
   	    const selectedAssignment = this.props.selectedAssignmentData
         const completed_student_names = selectedAssignment["completed student names"]
-        console.log(this.props.selectedAssignmentData)
-          console.log(completed_student_names)
+        //console.log(this.props.selectedAssignmentData)
+          //console.log(completed_student_names)
         for (var key in completed_student_names){ //Run through all the assignmentData (loaded from firebase)
-        console.log(key)
+        //console.log(key)
           var thisStudent = completed_student_names[key]
         listOfStudents.push( //Push one AssignmentListItem component onto the listOfAssignments for each assignment in assignmentData
           <CompletedListItem

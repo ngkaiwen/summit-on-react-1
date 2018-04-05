@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class BasicInformation extends Component {
 
   render() {
-    console.log(this.props.selectedAssignmentData)
+    //console.log(this.props.selectedAssignmentData)
     const data = this.props.selectedAssignmentData
     const name = data["name"]
     const questionType = data["questionType"]
@@ -11,7 +11,7 @@ class BasicInformation extends Component {
     const open = data["open"]
     const deadline = data["deadline"]
     const visible = data["visible"]
-    console.log(deadline)
+    //console.log(deadline)
 		return (
   <div>
       <div className = "pane-title">

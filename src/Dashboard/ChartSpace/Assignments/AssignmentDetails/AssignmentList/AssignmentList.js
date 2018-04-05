@@ -8,7 +8,7 @@ class AssignmentList extends Component {
   	var listOfAssignments = [] //Used to ultimately return the list of assignments to the render function
   	const assignmentData = this.props.assignmentData //Declare commonly used variables to make the code a little bit simpler - instead of refering to the props each time we need to use both functions we can just call it directly
   	const assignmentClickHandler = this.props.assignmentClickHandler
-    console.log(assignmentClickHandler)
+    //console.log(assignmentClickHandler)
   	for (var key in assignmentData){ //Run through all the assignmentData (loaded from firebase)
   		var thisAssignment = assignmentData[key]
   		listOfAssignments.push( //Push one AssignmentListItem component onto the listOfAssignments for each assignment in assignmentData
@@ -21,7 +21,7 @@ class AssignmentList extends Component {
   				/>
   		)
   	}
-    console.log(listOfAssignments)
+   // console.log(listOfAssignments)
   	return listOfAssignments
   }
 

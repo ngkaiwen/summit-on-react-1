@@ -8,15 +8,15 @@ class StudentsNotCompleted extends Component {
       obtainListOfStudents(){ //Obtain the list of students from the props and pass it to the render function
         var listOfStudents = [] //Used to ultimately return the list of assignments to the render function
   	    const selectedAssignment = this.props.selectedAssignmentData
-                console.log( selectedAssignment["not completed student names"] === undefined )
+                //console.log( selectedAssignment["not completed student names"] === undefined )
         if ( selectedAssignment["not completed student names"] === undefined ){ return null }
 
         else{
         const not_completed_student_names = selectedAssignment["not completed student names"]
-        console.log(this.props.selectedAssignmentData)
-          console.log(not_completed_student_names)
+        //console.log(this.props.selectedAssignmentData)
+          //console.log(not_completed_student_names)
         for (var key in not_completed_student_names){ //Run through all the assignmentData (loaded from firebase)
-        console.log(key)
+        //console.log(key)
           var thisStudent = not_completed_student_names[key]
         listOfStudents.push( //Push one AssignmentListItem component onto the listOfAssignments for each assignment in assignmentData
           <NotCompletedListItem

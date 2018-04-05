@@ -1,31 +1,39 @@
 import React from 'react';
+import Spinner from '../../../Misc/Spinner';
 
 const overviewStu = (props) => {
-  return (<div>
-            <div className='Overview-grid-container'>
 
-                <div className='Overview-grid-item'>
-                <p>{props.test}</p>
-                </div>
+  const numStudents = Object.keys(props.data['students']).length;
+  //console.log(props.data);
 
-                <div className='Overview-grid-item'>
-                <p>test</p>
-                </div>
+  return (
+          <div>
+              <div className='Overview-grid-container'>
 
-                <div className='Overview-grid-item1'>
-                <p>test</p>
-                </div>
+                  <div className='Overview-grid-item'>
+                    <h1>{numStudents}</h1>
+                    <h2>Students</h2>
+                  </div>
 
-                <div className='Overview-grid-item'>
-                <p>test</p>
-                </div>
+                  <div className='Overview-grid-item'>
+                  <p>test</p>
+                  </div>
 
-                <div className='Overview-grid-item'>
-                <p>test</p>
-                </div>
+                  <div className='Overview-grid-item1'>
+                  <p>test</p>
+                  </div>
+
+                  <div className='Overview-grid-item'>
+                  <p>test</p>
+                  </div>
+
+                  <div className='Overview-grid-item'>
+                  <p>test</p>
+                  </div>
 
             </div>
-          </div>);
+          </div>
+  );
 };
 
 export default overviewStu;
