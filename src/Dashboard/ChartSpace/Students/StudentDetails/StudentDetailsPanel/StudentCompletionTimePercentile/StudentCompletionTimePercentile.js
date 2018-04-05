@@ -6,7 +6,7 @@ class StudentCompletionTimePercentile extends Component {
   render() {
     const chartData = this.props.selectedStudentData["displayData"]["assignmentPercentiles"]
 
-  	return ( 
+  	return (
   		<div>
   			<div className = "pane-title">
   				Completion time percentile per assignment
