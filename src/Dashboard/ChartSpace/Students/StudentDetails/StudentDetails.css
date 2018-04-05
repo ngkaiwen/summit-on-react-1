@@ -82,3 +82,29 @@
 .test {
 	background:red;
 }
+
+
+.third-row-pane-container {
+	border: 1px solid grey;
+	height:200px;
+}
+
+.third-row-left-sub-pane{
+	float:left;
+	width:49%;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.third-row-right-sub-pane{
+  float:right;
+	width:49%;
+	text-align: left;
+  padding-top: 5px;
+}
+
+.fourth-row-pane-container {
+	border: 1px solid grey;
+	height:400px;
+}
+
