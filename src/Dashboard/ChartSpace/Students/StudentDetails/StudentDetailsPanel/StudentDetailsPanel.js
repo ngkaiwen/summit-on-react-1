@@ -11,17 +11,17 @@ class StudentDetailsPanel extends Component {
   render() {
     //console.log(this.props.assignmentData)
     if (Object.keys(this.props.selectedStudentData).length === 0){ //Check if there is no selected student
-      return( <div className = "empty"> 
+      return( <div className = "empty">
         PLEASE SELECT A STUDENT </div> )
     }
     else{
       return (
         <div className = "student-details-panel-container">
-          <Grid container justify="center">  
-            <Grid item xs = {10}> 
-              <StudentProfileDisplay selectedStudentData = {this.props.selectedStudentData}/> 
+          <Grid container justify="center">
+            <Grid item xs = {10}>
+              <StudentProfileDisplay selectedStudentData = {this.props.selectedStudentData}/>
             </Grid>
-            
+
             <Grid item xs = {5}>
                 <div className = "first-row-pane-container">
                   <SubmissionsOverTime selectedStudentData = {this.props.selectedStudentData}/>
@@ -33,7 +33,7 @@ class StudentDetailsPanel extends Component {
                   <AssignmentCompletionStatus selectedStudentData = {this.props.selectedStudentData}/>
                 </div>
             </Grid>
-            
+
             <Grid item xs = {10}>
               <div className = "second-row-pane-container">
                 <StudentCompletionTimePercentile selectedStudentData = {this.props.selectedStudentData}/>
