@@ -5,7 +5,7 @@
   float:left;
 }
 
-.student-details-panel-container{
+.assignment-details-panel-container{
 	float:right;
 	padding-top: 7vh;
 	padding-right: 1vw;
@@ -15,22 +15,31 @@
 	display:grid;
 }
 
-.student-profile-display {
+.basic-information {
 	display:flex;
+  	float:left;
 	flex-direction: column;
-	align-items: center;
-	padding-top:5vh;
-
+	align-items: flex-start;
+	padding-top:3vh;
+  	padding-left:2vh;
+  text-align: left;
 }
 
-.first-row-pane-container {
+.assign-first-row-pane-container {
 	border: 1px solid grey;
 	height:235px;
+  width:50%vw;
 }
 
-.second-row-pane-container {
+.assign-second-row-pane-container {
 	border: 1px solid grey;
 	height:350px;
+  width:50vw;
+}
+.assign-third-row-pane-container {
+	border: 1px solid grey;
+	height:350px;
+  width:50vw;
 }
 
 .pane-title {
@@ -84,27 +93,21 @@
 }
 
 
-.third-row-pane-container {
-	border: 1px solid grey;
-	height:200px;
-}
+.basic-information {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:5vh;
 
-.third-row-left-sub-pane{
-	float:left;
-	width:49%;
-  padding-top: 5px;
-  padding-left: 5px;
 }
-
-.third-row-right-sub-pane{
-  float:right;
-	width:49%;
-	text-align: left;
-  padding-top: 5px;
+.completion-rate {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:5vh;
 }
-
-.fourth-row-pane-container {
-	border: 1px solid grey;
-	height:400px;
+.students-completed {
+  height: 45vh;
+  width: 20vw;
+  padding-top: 2vh;
 }
-
