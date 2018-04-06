@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CodeCombatLevels from './CodeCombatLevels';
 import PieChart from './Charts/PieChart';
-import LineChart from './Charts/LineChart'
+import LineChart from './Charts/LineChart';
 
 class CodeCombat extends Component {
 
@@ -43,7 +43,7 @@ class CodeCombat extends Component {
 
               <div className='Overview-CC-grid-item'>
                 <h3>Student Completion of level</h3>
-                {this.state.currentLevelID ? <PieChart data={this.props.data['CompletionChartIdvAs'][this.state.currentLevelID]} /> : null}
+                {this.state.currentLevelID && this.props.data['CompletionChartIdvAs'][this.state.currentLevelID] ? <PieChart data={this.props.data['CompletionChartIdvAs'][this.state.currentLevelID]} /> : null}
               </div>
 
               <div className='Overview-CC-grid-item'>
