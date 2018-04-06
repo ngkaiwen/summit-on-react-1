@@ -7,7 +7,7 @@ class CodeCombat extends Component {
 
   state = {
     currentLevelID: null,
-    currentLevelName: null
+    currentLevelName: 'select a level'
   }
 
   levelClickHandler = (levelID,levelName) => {
@@ -27,6 +27,11 @@ class CodeCombat extends Component {
               </div>
 
               <div className='Overview-CC-grid-item'>
+                <h1 style={{fontWeight:700}}>Code Combat</h1>
+                <h2 style={{fontWeight:100, fontSize:'1rem'}}>Overall Data</h2>
+                <br/>
+                <br/>
+                <br/>
                 <h3>Selected Level</h3>
                 <h1>{this.state.currentLevelName}</h1>
               </div>
