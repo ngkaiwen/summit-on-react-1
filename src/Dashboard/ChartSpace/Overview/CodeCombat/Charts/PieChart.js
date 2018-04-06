@@ -1,5 +1,5 @@
 import React from 'react';
-import {PieChart, Pie, Legend, Tooltip, Cell,ResponsiveContainer } from 'recharts';
+import {PieChart, Pie, Legend, Tooltip, Cell } from 'recharts';
 
 const pieChart = (props) => {
 

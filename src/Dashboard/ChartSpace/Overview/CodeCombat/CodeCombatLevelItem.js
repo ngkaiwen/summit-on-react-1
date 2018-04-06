@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ListItem, ListItemText } from 'material-ui/List';
-import Avatar from 'material-ui/Avatar';
 
 class CodeCombatLevelItem extends Component {
 

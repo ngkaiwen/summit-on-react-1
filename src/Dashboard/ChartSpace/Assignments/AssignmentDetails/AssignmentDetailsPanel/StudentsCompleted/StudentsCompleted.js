@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CompletedListItem from "./CompletedListItem.js";
 import List from 'material-ui/List';
-import { ListItem, ListItemText } from 'material-ui/List';
+//import { ListItem, ListItemText } from 'material-ui/List';
 
 class StudentsCompleted extends Component {
 

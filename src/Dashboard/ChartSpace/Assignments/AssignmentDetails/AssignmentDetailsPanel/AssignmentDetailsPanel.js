@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
+//import Paper from 'material-ui/Paper';
 import BasicInformation from "./BasicInformation/BasicInformation.js";
 import CompletionRateStatus from "./CompletionRate/CompletionRateStatus.js";
 import StudentsCompleted from "./StudentsCompleted/StudentsCompleted.js";

@@ -5,12 +5,12 @@ import BarChart from './Charts/BarChart'
 const overviewAss = (props) => {
 
   const numAssignments = Object.keys(props.data["assignments"]).length;
-  const assignmentChart = props.data['courseInfo']['Charts']['AssignmentsByTime'];
+  //const assignmentChart = props.data['courseInfo']['Charts']['AssignmentsByTime'];
   const scatterData = props.data['courseInfo']['Charts']['ScatterAss'];
 
   let rawBarData = props.data['courseInfo']['Charts']['AssignmentsByTime']['Assignment Figure'];
   let barData = []
-  console.log(rawBarData);
+
   for(let i=0; i<rawBarData.length; i++){
     barData.push({
       name: (i+1),
