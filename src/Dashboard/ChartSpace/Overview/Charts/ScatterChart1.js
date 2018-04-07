@@ -1,20 +1,19 @@
 import React from 'react';
 import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
 
-const scatterChart = (props) => {
+const scatterChart1 = (props) => {
     return (
 			<ResponsiveContainer width="100%" height="100%">
-			<ScatterChart 
-										margin={{ top: 20, right: 20, bottom: 20, left: 60 }} >
+			<ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 60 }} >
 				<CartesianGrid />
-				<XAxis dataKey={'CompletionRate'} 
+				<XAxis dataKey={'Completion Rate'} 
 								type="number" 
 								domain={['auto', 'auto']}
 								name='Completion Rate'
 								unit=''
 								label={{value: "Completion Rate", offset: 0, position: "bottom"}}/>
 
-				<YAxis dataKey={'assignmentAvgTime'} 
+				<YAxis dataKey={'Average Time'} 
 								type="number" 
 								name='Average Time' 
 								label={{ value: 'Average Time (Seconds)', angle: -90,  offset: 0, position: 'left' }}/>
@@ -22,7 +21,7 @@ const scatterChart = (props) => {
 				<Tooltip cursor={{ strokeDasharray: '3 3' }}
 									label={'name'} />
 
-        <Scatter name='ScatterStu' data={props.data} fill='#8884d8'>
+        <Scatter name='ScatterStu' data={props.data} fill='#82ca9d'>
 					{//<LabelList dataKey="name" position="top" />
 					}
 				</Scatter>
@@ -32,4 +31,4 @@ const scatterChart = (props) => {
     );
 };
 
-export default scatterChart;
+export default scatterChart1;

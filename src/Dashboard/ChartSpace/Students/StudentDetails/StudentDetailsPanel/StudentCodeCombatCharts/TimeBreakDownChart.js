@@ -4,6 +4,7 @@ import { PieChart,Pie,Cell,Tooltip,ResponsiveContainer,Legend } from "recharts";
 class TimeBreakDownChart extends Component {
   render() {
     const pieData = this.props.pieData /*array*/
+    console.log(pieData);
     if (pieData["ownChart"] == null) { return null }
     const colors = ["#AED581","#F06292"]
 

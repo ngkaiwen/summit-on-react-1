@@ -300,7 +300,7 @@ a:visited {
 
 .Overview-heading {
   margin-top: 4rem;
-  margin-left: 4rem;
+  margin-left: 5%;
 }
 
 .Overview-container h1 {
@@ -338,24 +338,136 @@ a:visited {
   padding: 70px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   box-sizing: border-box;
+  grid-gap: 1.3rem;
 }
 
 .Overview-grid-item {
-  border: 1px solid black;
+  text-align: center;
+  padding: 3rem;
   box-sizing: border-box;
-  height: 400px;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
 }
+
+.Overview-grid-item h1{
+  color: #5b5b5b;
+}
+
 
 .Overview-grid-item1 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 1px solid black;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
   box-sizing: border-box;
   text-align: center;
+  height: 700px;
+  padding: 2rem;
 }
 
+.Overview-grid-item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2rem;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+}
+
+.weakestStudentsList {
+  list-style: none;
+}
+
+.weakestStudentsListItem {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin:2rem;
+}
+
+.weakestStudentsListItem p {
+  font-size: 1.2rem;
+  color: #8884d8;
+}
+
+.weakestStudentsListItem b {
+  font-size: 1.4rem;
+  color: #2b2b2b;
+}
+
+
+/* cc =====*/
+
+.Overview-CC-grid-container {
+  display: grid;
+  padding: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+}
+
+.Overview-CC-grid-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.Overview-CC-grid-container h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+
+.Overview-CC-grid-item {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px; 
+  padding: 1rem;
+}
+
+
+.Overview-CC-grid-item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  height: 800px;
+}
+
+.Overview-CC-grid-item p {
+  font-size: 1.2rem;
+  margin: 1rem;
+  font-family: inherit;
+}
+
+/* Questions Container ====================================*/
+
+.Questions-container {
+  display: grid;
+  padding: 70px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+}
+
+.Questions-item {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px; 
+  padding: 1rem;
+}
+
+.QuestionCard h1{
+  font-size: 2rem;
+}
 
 
 /* Spinner ================================================*/

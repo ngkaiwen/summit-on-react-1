@@ -1,1 +1,1 @@
-i am candice
+Welcome to Summit Analytics! Team 2's BT3103 project for AY 17/18 sem 2

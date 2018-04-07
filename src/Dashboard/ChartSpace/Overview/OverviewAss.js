@@ -1,33 +1,47 @@
 import React from 'react';
-import ScatterChart from './Charts/ScatterChart'
+import ScatterChart1 from './Charts/ScatterChart1'
+import BarChart from './Charts/BarChart'
 
 const overviewAss = (props) => {
+
+  const numAssignments = Object.keys(props.data["assignments"]).length;
+  //const assignmentChart = props.data['courseInfo']['Charts']['AssignmentsByTime'];
+  const scatterData = props.data['courseInfo']['Charts']['ScatterAss'];
+
+  let rawBarData = props.data['courseInfo']['Charts']['AssignmentsByTime']['Assignment Figure'];
+  let barData = []
+
+  for(let i=0; i<rawBarData.length; i++){
+    barData.push({
+      name: (i+1),
+      Assignments: (rawBarData[i] ? rawBarData[i]['Figure'] :0)
+    });
+  }
+
   return (<div>
             <div className='Overview-grid-container'>
 
                 <div className='Overview-grid-item'>
-                <p>test</p>
+                  <h1>Assignment</h1>
+                  <h2>Overall Data</h2>
                 </div>
 
                 <div className='Overview-grid-item'>
-                <p>test</p>
+                  <h1>{numAssignments}</h1>
+                  <h2>Assignments</h2>
                 </div>
 
                 <div className='Overview-grid-item1'>
-                    <h1 style={{color:'black'}}>Chart heading</h1>
-                    <ScatterChart  data={[{x: 100, y: 200, z: 200}, {x: 120, y: 100, z: 260},
-                  {x: 170, y: 300, z: 400}, {x: 140, y: 250, z: 280},
-                  {x: 150, y: 400, z: 500}, {x: 110, y: 2800, z: 200}]}/>
+                  <h3>Overall Student data per Assignment</h3>
+                  <ScatterChart1  data={scatterData}/>
                 </div>
 
-                <div className='Overview-grid-item'>
-                <p>test</p>
+                <div className='Overview-grid-item2'>
+                  <h3>Number of Assignments per week</h3>
+                   <BarChart data={barData} />
                 </div>
 
-                <div className='Overview-grid-item'>
-                <p>test</p>
-                </div>
-
+              
             </div>
           </div>);
 };
