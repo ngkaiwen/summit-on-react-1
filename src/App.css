@@ -463,6 +463,8 @@ a:visited {
   border: 1.5px solid #00ced1;
   border-radius: 20px; 
   padding: 1rem;
+  word-wrap:break-word;
+  max-width: 400px;
 }
 
 .QuestionCard h1{
