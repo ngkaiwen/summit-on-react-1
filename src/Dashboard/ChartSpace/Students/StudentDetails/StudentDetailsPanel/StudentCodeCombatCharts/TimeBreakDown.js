@@ -46,14 +46,14 @@ class TimeBreakDown extends Component {
                 <div className = "third-row-left-sub-pane">
                 <TimeBreakDownChart pieData = {pieData}/>
                   <div className = "third-row-chart-title">
-                    <p style={{fontSize:14}}> Breakdown of minutes spent on level attempts </p>
+                    <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat</p>
                     </div>
                 </div>
 
                 <div className = "third-row-right-sub-pane">
                 <TimeBreakDownComparisonChart pieData = {pieData}/>
                 <div className = "third-row-chart-title">
-                  <p style={{fontSize:14}}> Typical performance of peers in minutes</p>
+                  <p style={{fontSize:14}}> Efficiency of time spent by peers</p>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ class TimeBreakDown extends Component {
                   <div className = "third-row-left-sub-pane">
                   <TimeBreakDownChart pieData = {pieData}/>
                     <div className = "third-row-chart-title">
-                      <p style={{fontSize:14}}> Breakdown of minutes spent on level attempts </p>
+                      <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat </p>
                       </div>
                   </div>
                 </div>
@@ -174,14 +174,14 @@ class TimeBreakDown extends Component {
               <div className = "third-row-left-sub-pane">
               <TimeBreakDownChart pieData = {pieData}/>
                 <div className = "third-row-chart-title">
-                  <p style={{fontSize:14}}> Breakdown of minutes spent on level attempts </p>
+                  <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat</p>
                   </div>
               </div>
 
               <div className = "third-row-right-sub-pane">
               <TimeBreakDownComparisonChart pieData = {pieData}/>
               <div className = "third-row-chart-title">
-                <p style={{fontSize:14}}>Typical performance of peers in minutes</p>
+                <p style={{fontSize:14}}>Efficiency of time spent by peers</p>
                 </div>
               </div>
             </div>
