@@ -6,7 +6,7 @@ class AchievementsStatistics extends Component {
     const data = this.props.selectedStudentData["codeCombatDisplayData"]
 
     if (data == null) {return null}
- 
+
     const chartData = this.props.selectedStudentData["codeCombatDisplayData"]["courseRankingChart"]
 
     if(chartData == null){return null}
@@ -21,7 +21,8 @@ class AchievementsStatistics extends Component {
         </div>
 
         <div className = "third-row-left-sub-pane">
-        <p style={{fontSize:20}}> {chartData["Course Rank"]}th in Course </p>
+        <p style={{fontSize:20}}> <b> {chartData["Course Rank"]}</b> th</p>
+        <p style={{fontSize:14}}> in Course</p>
         </div>
 
         <div className = "third-row-right-sub-pane">
@@ -39,7 +40,8 @@ class AchievementsStatistics extends Component {
       </div>
 
       <div className = "third-row-left-sub-pane">
-      <p style={{fontSize:24}}> {chartData["Course Rank"]}th in Course </p>
+      <p style={{fontSize:20}}> <b> {chartData["Course Rank"]}</b> th</p>
+      <p style={{fontSize:14}}> in Course</p>
       </div>
 
       <div className = "third-row-right-sub-pane">

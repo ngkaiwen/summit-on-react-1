@@ -90,14 +90,14 @@
 
 .third-row-left-sub-pane{
 	float:left;
-	width:49%;
+	width:48%;
   padding-top: 5px;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 .third-row-right-sub-pane{
   float:right;
-	width:48%;
+	width:47%;
 	text-align: left;
   padding-top: 5px;
   padding-left: 5px;
@@ -105,11 +105,11 @@
 
 .fourth-row-pane-container {
 	border: 1px solid grey;
-	height:400px;
+	height:415px;
 }
 .third-row-upper-divider{
   width: 99%;
-  height:60px;
+  height:90px;
   border-bottom: dotted black 2px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .third-row-last-stats{
-  height:50px;
+  height:45px;
 }
 
 .third-row-chart-title{
