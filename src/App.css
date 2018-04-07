@@ -250,11 +250,25 @@ a:visited {
 
 .toolbar-nav-box li.active {
   color: #00ced1;
-  border-bottom: 2px solid #00ced1;
+
 }
 
 .toolbar-nav-box li:hover {
   color: #00ced1;
+}
+
+.toolbar-nav-box li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00ced1;
+  transition: width .3s;
+}
+
+.toolbar-nav-box li:hover::after {
+  width: 100%;
+  transition: width .3s;
 }
 
 /* Students ================================================*/
