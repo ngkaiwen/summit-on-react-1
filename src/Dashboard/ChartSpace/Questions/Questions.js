@@ -13,7 +13,7 @@ class Questions extends Component {
 
         let out = <Spinner />;
 
-        if(this.props.state["all_raw_data"][this.props.selected_course]){
+        if(this.props.state["all_raw_data"][this.props.selected_course] && this.props.state["all_raw_data"][this.props.selected_course]["chats"]){
             let rawList = Object.keys(this.props.state["all_raw_data"][this.props.selected_course]["chats"]);
             let cleanList = rawList.map( key => {return this.props.state["all_raw_data"][this.props.selected_course]["chats"][key]})
             out = cleanList.map( m => { return <div className="Questions-item" key={m['message']+m['from']}><QuestionCard msg={m['message']} from={m['from']} time={m['time']}/></div>}).reverse()
