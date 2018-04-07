@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NotCompletedListItem from "./NotCompletedListItem.js";
 import List from 'material-ui/List';
-import { ListItem, ListItemText } from 'material-ui/List';
+//import { ListItem, ListItemText } from 'material-ui/List';
 
 class StudentsNotCompleted extends Component {
 

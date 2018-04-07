@@ -9,6 +9,7 @@ const toolbar = (props) => {
                 <li onClick={() => props.clicked('overview')} className={props.cur==='overview' ? "active" : null}>Overview</li>
                 <li onClick={() => props.clicked('studentsList')} className={props.cur==='studentsList' ? "active" : null}>Students</li>
                 <li onClick={() => props.clicked('assignmentsList')} className={props.cur==='assignmentsList' ? "active" : null}>Assignments</li>
+                <li onClick={() => props.clicked('questions')} className={props.cur==='questions' ? "active" : null}>Questions</li>
                 <li><Link to='/'>log-out</Link></li>
               </ul>
             </nav>

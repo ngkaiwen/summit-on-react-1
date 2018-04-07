@@ -5,12 +5,17 @@ import BarChart from './Charts/BarChart'
 const overviewAss = (props) => {
 
   const numAssignments = Object.keys(props.data["assignments"]).length;
-  const assignmentChart = props.data['courseInfo']['Charts']['AssignmentsByTime'];
+  //const assignmentChart = props.data['courseInfo']['Charts']['AssignmentsByTime'];
   const scatterData = props.data['courseInfo']['Charts']['ScatterAss'];
 
+  let rawBarData = props.data['courseInfo']['Charts']['AssignmentsByTime']['Assignment Figure'];
   let barData = []
-  for(let ass in assignmentChart){
-    //console.log(assignmentChart[ass]);
+
+  for(let i=0; i<rawBarData.length; i++){
+    barData.push({
+      name: (i+1),
+      Assignments: (rawBarData[i] ? rawBarData[i]['Figure'] :0)
+    });
   }
 
   return (<div>
@@ -33,19 +38,7 @@ const overviewAss = (props) => {
 
                 <div className='Overview-grid-item2'>
                   <h3>Number of Assignments per week</h3>
-                   <BarChart data={[
-                            {name: 'Week 1', assignments: 2},
-                            {name: 'Week 2', assignments: 1},
-                            {name: 'Week 3', assignments: 3},
-                            {name: 'Week 4', assignments: 5},
-                            {name: 'Week 5', assignments: 3},
-                            {name: 'Week 6', assignments: 2},
-                            {name: 'Week 7', assignments: 2},
-                            {name: 'Week 8', assignments: 1},
-                            {name: 'Week 9', assignments: 0},
-                            {name: 'Week 10', assignments: 2},
-                            {name: 'Week 11', assignments: 1}
-                      ]} />
+                   <BarChart data={barData} />
                 </div>
 
               

@@ -10,6 +10,8 @@ class Overview extends Component {
 
   render() {
 
+    console.log(this.props.state);
+
     let output = <div style={{marginTop:"50vh"}}><Spinner /></div>;
 
     if (this.props.state["all_raw_data"][this.props.selected_course]) {
@@ -35,7 +37,6 @@ class Overview extends Component {
       }
 
       if (this.props.state["all_raw_data"][this.props.selected_course]["CodeCombat"]["AcrossLevelsChart"]){
-        //console.log(this.props.state["all_raw_data"][this.props.selected_course]["CodeCombat"]);
         codeCombat = <CodeCombat data={this.props.state["all_raw_data"][this.props.selected_course]["CodeCombat"]}/>
       }
       

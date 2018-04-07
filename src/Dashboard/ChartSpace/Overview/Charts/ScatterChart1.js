@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Legend, LabelList, ResponsiveContainer} from 'recharts';
+import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
 
 const scatterChart1 = (props) => {
     return (

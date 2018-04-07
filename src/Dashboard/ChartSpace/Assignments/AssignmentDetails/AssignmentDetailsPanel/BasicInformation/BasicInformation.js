@@ -7,9 +7,9 @@ class BasicInformation extends Component {
     const data = this.props.selectedAssignmentData
     const name = data["name"]
     const questionType = data["questionType"]
-    const details = data["details"]
-    const open = data["open"]
-    const deadline = data["deadline"]
+    //const details = data["details"]
+    //const open = data["open"]
+    //const deadline = data["deadline"]
     const visible = data["visible"]
     //console.log(deadline)
 		return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AreaChart,XAxis,YAxis,Tooltip,ResponsiveContainer,Legend,CartesianGrid,Area } from "recharts";
+import { AreaChart,XAxis,YAxis,Tooltip,ResponsiveContainer,Legend,Area } from "recharts";
 
 class SubmissionsOverTimeChart extends Component {
 

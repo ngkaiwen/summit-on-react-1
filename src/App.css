@@ -447,7 +447,29 @@ a:visited {
   font-family: inherit;
 }
 
+/* Questions Container ====================================*/
 
+.Questions-container {
+  display: grid;
+  padding: 70px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+}
+
+.Questions-item {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1.5px solid #00ced1;
+  border-radius: 20px; 
+  padding: 1rem;
+  word-wrap:break-word;
+  max-width: 400px;
+}
+
+.QuestionCard h1{
+  font-size: 2rem;
+}
 
 
 /* Spinner ================================================*/

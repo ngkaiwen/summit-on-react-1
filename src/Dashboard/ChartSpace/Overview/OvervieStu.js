@@ -1,11 +1,10 @@
 import React from 'react';
-import Spinner from '../../../Misc/Spinner';
+//import Spinner from '../../../Misc/Spinner';
 import ScatterChart from './Charts/ScatterChart';
 
 const overviewStu = (props) => {
 
   const numStudents = Object.keys(props.data['students']).length;
-  console.log(props.data);
   const scatterData = props.data['courseInfo']['Charts']['ScatterStudent'];
 
   const weakestStu = (data) => {
