@@ -9,7 +9,7 @@ class AssignmentListItem extends Component {
       <ListItem onClick = {() => { this.props.assignmentClickHandler(this.props.id)}} button >
 
       <ListItemText primary = {this.props.name}/>
-      <ListItemText secondary = {this.props.type}/>
+      {/*)<ListItemText secondary = {this.props.type}/>*/}
       </ListItem>
     );
   }

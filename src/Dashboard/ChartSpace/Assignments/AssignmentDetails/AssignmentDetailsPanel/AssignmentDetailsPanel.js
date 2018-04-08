@@ -5,6 +5,8 @@ import BasicInformation from "./BasicInformation/BasicInformation.js";
 import CompletionRateStatus from "./CompletionRate/CompletionRateStatus.js";
 import StudentsCompleted from "./StudentsCompleted/StudentsCompleted.js";
 import StudentsNotCompleted from "./StudentsNotCompleted/StudentsNotCompleted.js";
+import CompletionLists from "./StudentsCompletedLists/CompletionLists.js";
+import SubmissionsRateChart from "./SubmissionsRate/SubmissionsRateChart.js";
 
 class AssignmentDetailsPanel extends Component {
 
@@ -28,20 +30,24 @@ class AssignmentDetailsPanel extends Component {
 
               <Grid item xs = {10}>
                 <div className = "assign-second-row-pane-container">
-                <CompletionRateStatus selectedAssignmentData = {this.props.selectedAssignmentData}/>
+
+                <div className = "assign-second-row-pane-left">
+                <CompletionRateStatus
+                selectedAssignmentData = {this.props.selectedAssignmentData}/>
+                </div>
+
+                <div className = "assign-second-row-pane-right">
+                <CompletionLists
+                selectedAssignmentData = {this.props.selectedAssignmentData}/>
+                </div>
               </div>
               </Grid>
 
               <Grid item xs = {10}>
-                <div className = "assign-third-row-pane-container">
-                <StudentsCompleted
-                selectedAssignmentData = {this.props.selectedAssignmentData}
+                <div className = "Overview-CC-grid-item">
+                <SubmissionsRateChart
+                selectedData = {this.props.selectedAssignmentData['Charts']['StudentsByTime']}
                   assignmentClickHandler = {this.assignmentClickHandler}/>
-
-              <StudentsNotCompleted
-              selectedAssignmentData = {this.props.selectedAssignmentData}
-                assignmentClickHandler = {this.assignmentClickHandler}/>
-              />
               </div>
               </Grid>
 
@@ -49,9 +55,8 @@ class AssignmentDetailsPanel extends Component {
           </Grid>
 
         </div>
-      )
-    }
-  }
+      )}
+}
 }
 
 export default AssignmentDetailsPanel;

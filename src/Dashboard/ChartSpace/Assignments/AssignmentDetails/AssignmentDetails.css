@@ -28,27 +28,55 @@
 .assign-first-row-pane-container {
 	border: 1px solid grey;
 	height:235px;
-  width:50%vw;
+  width:60vw;
 }
 
 .assign-second-row-pane-container {
+	height:260px;
+  width:71vw;
+}
+.assign-second-row-pane-left {
 	border: 1px solid grey;
-	height:350px;
-  width:50vw;
+	height:260px;
+  width:35vw;
+  float:left;
+}
+.assign-second-row-pane-right {
+	border: 1px solid grey;
+	height:260px;
+  width:35vw;
+  float:right;
 }
 .assign-third-row-pane-container {
 	border: 1px solid grey;
 	height:350px;
   width:50vw;
 }
-
-.pane-title {
+.pane-title-left {
 	height:30px;
-	border: 1px solid grey;
 	background:rgba(0, 0, 0, 0.7);
-  	padding-left: 10px;
-  	padding-top: 5px;
-  	color: #FFFFFF;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #FFFF;
+}
+
+.pane-title-left {
+	height:30px;
+	background:rgba(0, 0, 0, 0.7);
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #AED581;
+  width:48.1%;
+  float:left;
+}
+.pane-title-right {
+	height:30px;
+	background:rgba(0, 0, 0, 0.7);
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #F06292;
+  width:48.1%;
+  float:right;
 }
 
 .central-sub-pane{
@@ -60,14 +88,21 @@
 	width:75%;
 }
 
-.right-sub-pane{
-	float:right;
-	width:25%;
+.left-equal-sub-pane{
+	float:left;
+	width:50%;
 	height:100%;
 	text-align: left;
-	padding-top: 20%;
 	font-size: 40px;
 }
+.right-equal-sub-pane{
+	float:right;
+	width:50%;
+	height:100%;
+	text-align: left;
+	font-size: 40px;
+}
+
 
 .right-sub-pane-second-row{
 	float:right;
@@ -97,8 +132,37 @@
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top:5vh;
-
+	padding-top:2vh;
+  padding-left: 10vh;
+  padding-right:10vh;
+}
+.basic-information-top {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:2vh;
+  padding-left: 10vh;
+  padding-right:10vh;
+  width:80%;
+}
+.basic-information-left {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:2vh;
+  padding-left: 10vh;
+  padding-right:2vh;
+  width:300px;
+  float: left;
+}
+.basic-information-right {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:2vh;
+  padding-right:20vh;
+  width:350px;
+  float: right;
 }
 .completion-rate {
 	display:flex;
@@ -107,7 +171,10 @@
 	padding-top:5vh;
 }
 .students-completed {
-  height: 45vh;
-  width: 20vw;
-  padding-top: 2vh;
+  height: 215px;
+  width: 17vw;
+  padding-top: 1vh;
+}
+.list-item {
+color: #F06292;
 }

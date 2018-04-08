@@ -3,28 +3,38 @@ import React, { Component } from 'react';
 class BasicInformation extends Component {
 
   render() {
-    //console.log(this.props.selectedAssignmentData)
+    console.log(this.props.selectedAssignmentData)
     const data = this.props.selectedAssignmentData
     const name = data["name"]
     const questionType = data["questionType"]
-    //const details = data["details"]
-    //const open = data["open"]
-    //const deadline = data["deadline"]
-    const visible = data["visible"]
-    //console.log(deadline)
+    const details = data["details"]
+    const open = data["open"]
+    const deadline = data["deadline"]
+    const visible = data["visible"].toString()
+    console.log(visible)
 		return (
   <div>
       <div className = "pane-title">
       Key Details
 			</div>
-          <div className="basic-information">
-	      	Assignment Name : {name} <br/>
+          <div className="basic-information-top">
+          <svg width="42" height="42" viewBox="0 0 1024 1024">
+<path class="path1" d="M844.8 972.8h-716.8c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h716.8c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M817.13 783.515l-131.562-306.978c-0.032-0.075-0.064-0.149-0.098-0.224l-175.539-409.598c-4.035-9.413-13.291-15.515-23.531-15.515s-19.496 6.102-23.531 15.515l-175.539 409.594c-0.034 0.078-0.067 0.155-0.099 0.232l-131.562 306.974c-5.568 12.995 0.451 28.045 13.446 33.614 12.992 5.57 28.045-0.451 33.614-13.445l125.008-291.685h317.325l125.008 291.685c4.16 9.707 13.61 15.523 23.542 15.522 3.365 0 6.784-0.667 10.072-2.077 12.995-5.568 19.016-20.619 13.445-33.614zM349.68 460.8l136.72-319.013 136.72 319.013h-273.44z"></path>
+</svg>
+          <h4> Assignment Name : </h4>{name}  <br/>
           </div>
-          <div className="basic-information">
-          Visibility: {visible} <br/>
+
+          <div className="basic-information-left">
+          <svg width="42" height="42" viewBox="0 0 1024 1024">
+<path class="path1" d="M966.070 981.101l-304.302-331.965c68.573-71.754 106.232-165.549 106.232-265.136 0-102.57-39.942-199-112.47-271.53s-168.96-112.47-271.53-112.47-199 39.942-271.53 112.47-112.47 168.96-112.47 271.53 39.942 199.002 112.47 271.53 168.96 112.47 271.53 112.47c88.362 0 172.152-29.667 240.043-84.248l304.285 331.947c5.050 5.507 11.954 8.301 18.878 8.301 6.179 0 12.378-2.226 17.293-6.728 10.421-9.555 11.126-25.749 1.571-36.171zM51.2 384c0-183.506 149.294-332.8 332.8-332.8s332.8 149.294 332.8 332.8-149.294 332.8-332.8 332.8-332.8-149.294-332.8-332.8z"></path>
+</svg>
+          <h4>Visibility:</h4> {visible}  <br/>
         </div>
-          <div className="basic-information">
-            QuestionType : {questionType} <br/>
+          <div className="basic-information-right">
+          <svg width="42" height="42" viewBox="0 0 1024 1024">
+<path class="path1" d="M998.4 819.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M998.4 563.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path3" d="M998.4 307.2h-768c-14.138 0-25.6-11.462-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.462 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path4" d="M76.8 358.4c-42.347 0-76.8-34.453-76.8-76.8s34.453-76.8 76.8-76.8 76.8 34.453 76.8 76.8-34.453 76.8-76.8 76.8zM76.8 256c-14.115 0-25.6 11.485-25.6 25.6s11.485 25.6 25.6 25.6 25.6-11.485 25.6-25.6-11.485-25.6-25.6-25.6z"></path><path class="path5" d="M76.8 614.4c-42.347 0-76.8-34.451-76.8-76.8 0-42.347 34.453-76.8 76.8-76.8s76.8 34.453 76.8 76.8c0 42.349-34.453 76.8-76.8 76.8zM76.8 512c-14.115 0-25.6 11.485-25.6 25.6s11.485 25.6 25.6 25.6 25.6-11.485 25.6-25.6-11.485-25.6-25.6-25.6z"></path><path class="path6" d="M76.8 870.4c-42.347 0-76.8-34.451-76.8-76.8s34.453-76.8 76.8-76.8 76.8 34.451 76.8 76.8-34.453 76.8-76.8 76.8zM76.8 768c-14.115 0-25.6 11.485-25.6 25.6s11.485 25.6 25.6 25.6 25.6-11.485 25.6-25.6-11.485-25.6-25.6-25.6z"></path>
+</svg>
+            <h4> Assignment Type :</h4> {questionType} <br/>
           </div>
         </div>
 	    );
