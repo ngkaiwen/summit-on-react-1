@@ -255,11 +255,25 @@ a:visited {
 
 .toolbar-nav-box li.active {
   color: #00ced1;
-  border-bottom: 2px solid #00ced1;
+
 }
 
 .toolbar-nav-box li:hover {
   color: #00ced1;
+}
+
+.toolbar-nav-box li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00ced1;
+  transition: width .3s;
+}
+
+.toolbar-nav-box li:hover::after {
+  width: 100%;
+  transition: width .3s;
 }
 
 /* Students ================================================*/
@@ -468,12 +482,113 @@ a:visited {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
+  word-wrap:break-word;
+  max-width: 400px;
 }
 
 .QuestionCard h1{
   font-size: 2rem;
 }
 
+/* Assignments ================================================*/
+
+
+.assignmentDetailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+  margin-top: 10px;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.assignmentBasicInfo, .assignmentRate {
+  border: 1.5px solid #00ced1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.assignmentPie {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.assignmentList {
+  border: 1.5px solid #00ced1;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.assignmentListItem {
+  margin-top: 1.5rem;
+  text-align: center;
+  border: 1px solid #00ced1;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.assignment-pane-title {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  font-size: 1.3rem;
+}
+
+.assignment-pane-title h1 {
+  font-size: 3rem;
+}
+
+.assignment-pane-title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.assignment-pane-title h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.assignment-information-top {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding: 1rem; 
+}
+
+.assignment-information {
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.assignments-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.assignments-title h4{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Misc ================================================*/
+.csfixed {
+  position: fixed;
+}
+
+.selectSomething {
+  text-align: center;
+  margin-top: 40vh;
+}
 
 /* Spinner ================================================*/
 .sk-cube-grid {

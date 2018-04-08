@@ -13,8 +13,11 @@ class StudentDetailsPanel extends Component {
   render() {
     //console.log(this.props.assignmentData)
     if (Object.keys(this.props.selectedStudentData).length === 0){ //Check if there is no selected student
-      return( <div className = "empty">
-        PLEASE SELECT A STUDENT </div> )
+      return( <div className = "student-details-panel-container">
+                  <div className = "selectSomething">
+                    <h1>PLEASE SELECT A STUDENT</h1>
+                  </div>
+              </div> )
     }
     else{
       return (

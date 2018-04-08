@@ -14,10 +14,10 @@ class CompletionRateStatus extends Component {
   	const total = completed + notCompleted
   	const percentage = Math.round(completed*100/total)
     return (
-      <div>
-			<div className = "pane-title">
+      <div className="assignments-title">
+			<h4>
 				Assignment submission rate
-			</div>
+			</h4>
 			<div className = "left-sub-pane">
   				<CompletionRatePieChart pieData2 = {pieData2}/>
   			</div>

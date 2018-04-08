@@ -5,13 +5,13 @@ import TimeBreakDownComparisonChart from "./TimeBreakDownComparisonChart.js"
 class TimeBreakDown extends Component {
 
   render() {
-    console.log(data);
+    //console.log(data);
     const data = this.props.selectedStudentData["codeCombatDisplayData"]
 
     if(data == null){return null;}
 
     const pieData = data["timeBreakdown"]
-    console.log(pieData);
+    //console.log(pieData);
     if (pieData == null) { return null ;}
 
     if(pieData["total"] != null){
@@ -25,27 +25,35 @@ class TimeBreakDown extends Component {
               </div>
 
               <div className = "third-row-upper-divider">
-                <div className = "third-row-left-sub-pane">
-                <p style={{fontSize:20}}> Spent {totalTime} minutes on CodeCombat </p>
-                </div>
+              <div className = "third-row-left-sub-pane">
+              <p style={{fontSize:20}}> {totalTime} minutes</p>
+              </div>
 
-                <div className = "third-row-right-sub-pane">
-                <p style={{fontSize:17}}> Average time spent by other students with the same achievements: {pieData["averageTimeOthers"]} minutes </p>
-                </div>
+              <div className = "third-row-right-sub-pane">
+              <p style={{fontSize:20}}> {pieData["averageTimeOthers"]} minutes </p>
+              </div>
+
+              <div className = "third-row-left-sub-pane">
+              <p style={{fontSize:16}}> spent on CodeCombat</p>
+              </div>
+
+              <div className = "third-row-right-sub-pane">
+              <p style={{fontSize:16}}> spent by other students with the same number of achievements</p>
+              </div>
               </div>
 
               <div className = "third-row-dual-charts">
                 <div className = "third-row-left-sub-pane">
                 <TimeBreakDownChart pieData = {pieData}/>
                   <div className = "third-row-chart-title">
-                    <p style={{fontSize:14}}> Breakdown of time spent on level attempts </p>
+                    <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat</p>
                     </div>
                 </div>
 
                 <div className = "third-row-right-sub-pane">
                 <TimeBreakDownComparisonChart pieData = {pieData}/>
                 <div className = "third-row-chart-title">
-                  <p style={{fontSize:14}}> Comparison with users who completed the same number of levels</p>
+                  <p style={{fontSize:14}}> Efficiency of time spent by peers</p>
                   </div>
                 </div>
               </div>
@@ -67,11 +75,19 @@ class TimeBreakDown extends Component {
 
                 <div className = "third-row-upper-divider">
                   <div className = "third-row-left-sub-pane">
-                  <p style={{fontSize:20}}> Spent {totalTime} minutes on CodeCombat </p>
+                  <p style={{fontSize:20}}> {totalTime} minutes</p>
                   </div>
 
                   <div className = "third-row-right-sub-pane">
-                  <p style={{fontSize:17}}> Average time spent by other students with the same achievements: {pieData["averageTimeOthers"]} minutes </p>
+                  <p style={{fontSize:20}}> {pieData["averageTimeOthers"]} minutes </p>
+                  </div>
+
+                  <div className = "third-row-left-sub-pane">
+                  <p style={{fontSize:16}}> spent on CodeCombat</p>
+                  </div>
+
+                  <div className = "third-row-right-sub-pane">
+                  <p style={{fontSize:16}}> spent by other students with the same number of achievements</p>
                   </div>
                 </div>
 
@@ -79,7 +95,7 @@ class TimeBreakDown extends Component {
                   <div className = "third-row-left-sub-pane">
                   <TimeBreakDownChart pieData = {pieData}/>
                     <div className = "third-row-chart-title">
-                      <p style={{fontSize:14}}> Breakdown of time spent on level attempts </p>
+                      <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat </p>
                       </div>
                   </div>
                 </div>
@@ -103,7 +119,8 @@ class TimeBreakDown extends Component {
 
             <div className = "third-row-upper-divider">
               <div className = "third-row-left-sub-pane">
-              <p style={{fontSize:20}}> Spent {totalTime} minutes on CodeCombat </p>
+              <p style={{fontSize:20}}> {totalTime} minutes</p>
+              <p style={{fontSize:16}}> spent on CodeCombat</p>
               </div>
 
               <div className = "third-row-right-sub-pane">
@@ -132,12 +149,6 @@ class TimeBreakDown extends Component {
               </div>
             </div>
           </div>
-
-
-
-
-
-
         );
         }
 
@@ -151,7 +162,7 @@ class TimeBreakDown extends Component {
 
             <div className = "third-row-upper-divider">
               <div className = "third-row-left-sub-pane">
-              <p style={{fontSize:20}}> No CodeCombat play time is recorded </p>
+              <p style={{fontSize:17}}> No CodeCombat play time is recorded </p>
               </div>
 
               <div className = "third-row-right-sub-pane">
@@ -163,14 +174,14 @@ class TimeBreakDown extends Component {
               <div className = "third-row-left-sub-pane">
               <TimeBreakDownChart pieData = {pieData}/>
                 <div className = "third-row-chart-title">
-                  <p style={{fontSize:14}}> Breakdown of time spent on level attempts </p>
+                  <p style={{fontSize:14}}> Efficiency of time spent on CodeCombat</p>
                   </div>
               </div>
 
               <div className = "third-row-right-sub-pane">
               <TimeBreakDownComparisonChart pieData = {pieData}/>
               <div className = "third-row-chart-title">
-                <p style={{fontSize:14}}> Comparison with users who completed the same number of levels</p>
+                <p style={{fontSize:14}}>Efficiency of time spent by peers</p>
                 </div>
               </div>
             </div>
