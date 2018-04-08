@@ -8,7 +8,7 @@ class AssignmentList extends Component {
   	var listOfAssignments = [] //Used to ultimately return the list of assignments to the render function
   	const assignmentData = this.props.assignmentData //Declare commonly used variables to make the code a little bit simpler - instead of refering to the props each time we need to use both functions we can just call it directly
   	const assignmentClickHandler = this.props.assignmentClickHandler
-    console.log(assignmentClickHandler)
+    //console.log(assignmentClickHandler)
   	for (var key in assignmentData){ //Run through all the assignmentData (loaded from firebase)
   		var thisAssignment = assignmentData[key]
       var orderIndex = thisAssignment["orderIndex"]
@@ -19,13 +19,13 @@ class AssignmentList extends Component {
           orderIndex = {thisAssignment["orderIndex"]}
   				type = {thisAssignment["questionType"]}
   				key = {key}
-  				id = {key}
+  				//id = {key}
   				assignmentClickHandler = {assignmentClickHandler}
   				/>]
   		)
   	}
 
-    console.log(listOfAssignments)
+    //console.log(listOfAssignments)
      listOfAssignments.sort(function(a,b){return a[0] - b[0]})
      //listOfAssignments.sort(function(a,b){return a[1] > b[1]}) ///using string
      //for itempair in listofAssignments
@@ -39,7 +39,9 @@ class AssignmentList extends Component {
     return (
     	<div className = "scrollable-list-container">
       		<List style = {{ maxHeight:'100%', overflow:"auto"}}>
-        		{this.obtainListOfAssignments()}
+						{this.obtainListOfAssignments().map( i => {
+									return	<div className="assignmentListItem" key={i[0]}>ASSIGNMENT {i[0]}<span>{i[1]}</span></div>})
+						} 
       		</List>
       	</div>
       );

@@ -39,7 +39,7 @@ class StudentDetailsPage extends Component {
   render() {
     if (this.props.studentData!=null){ //Check if the redux store has been updated with data from firebase
       return (
-        <div>
+        <div className="csfixed">
           <StudentList 
             studentData={this.props.studentData}
             studentClickHandler = {this.studentClickHandler}/>

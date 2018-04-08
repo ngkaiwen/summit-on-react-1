@@ -13,7 +13,7 @@ class AchievementsStatistics extends Component {
 
     const percentileRoundUp = Math.ceil(chartData["Course Percentile"])
 
-    if(chartData["Maximum Attained Level"]==0){
+    if(chartData["Maximum Attained Level"]===0){
       return(
         <div>
         <div className = "pane-title">

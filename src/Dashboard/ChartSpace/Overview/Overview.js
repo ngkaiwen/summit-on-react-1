@@ -10,7 +10,7 @@ class Overview extends Component {
 
   render() {
 
-    console.log(this.props.state);
+    //console.log(this.props.state);
 
     let output = <div style={{marginTop:"50vh"}}><Spinner /></div>;
 
