@@ -17,11 +17,7 @@ const about = (props) => {
                     The codebase for Summit Analytics is available <a href="https://github.com/TheIanSim/summit-on-react">HERE on Github</a> <br/>
                     Team Members for Summit Analytics are: <br/>
                     <br/>
-                    Arthur Li <br/>
-                    Candice Tay <br/>
-                    Ian Sim <br/>
-                    Ng Kai Wen <br/>
-                    Suen Wai Lun <br/>
+                    <b>Arthur Li | Candice Tay | Ian Sim | Ng Kai Wen | Suen Wai Lun</b>
                   </p>
                 </div>
               </div>
