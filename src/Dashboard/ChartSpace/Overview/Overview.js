@@ -5,8 +5,6 @@ import OverviewAss from './OverviewAss';
 import Spinner from '../../../Misc/Spinner';
 import CodeCombat from './CodeCombat/CodeCombat';
 
-import { Link } from 'react-scroll';
-
 class Overview extends Component {
 
 
