@@ -85,13 +85,12 @@
 
 .third-row-pane-container {
 	border: 1px solid grey;
-	height:125px;
+	height:100px;
 }
 
 .third-row-left-sub-pane{
 	float:left;
 	width:48%;
-  padding-top: 5px;
   padding-left: 15px;
 }
 
@@ -99,8 +98,7 @@
   float:right;
 	width:47%;
 	text-align: left;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 .fourth-row-pane-container {

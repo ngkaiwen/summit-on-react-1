@@ -21,7 +21,7 @@ class AchievementsStatistics extends Component {
         </div>
 
         <div className = "third-row-left-sub-pane">
-        <p style={{fontSize:20}}> <b> {chartData["Course Rank"]}</b> th</p>
+        <p style={{fontSize:20, color:"#f05683"}}> <b> {chartData["Course Rank"]}</b> th</p>
         <p style={{fontSize:14}}> in Course</p>
         </div>
 
@@ -40,13 +40,13 @@ class AchievementsStatistics extends Component {
       </div>
 
       <div className = "third-row-left-sub-pane">
-      <p style={{fontSize:20}}> <b> {chartData["Course Rank"]}</b> th</p>
+      <p style={{fontSize:20, color:"#f05683"}}> <b> {chartData["Course Rank"]}</b> th</p>
       <p style={{fontSize:14}}> in Course</p>
       </div>
 
       <div className = "third-row-right-sub-pane">
-      <p style={{fontSize:18}}> Completed {chartData["Maximum Attained Level"]} levels </p>
-      <p style={{fontSize:18}}> {percentileRoundUp}%  Percentile in Performance </p>
+      <p style={{fontSize:17}}> {chartData["Maximum Attained Level"]} Levels completed </p>
+      <p style={{fontSize:17, color: "#142b9d"}}> <b> {percentileRoundUp}% </b> Percentile in Performance </p>
       </div>
       </div>
     );
