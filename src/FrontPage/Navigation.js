@@ -10,15 +10,20 @@ const navigation = (props) => {
               </Link>
 
               <Link to="services" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}>
-                <li className="frontPage-li">Services</li>
+                <li className="frontPage-li">Data</li>
               </Link>
 
               <Link to="login" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}>
                 <li className="frontPage-login">Log-in</li>
               </Link>
 
-              <li className="frontPage-li">Pricing</li>
-              <li className="frontPage-li">Contact</li>
+              <Link to="docs" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <li className="frontPage-li">Docs</li>
+              </Link>
+
+              <Link to="docs" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <li className="frontPage-li">Contact</li>
+              </Link>
             </ul>
           </nav>);
 };

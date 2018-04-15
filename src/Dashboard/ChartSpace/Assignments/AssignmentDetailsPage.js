@@ -39,14 +39,13 @@ class AssignmentDetailsPage extends Component {
   render() {
     if (this.props.assignmentData!=null){ //Check if the redux store has been updated with data from firebase
       return (
-        <div>
-          <AssignmentList
+        <div className="csfixed">
+          <AssignmentList 
             assignmentData={this.props.assignmentData}
             assignmentClickHandler = {this.assignmentClickHandler}/>
           <AssignmentDetailsPanel
             selectedAssignmentData = {this.state.selectedAssignmentData}
             assignmentData = {this.state.assignmentData}/>
-
         </div>
         );
     }

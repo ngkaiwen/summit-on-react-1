@@ -4,7 +4,7 @@ import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveC
 const scatterChart1 = (props) => {
     return (
 			<ResponsiveContainer width="100%" height="100%">
-			<ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 60 }} >
+			<ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }} >
 				<CartesianGrid />
 				<XAxis dataKey={'Completion Rate'} 
 								type="number" 

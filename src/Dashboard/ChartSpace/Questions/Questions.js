@@ -10,7 +10,6 @@ class Questions extends Component {
     }
 
     render() {
-
         let out = <Spinner />;
 
         if(this.props.state["all_raw_data"][this.props.selected_course] && this.props.state["all_raw_data"][this.props.selected_course]["chats"]){

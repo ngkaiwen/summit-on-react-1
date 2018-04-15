@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Grid from 'material-ui/Grid';
 //import Paper from 'material-ui/Paper';
 import BasicInformation from "./BasicInformation/BasicInformation.js";
 import CompletionRateStatus from "./CompletionRate/CompletionRateStatus.js";
-import StudentsCompleted from "./StudentsCompleted/StudentsCompleted.js";
-import StudentsNotCompleted from "./StudentsNotCompleted/StudentsNotCompleted.js";
+//import StudentsCompleted from "./StudentsCompleted/StudentsCompleted.js";
+//import StudentsNotCompleted from "./StudentsNotCompleted/StudentsNotCompleted.js";
+import CompletionLists from "./StudentsCompletedLists/CompletionLists.js";
+import SubmissionsRateChart from "./SubmissionsRate/SubmissionsRateChart.js";
 
 class AssignmentDetailsPanel extends Component {
 
@@ -12,46 +13,38 @@ class AssignmentDetailsPanel extends Component {
   render() {
     //console.log(this.props.assignmentData)
     if (Object.keys(this.props.selectedAssignmentData).length === 0){ //Check if there is no selected Assignment
-      return( <div className = "empty">
-        PLEASE SELECT AN ASSIGNMENT </div> )
+      return( <div className = "student-details-panel-container">
+                  <div className = "selectSomething">
+                    <h1>PLEASE SELECT AN ASSIGNMENT</h1>
+                  </div>
+              </div> )
     }
     else{
       return (
+        <div className = "student-details-panel-container">
+        <div className = "assignmentDetailsContainer">
+          <div className = "assignmentBasicInfo">
+            <BasicInformation selectedAssignmentData = {this.props.selectedAssignmentData}/> 
+          </div>
 
-        <div className = "assignment-details-panel-container">
-          <Grid container justify="center">
-            <Grid item xs = {10}>
-            <div className = "assign-first-row-pane-container">
-            <BasicInformation selectedAssignmentData = {this.props.selectedAssignmentData}/>
-                </div>
-            </Grid>
+          <div className = "assignmentPie">
+            <CompletionRateStatus selectedAssignmentData = {this.props.selectedAssignmentData}/>
+          </div>
 
-              <Grid item xs = {10}>
-                <div className = "assign-second-row-pane-container">
-                <CompletionRateStatus selectedAssignmentData = {this.props.selectedAssignmentData}/>
-              </div>
-              </Grid>
-
-              <Grid item xs = {10}>
-                <div className = "assign-third-row-pane-container">
-                <StudentsCompleted
-                selectedAssignmentData = {this.props.selectedAssignmentData}
+          <div className = "assignmentList">
+            <CompletionLists selectedAssignmentData = {this.props.selectedAssignmentData}/>
+          </div>
+          
+          <div className= "assignmentRate">
+          <h4 className="assignments-title">Submissions Rate</h4>
+            <SubmissionsRateChart
+                  selectedData = {this.props.selectedAssignmentData['Charts']['StudentsByTime']}
                   assignmentClickHandler = {this.assignmentClickHandler}/>
-
-              <StudentsNotCompleted
-              selectedAssignmentData = {this.props.selectedAssignmentData}
-                assignmentClickHandler = {this.assignmentClickHandler}/>
-              />
-              </div>
-              </Grid>
-
-
-          </Grid>
-
+          </div>
         </div>
-      )
-    }
-  }
+        </div>
+      )}
+}
 }
 
 export default AssignmentDetailsPanel;

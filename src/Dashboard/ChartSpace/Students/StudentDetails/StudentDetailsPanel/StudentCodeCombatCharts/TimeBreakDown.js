@@ -5,13 +5,13 @@ import TimeBreakDownComparisonChart from "./TimeBreakDownComparisonChart.js"
 class TimeBreakDown extends Component {
 
   render() {
-    console.log(data);
+    //console.log(data);
     const data = this.props.selectedStudentData["codeCombatDisplayData"]
 
     if(data == null){return null;}
 
     const pieData = data["timeBreakdown"]
-    console.log(pieData);
+    //console.log(pieData);
     if (pieData == null) { return null ;}
 
     if(pieData["total"] != null){
