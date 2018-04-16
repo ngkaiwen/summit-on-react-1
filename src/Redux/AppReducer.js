@@ -20,9 +20,9 @@ function dataFilter(id,data) {
 }
 
 const mapping = {
-	'PERAmakNzPf5kY5pzX4z3YvpC1R2': 'admin', //admin
-	'7Ghgga6DTjUKRgDaTCNEOu9PL0J3':'R6nSbDVly8PUnC6jQFcseDS9sgJ3', //boesch
-	"CtwHwDEGw2Udhzf8yr8Vsd2aRvv1" : 'Ab947q6H2eQ1DjJzhu4GwQXQ9vz1' //venu
+	'JzuiJfncXmOzVqmXJJa7DgyJSXx1': 'admin', //admin
+	'H5peGQPdl1ToA3647QnDMP7eHCf2':'R6nSbDVly8PUnC6jQFcseDS9sgJ3', //boesch
+	"AstdRIojHghB3g4gRg4X3loJG2n2" : 'Ab947q6H2eQ1DjJzhu4GwQXQ9vz1' //venu
 }
 
 //define a reducer with an initialized state action
