@@ -6,6 +6,7 @@ import StudentCompletionTimePercentile from "./StudentCompletionTimePercentile/S
 import SubmissionsOverTime from "./SubmissionsOverTime/SubmissionsOverTime.js";
 import AchievementsStatistics from "./StudentCodeCombatCharts/AchievementsStatistics.js";
 import TimeBreakDown from "./StudentCodeCombatCharts/TimeBreakDown.js"
+import TimePerLevel from "./StudentCodeCombatCharts/TimePerLevel.js"
 
 class StudentDetailsPanel extends Component {
 
@@ -54,6 +55,12 @@ class StudentDetailsPanel extends Component {
             <Grid item xs = {10}>
                 <div className = "fourth-row-pane-container">
                   <TimeBreakDown selectedStudentData = {this.props.selectedStudentData}/>
+                </div>
+            </Grid>
+
+            <Grid item xs = {10}>
+                <div className = "fifth-row-pane-container">
+                <TimePerLevel selectedStudentData = {this.props.selectedStudentData}/>
                 </div>
             </Grid>
 
