@@ -85,7 +85,7 @@
 
 .third-row-pane-container {
 	border: 1px solid grey;
-	height:100px;
+	height:90px;
 }
 
 .third-row-left-sub-pane{
@@ -103,11 +103,11 @@
 
 .fourth-row-pane-container {
 	border: 1px solid grey;
-	height:415px;
+	height:400px;
 }
 .third-row-upper-divider{
   width: 99%;
-  height:90px;
+  height:75px;
   border-bottom: dotted black 2px;
 }
 
@@ -125,4 +125,9 @@
   width:88%;
   padding-top: 5px;
   text-align: center;
+}
+
+.fifth-row-pane-container {
+	border: 1px solid grey;
+	height:400px;
 }
