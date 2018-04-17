@@ -575,7 +575,7 @@ a:visited {
 .assignment-information-top {
   grid-column-start: 1;
   grid-column-end: 5;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .assignment-information {
@@ -614,6 +614,8 @@ a:visited {
   height: 400px;
 }
 
+
+/* Internal Cohort Comparisons================================================*/
 
 /* Misc ================================================*/
 .csfixed {
