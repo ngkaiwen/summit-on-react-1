@@ -3,7 +3,7 @@ import React from 'react';
 
 const toolbarAdmin = (props) => {
   return(<div className="toolbar-container">
-            <div className="logo">SUMMIT<strong className="logo-subhead">DASHBOARD</strong></div>
+            <div className="logo">SUMMIT<strong className="logo-subhead">{props.role}</strong></div>
             <nav className="toolbar-nav-box">
               <ul>
                 <li onClick={() => props.clicked('overview')} className={props.cur==='overview' ? "active" : null}>Overview</li>

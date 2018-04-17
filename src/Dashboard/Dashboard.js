@@ -42,8 +42,8 @@ class dashboard extends Component {
         <div className='dashboard'>
           
           <div className='toolbar'> 
-            {this.props.role === 'edu' ? <Toolbar clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
-            {this.props.role === 'sudo' ? <ToolbarAdmin clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
+            {this.props.role === 'EDUCATOR' ? <Toolbar role={this.props.role} clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
+            {this.props.role === 'ADMINISTRATOR' ? <ToolbarAdmin role={this.props.role} clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
           </div>
 
           <CourseSelectionDialog 
