@@ -276,6 +276,20 @@ a:visited {
   transition: width .3s;
 }
 
+.toolbar-nav-box .sub {
+  color: gray;
+}
+
+.toolbar-nav-box .left-border{
+  border-left: 1px solid gray;
+  padding-left: 3rem; 
+}
+
+.toolbar-nav-box .right-border{
+  border-right: 1px solid gray;
+  padding-right: 3rem; 
+}
+
 /* Students ================================================*/
 
 .students-chart-container {
@@ -579,6 +593,27 @@ a:visited {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
+/* Course ================================================*/
+
+.courses-main-container {
+  margin: 4rem 3rem;
+}
+
+.courses-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+.course-grid-item {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 400px;
+}
+
 
 /* Misc ================================================*/
 .csfixed {
