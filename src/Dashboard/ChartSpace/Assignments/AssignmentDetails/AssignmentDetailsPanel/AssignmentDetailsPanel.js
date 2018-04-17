@@ -43,10 +43,10 @@ class AssignmentDetailsPanel extends Component {
                   assignmentClickHandler = {this.assignmentClickHandler}/>
           </div>
 
-          <div className="assignmentRate">
+          {this.props.selectedAssignmentData['Charts']['YoutubeCharts'] ? <div className="assignmentRate">
           <YoutubeChart
             selectedData = {this.props.selectedAssignmentData['Charts']['YoutubeCharts']}/>
-          </div>
+          </div> : null }
 
         </div>
         </div>
