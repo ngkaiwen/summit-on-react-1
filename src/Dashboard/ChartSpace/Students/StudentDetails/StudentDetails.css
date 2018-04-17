@@ -62,7 +62,7 @@
 
 .right-sub-pane-second-row{
 	float:right;
-	width:25%;
+	width:24%;
 	height:100%;
 	text-align: center;
 	padding-top: 15%;
@@ -112,12 +112,13 @@
 }
 
 .third-row-dual-charts {
-	width: 100%;
+	width: 97%;
 	height:250px;
 }
 
 .third-row-last-stats{
   height:45px;
+  width:98%
 }
 
 .third-row-chart-title{
@@ -130,4 +131,20 @@
 .fifth-row-pane-container {
 	border: 1px solid grey;
 	height:400px;
+}
+
+.barChart-left-sub-pane{
+	float:left;
+	width:68%;
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+.barChart-right-sub-pane{
+	float:right;
+	width:29%;
+	height:100%;
+	text-align: left;
+	padding-top: 15%;
+	font-size: 25px;
 }
