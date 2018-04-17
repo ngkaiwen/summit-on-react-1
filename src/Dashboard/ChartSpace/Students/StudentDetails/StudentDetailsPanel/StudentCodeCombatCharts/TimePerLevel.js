@@ -8,19 +8,90 @@ class TimePerLevel extends Component {
 
     const chartData = data["timePerLevel"]
     if(chartData == null){return null;}
-    const average = chartData["Average"] //possibly null
-    const median = chartData["Median"] //possibly null
-    return(
-      <div>
+    const average = Math.round(chartData["Average"]) //possibly null
+    const median = Math.round(chartData["Median"]) //possibly null
 
-        <div className = "pane-title">
-          Time Spent Per Code Combat Level in Seconds
-        </div>
+    if(chartData["data"]!=null && (average==null && median == null))
+      {return(
+        <div>
 
-      </div>);
+          <div className = "pane-title">
+            Relative Time Spent Per Code Combat Level
+          </div>
 
+          <div className = "barChart-left-sub-pane">
+            <TimePerLevelChart chartData = {chartData["data"]}/>
+            <div className = "third-row-chart-title">
+              <p style={{fontSize:14}}> Time spent per level in seconds versus minimum and maximum</p>
+            </div>
+          </div>
 
+        </div>);}
 
+    else if (chartData["data"]!=null && (average==null && median!=null)){
+      return (
+        <div>
+
+          <div className = "pane-title">
+            Relative Time Spent Per Code Combat Level
+          </div>
+
+          <div className = "barChart-left-sub-pane">
+            <TimePerLevelChart chartData = {chartData["data"]}/>
+            <div className = "third-row-chart-title">
+              <p style={{fontSize:14}}> Time spent per level in seconds versus minimum and maximum</p>
+            </div>
+          </div>
+
+          <div className = "barChart-right-sub-pane">
+            <p style={{fontSize:15}}> Median Time Per Level:</p>
+            <p style={{color:"#142b9d"}}> {median} seconds</p>
+          </div>
+        </div>);
+    }
+
+    else if (chartData["data"]!=null && (average!=null && median==null)){
+      return (
+        <div>
+
+          <div className = "pane-title">
+            Relative Time Spent Per Code Combat Level
+          </div>
+
+          <div className = "barChart-left-sub-pane">
+            <TimePerLevelChart chartData = {chartData["data"]}/>
+            <div className = "third-row-chart-title">
+              <p style={{fontSize:14}}> Time spent per level in seconds versus minimum and maximum</p>
+            </div>
+            <p style={{fontSize:15}}> Average Time Per Level:</p>
+            <p style={{color:"#ed466b"}}> {average} seconds</p>
+          </div>
+        </div>);
+    }
+
+    else{
+      return (
+        <div>
+
+          <div className = "pane-title">
+            Relative Time Spent Per Code Combat Level
+          </div>
+
+          <div className = "barChart-left-sub-pane">
+            <TimePerLevelChart chartData = {chartData["data"]}/>
+            <div className = "third-row-chart-title">
+              <p style={{fontSize:14}}> Time spent per level in seconds versus minimum and maximum</p>
+            </div>
+          </div>
+
+          <div className = "barChart-right-sub-pane">
+            <p style={{fontSize:15}}> Average Time Per Level:</p>
+            <p style={{color:"#ed466b"}}> {average} seconds</p>
+            <p style={{fontSize:15}}> Median Time Per Level:</p>
+            <p style={{color:"#142b9d"}}> {median} seconds</p>
+          </div>
+        </div>);
+    }
 
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LineChart,Line,XAxis,YAxis,Tooltip,Legend,ReferenceLine,ResponsiveContainer } from "recharts";
+import { LineChart,Line,YAxis,Tooltip,Legend,ReferenceLine,ResponsiveContainer } from "recharts";
 
 class StudentCompletionTimePercentileChart extends Component {
 
@@ -10,7 +10,6 @@ class StudentCompletionTimePercentileChart extends Component {
         <div className = "chart">
           <ResponsiveContainer width="100%" height = {330}>
             <LineChart data={chartData} margin={{top: 30, bottom: 0}}>
-               <XAxis dataKey="Name" tick = {false}/>
                <YAxis />
                <Tooltip />
                <Legend align = "center" verticalAlign = "bottom" height={40}/>
