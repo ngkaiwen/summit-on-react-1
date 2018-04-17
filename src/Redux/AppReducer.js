@@ -3,7 +3,8 @@ const initialState = {
 	all_raw_data: {},
 	selected_course: "",
 	auth: false,
-	user: null
+	user: null,
+	role: null
 }
 
 function dataFilter(id,data) {
@@ -20,9 +21,9 @@ function dataFilter(id,data) {
 }
 
 const mapping = {
-	'JzuiJfncXmOzVqmXJJa7DgyJSXx1': 'admin', //admin
-	'H5peGQPdl1ToA3647QnDMP7eHCf2':'R6nSbDVly8PUnC6jQFcseDS9sgJ3', //boesch
-	"AstdRIojHghB3g4gRg4X3loJG2n2" : 'Ab947q6H2eQ1DjJzhu4GwQXQ9vz1' //venu
+	'JzuiJfncXmOzVqmXJJa7DgyJSXx1': ['admin','sudo'], //admin
+	'H5peGQPdl1ToA3647QnDMP7eHCf2':['R6nSbDVly8PUnC6jQFcseDS9sgJ3','edu'], //boesch
+	"AstdRIojHghB3g4gRg4X3loJG2n2" : ['Ab947q6H2eQ1DjJzhu4GwQXQ9vz1','edu'] //venu
 }
 
 //define a reducer with an initialized state action
@@ -52,7 +53,8 @@ function MainAppReducer(state = initialState, action) {
 		case "SET_USER":
 			return {
 				...state,
-				user: mapping[action.payload.uid]
+				user: mapping[action.payload.uid][0],
+				role: mapping[action.payload.uid][1]
 			}
 		case "FILTER_DATA":
 		console.log(state)
