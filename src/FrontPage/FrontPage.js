@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './Navigation';
 import Login from './Login';
 import About from './About';
+import About1 from './About.1';
 
 class frontPage extends Component {
 
@@ -22,6 +23,7 @@ class frontPage extends Component {
       <main>
         <About />
         <div id='login'><Login /></div>
+        <About1 />
       </main>
     </div>
     );

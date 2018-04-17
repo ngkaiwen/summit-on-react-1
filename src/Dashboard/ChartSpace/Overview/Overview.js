@@ -42,7 +42,7 @@ class Overview extends Component {
       
       output = <div className="Overview-container">
                   <div className="Overview-heading">
-                    <h1>{courseName}</h1>
+                    <h1>{courseName}</h1>      
                     <h2><b>{instructorName}</b></h2>
                     {isPublic ? <h3>Public</h3> : <h3>Private</h3>}
                   </div>

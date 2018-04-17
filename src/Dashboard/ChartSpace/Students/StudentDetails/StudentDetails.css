@@ -85,13 +85,12 @@
 
 .third-row-pane-container {
 	border: 1px solid grey;
-	height:125px;
+	height:90px;
 }
 
 .third-row-left-sub-pane{
 	float:left;
 	width:48%;
-  padding-top: 5px;
   padding-left: 15px;
 }
 
@@ -99,17 +98,16 @@
   float:right;
 	width:47%;
 	text-align: left;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 .fourth-row-pane-container {
 	border: 1px solid grey;
-	height:415px;
+	height:400px;
 }
 .third-row-upper-divider{
   width: 99%;
-  height:90px;
+  height:75px;
   border-bottom: dotted black 2px;
 }
 
@@ -127,4 +125,9 @@
   width:88%;
   padding-top: 5px;
   text-align: center;
+}
+
+.fifth-row-pane-container {
+	border: 1px solid grey;
+	height:400px;
 }

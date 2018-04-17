@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux';
 import MainAppReducer from "../Redux/AppReducer.js";
-import { Provider } from 'react-redux';
+import { Provider, connect } from 'react-redux';
 import {firebaseHandle} from "../Config/firebaseAPI.js";
+import { Link, Redirect } from 'react-router-dom';
 
 import Toolbar from './Toolbar';
 import ChartSpace from './ChartSpace/ChartSpace';
@@ -11,13 +12,13 @@ import Button from 'material-ui/Button';
 import {Settings} from 'material-ui-icons';
 
 
-let store = createStore(MainAppReducer)
+
 
 class dashboard extends Component {
 
   state = {
     displayPage: 'overview',
-    displayCourseSelectionDialog: false,
+    displayCourseSelectionDialog: false
   }
 
   toolbarClickHandler = (pageID) => {
@@ -29,23 +30,18 @@ class dashboard extends Component {
     this.setState({displayCourseSelectionDialog:bool})
   }
 
-  componentDidMount(){
-    const dataLocation = "courses/";
-    var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
-    firebaseStudentsDataset.on("value",Snapshot => store.dispatch( {type:"SET_DATA",payload:Snapshot.val()} )); //Store data in Redux store
-    store.dispatch({type:"SET_SELECTED_COURSE",payload:"-L5cmwU2yj2HRmfDvIUP"}) //Set course to BT3103 as default in redux store
-    console.log('firebase mounted');
+  signOut = () => {
+    this.props.logOut();
   }
-
 
 
   render() {
     return (
-      <Provider store = {store}> 
-        
+      
+      this.props.auth ?  
         <div className='dashboard'>
           
-          <div className='toolbar'> <Toolbar clicked={this.toolbarClickHandler} cur={this.state.displayPage}/> </div>
+          <div className='toolbar'> <Toolbar clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> </div>
 
           <CourseSelectionDialog 
             open = {this.state.displayCourseSelectionDialog}
@@ -61,10 +57,18 @@ class dashboard extends Component {
             children = {<Settings/>} />
           </div>
         </div>
+      : <Redirect to="/"/>
 
-      </Provider>  
+     
     );
   }
 }
 
-export default dashboard;
+function mapStateToProps(state){
+  return {
+    auth: state["auth"],
+    user: state.user
+  } 
+}
+
+export default connect(mapStateToProps)(dashboard);
