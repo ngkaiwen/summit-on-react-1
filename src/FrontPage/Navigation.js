@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-
+//this component is the navigation for the landing page
 const navigation = (props) => {
   return (<nav className="frontPage-nav">
             <ul className="frontPage-ul">

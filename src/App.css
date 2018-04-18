@@ -282,12 +282,12 @@ a:visited {
 
 .toolbar-nav-box .left-border{
   border-left: 1px solid gray;
-  padding-left: 3rem; 
+  padding-left: 3rem;
 }
 
 .toolbar-nav-box .right-border{
   border-right: 1px solid gray;
-  padding-right: 3rem; 
+  padding-right: 3rem;
 }
 
 /* Students ================================================*/
@@ -469,7 +469,6 @@ a:visited {
   padding: 1rem;
 }
 
-
 .Overview-CC-grid-item1 {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -605,24 +604,115 @@ a:visited {
 .courses-main-container {
   margin: 4rem 3rem;
 }
-
+ 
 .courses-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
   grid-gap: 1.3rem;
   margin-top: 2rem;
+}
+
+.courses-grid-container p {
+  font-size: 1.2rem;
+  color: #8884d8;
+}
+
+.courses-grid-container b {
+  font-size: 1.4rem;
+  color: #2b2b2b;
+}
+
+.courses-grid-container h2 {
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.courses-grid-container h4 {
+  color: #2b2b2b;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.courses-grid-container h5 {
+  color: #999999;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .course-grid-item {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
-  height: 400px;
+  height: 40vh;
+}
+
+.course-grid-item-joint {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 40vh;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.course-grid-item-vert {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.course-filler {
+  height: 45%;
 }
 
 
 /* Internal Cohort Comparisons================================================*/
+
+.cohort-main-container {
+  margin: 4rem 3rem;
+  box-sizing: border-box;
+}
+
+.cohort-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.cohort-grid-item {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 40vh;
+  box-sizing: border-box;
+}
+
+.cohort-grid-item-joint {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 40vh;
+  grid-column-start: 1;
+  grid-column-end: 5; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1rem;
+}
+
+.cohort-grid-item-joint-inner {
+  padding: 1rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 
 /* Misc ================================================*/
 .csfixed {

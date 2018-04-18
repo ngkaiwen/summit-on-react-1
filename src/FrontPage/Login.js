@@ -36,9 +36,9 @@ class Login extends Component {
     const promise = auth.signInWithEmailAndPassword(uname,pass);
     promise
       .then(user => {
-        this.loadData(user);
+        this.loadData(user); //if authenticated then sign in the user
       })
-      .catch(e => window.alert(e.message));
+      .catch(e => window.alert(e.message)); //else show the error
   }
 
   loadData = (user) => {
@@ -47,12 +47,14 @@ class Login extends Component {
     this.props.setUser(user);
     var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
     firebaseStudentsDataset.on("value", Snapshot => {
+
       this.props.setData(Snapshot.val()['courses']); //Store data in Redux store
-      this.props.setCCData(Snapshot.val()['CodeCombat']);
+      this.props.setCCData(Snapshot.val()['courseCodeCombat']);
+      this.props.setCohortData(Snapshot.val()['cohortCharts']);
       this.props.setCourse("-L5cmwU2yj2HRmfDvIUP");
       this.props.setLastUpdated(Snapshot.val()["lastUpdatedDatetime"]["updateTime"])
       console.log('firebase mounted');
-      this.props.filterData();
+      this.props.filterData(); //filter the data so that only the courses specific to instructor show
     });
   };
 
@@ -79,7 +81,8 @@ const mapDispatchToProps = dispatch => {
     setData: (data) => dispatch({type:"SET_DATA", payload:data}),
     setCourse: (course) => dispatch({type:"SET_SELECTED_COURSE", payload:course}),
     setLastUpdated: (datetime) => dispatch({type:"SET_LAST_UPDATED", payload:datetime}),
-    setCCData: (data) => dispatch({type:"SET_CC_DATA", payload:data })
+    setCCData: (data) => dispatch({type:"SET_CC_DATA", payload:data }),
+    setCohortData: (data) => dispatch({type:"SET_COHORT_DATA", payload:data })
   };
 };
 
