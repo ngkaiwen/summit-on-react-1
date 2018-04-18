@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "summit-analytics": "summit-analytics",
+    "default": "summit-analytics"
+  }
+}

@@ -42,13 +42,14 @@ class Login extends Component {
   }
 
   loadData = (user) => {
-    const dataLocation = "courses/";
+    const dataLocation = "/";
     this.props.authOn();
     this.props.setUser(user);
     var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
     firebaseStudentsDataset.on("value", Snapshot => {
-      this.props.setData(Snapshot.val()); //Store data in Redux store
+      this.props.setData(Snapshot.val()["courses"]); //Store data in Redux store
       this.props.setCourse("-L5cmwU2yj2HRmfDvIUP");
+      this.props.setLastUpdated(Snapshot.val()["lastUpdatedDatetime"]["updateTime"])
       console.log('firebase mounted');
       this.props.filterData();
     });
@@ -75,7 +76,8 @@ const mapDispatchToProps = dispatch => {
     setUser: (user) => dispatch({type:"SET_USER", payload:user}),
     filterData: () => dispatch({type:"FILTER_DATA"}),
     setData: (data) => dispatch({type:"SET_DATA", payload:data}),
-    setCourse: (course) => dispatch({type:"SET_SELECTED_COURSE", payload:course})
+    setCourse: (course) => dispatch({type:"SET_SELECTED_COURSE", payload:course}),
+    setLastUpdated: (datetime) => dispatch({type:"SET_LAST_UPDATED", payload:datetime})
   };
 };
 
