@@ -623,6 +623,18 @@ a:visited {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.courses-grid-container h4 {
+  color: #2b2b2b;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.courses-grid-container h5 {
+  color: #999999;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
 .course-grid-item {
   border: 1.5px solid #00ced1;
