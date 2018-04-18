@@ -305,14 +305,21 @@ a:visited {
   animation-timing-function: linear;
 }
 
-.courseSelectionDialogShow{
+.DialogShowButtons{
   position:fixed;
-  /*float:right;
-  float:bottom;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:5vw;
+  height:15vh;
   right:0;
   bottom:0;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   padding-bottom: 1rem;
+}
+
+.dataRefresh{
+  padding-bottom: 10px;
 }
 
 @keyframes fade-in {
@@ -575,7 +582,7 @@ a:visited {
 .assignment-information-top {
   grid-column-start: 1;
   grid-column-end: 5;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .assignment-information {
@@ -614,6 +621,8 @@ a:visited {
   height: 400px;
 }
 
+
+/* Internal Cohort Comparisons================================================*/
 
 /* Misc ================================================*/
 .csfixed {

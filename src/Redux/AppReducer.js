@@ -4,7 +4,8 @@ const initialState = {
 	selected_course: "",
 	auth: false,
 	user: null,
-	role: null
+	role: null,
+	cc_data: null
 }
 
 function dataFilter(id,data) {
@@ -39,6 +40,16 @@ function MainAppReducer(state = initialState, action) {
 			return {
 				...state,
 				all_raw_data: action.payload
+			}
+		case "SET_LAST_UPDATED":
+			return {
+				...state,
+				last_updated_datetime: action.payload
+			}
+		case "SET_CC_DATA":
+			return {
+				...state,
+				cc_data: action.payload
 			}
 		case "ON_AUTH":
 			return {

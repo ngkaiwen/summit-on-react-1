@@ -142,13 +142,15 @@ class TimeBreakDown extends Component {
 
             <div className = "third-row-dual-charts">
               <div className = "third-row-left-sub-pane">
-                <TimeBreakDownChart pieData = {pieData}/>
-              </div>
-              <div className = "right-sub-pane">
-                {Math.round(pieData["ownChart"][0]["Value"]*100)}%
-              </div>
-              <div className = "third-row-chart-title">
-                <p style={{fontSize:14}}> Efficiency of time spent on Code Combat </p>
+                <div className = "left-sub-pane">
+                  <TimeBreakDownChart pieData = {pieData}/>
+                </div>
+                <div className = "right-sub-pane">
+                  {Math.round(pieData["ownChart"][0]["Value"]*100)}%
+                </div>
+                <div className = "third-row-chart-title">
+                  <p style={{fontSize:14}}> Efficiency of time spent on Code Combat </p>
+                </div>
               </div>
               <div className = "third-row-right-sub-pane">
                 <div className = "third-row-chart-title">
@@ -209,7 +211,7 @@ class TimeBreakDown extends Component {
                 </div>
               </div>
             </div>
-            
+
           </div>
         );
       }
