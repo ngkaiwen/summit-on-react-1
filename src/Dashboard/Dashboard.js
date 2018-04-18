@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import Toolbar from './Toolbar';
+import ToolbarAdmin from './ToolbarAdmin';
 import ChartSpace from './ChartSpace/ChartSpace';
 import CourseSelectionDialog from "./CourseSelectionDialog/CourseSelectionDialog"
 import RefreshDataDialog from "./RefreshDataDialog/RefreshDataDialog"
@@ -43,11 +44,13 @@ class dashboard extends Component {
 
   render() {
     return (
-      
       this.props.auth ?  
         <div className='dashboard'>
           
-          <div className='toolbar'> <Toolbar clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> </div>
+          <div className='toolbar'> 
+            {this.props.role === 'EDUCATOR' ? <Toolbar role={this.props.role} clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
+            {this.props.role === 'ADMINISTRATOR' ? <ToolbarAdmin role={this.props.role} clicked={this.toolbarClickHandler} cur={this.state.displayPage} out={this.signOut}/> : null}
+          </div>
 
           <RefreshDataDialog
             open = {this.state.displayDataRefreshDialog}
@@ -90,7 +93,8 @@ class dashboard extends Component {
 function mapStateToProps(state){
   return {
     auth: state["auth"],
-    user: state.user
+    user: state.user,
+    role: state.role
   } 
 }
 

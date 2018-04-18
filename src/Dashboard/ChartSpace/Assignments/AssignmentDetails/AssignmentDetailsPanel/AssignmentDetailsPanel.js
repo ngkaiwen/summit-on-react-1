@@ -6,6 +6,7 @@ import CompletionRateStatus from "./CompletionRate/CompletionRateStatus.js";
 //import StudentsNotCompleted from "./StudentsNotCompleted/StudentsNotCompleted.js";
 import CompletionLists from "./StudentsCompletedLists/CompletionLists.js";
 import SubmissionsRateChart from "./SubmissionsRate/SubmissionsRateChart.js";
+import YoutubeChart from "./YoutubeChart/YoutubeChart.js";
 
 class AssignmentDetailsPanel extends Component {
 
@@ -24,7 +25,7 @@ class AssignmentDetailsPanel extends Component {
         <div className = "student-details-panel-container">
         <div className = "assignmentDetailsContainer">
           <div className = "assignmentBasicInfo">
-            <BasicInformation selectedAssignmentData = {this.props.selectedAssignmentData}/> 
+            <BasicInformation selectedAssignmentData = {this.props.selectedAssignmentData}/>
           </div>
 
           <div className = "assignmentPie">
@@ -34,13 +35,19 @@ class AssignmentDetailsPanel extends Component {
           <div className = "assignmentList">
             <CompletionLists selectedAssignmentData = {this.props.selectedAssignmentData}/>
           </div>
-          
+
           <div className= "assignmentRate">
           <h4 className="assignments-title">Submissions Rate</h4>
             <SubmissionsRateChart
                   selectedData = {this.props.selectedAssignmentData['Charts']['StudentsByTime']}
                   assignmentClickHandler = {this.assignmentClickHandler}/>
           </div>
+
+          {this.props.selectedAssignmentData['Charts']['YoutubeCharts'] ? <div className="assignmentRate">
+          <YoutubeChart
+            selectedData = {this.props.selectedAssignmentData['Charts']['YoutubeCharts']}/>
+          </div> : null }
+
         </div>
         </div>
       )}
