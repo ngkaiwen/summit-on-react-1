@@ -27,7 +27,7 @@ class CodeCombatLevels extends Component {
   render() {
     //console.log(this.props.studentData)
     return (
-    	<div style = {{ maxHeight:'95%', overflow:"auto", width:'95%'}}>
+    	<div style = {{ maxHeight:'90%', overflow:"auto", width:'95%'}}>
       		<List style = {{ maxHeight:'100%', overflow:"auto"}}>
         		{this.obtainListLevels()}
       		</List>
