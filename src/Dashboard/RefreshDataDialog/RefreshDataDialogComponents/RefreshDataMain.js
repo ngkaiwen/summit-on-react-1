@@ -14,7 +14,7 @@ class RefreshDataMain extends Component {
 		this.props.toggleDataIsRefreshing();//Toggle data refresh
 		this.props.startTimer(); //Start countdown timer
 		const apiAddress = "https://1pj789ht41.execute-api.us-west-2.amazonaws.com/v1/summitUpdate" //AWS lambda API gateway address
-		//fetch(apiAddress,{ mode: "no-cors" }).then((response) => {console.log("Updating firebase data")}) //Call the api that updates the firebase
+		fetch(apiAddress,{ mode: "no-cors" }).then((response) => {console.log("Updating firebase data")}) //Call the api that updates the firebase
 	}
 
 	render() {
