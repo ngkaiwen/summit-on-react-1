@@ -17,7 +17,7 @@ class AchievementsStatistics extends Component {
       return(
         <div>
         <div className = "pane-title">
-        Relative Ranking Based on CodeCombat Achievements
+        RANKING BASED ON CODE COMBAT ACHIEVEMENTS
         </div>
 
         <div className = "third-row-left-sub-pane">
@@ -36,7 +36,7 @@ class AchievementsStatistics extends Component {
     return (
       <div>
       <div className = "pane-title">
-      Relative Ranking Based on CodeCombat Achievements
+      RANKING BASED ON CODE COMBAT ACHIEVEMENTS
       </div>
 
       <div className = "third-row-left-sub-pane">

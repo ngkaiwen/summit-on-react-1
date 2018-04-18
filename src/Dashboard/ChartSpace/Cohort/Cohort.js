@@ -46,22 +46,63 @@ class Cohort extends Component {
             </div>
 
             <div className='cohort-grid-item-joint'>
-              <div className='cohort-pane-title'>
-                <p style={{fontSize:28 ,color:"#f05683"}}>  <b> Cohort Performance and Effort Metrics </b></p>
-              </div>
                 <div className='cohort-grid-item-joint-inner'>
-                  <h2>internal</h2>
+                <p style={{fontSize:20 ,color:"#142b9d"}}>  <b> COHORT PERFORMANCE AND EFFORT METRICS </b></p>
+                <br/>
+                <br/>
+                <p style={{fontSize:18}}>  <b> Maximum Levels Completed by >=75% of Cohort</b></p>
+                <br/>
+                <p style={{fontSize:18}}>  <b> Average Time Spent Per Student in Cohort</b></p>
+                <br/>
+                <p style={{fontSize:18}}>  <b> Median Time Spent Per Student in Cohort</b></p>
                 </div>
 
                 <div className='cohort-grid-item-joint-inner'>
-                  <h2>internal</h2>
+                  <br/>
+                  <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["name"]}</b></p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["maxLevel75"]}</b></u></p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["AverageTime"]} Hours</b></u></p>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["MedianTime"]} Hours</b></u></p>
                 </div>
 
                 <div className='cohort-grid-item-joint-inner'>
-                  <h2>internal</h2>
+                  <br/>
+                  <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["name"]}</b></p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["maxLevel75"]}</b></u></p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["AverageTime"]} Hours</b></u></p>
+                  <br/>
+                  <br/>
+                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["MedianTime"]} Hours</b></u></p>
                 </div>
+
                   <div className='cohort-grid-item-joint-inner'>
-                    <h2>internal</h2>
+                    <br/>
+                    <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["name"]}</b></p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["maxLevel75"]}</b></u></p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["AverageTime"]} Hours</b></u></p>
+                    <br/>
+                    <br/>
+                    <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["MedianTime"]} Hours</b></u></p>
                   </div>
             </div>
 

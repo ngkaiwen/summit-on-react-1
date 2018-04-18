@@ -9,7 +9,7 @@ class StudentCompletionTimePercentile extends Component {
   	return (
   		<div>
   			<div className = "pane-title">
-  				Completion time percentile per assignment
+  				COMPLETION TIME PERCENTILE PER ASSIGNMENT
   			</div>
 
   			<div className = "left-sub-pane">

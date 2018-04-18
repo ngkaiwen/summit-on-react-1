@@ -16,7 +16,7 @@ class TimePerLevel extends Component {
         <div>
 
           <div className = "pane-title">
-            Relative Time Spent Per Code Combat Level
+            RELATIVE TIME SPENT PER CODE COMBAT LEVEL
           </div>
 
           <div className = "barChart-left-sub-pane">
@@ -33,7 +33,7 @@ class TimePerLevel extends Component {
         <div>
 
           <div className = "pane-title">
-            Relative Time Spent Per Code Combat Level
+            RELATIVE TIME SPENT PER CODE COMBAT LEVEL
           </div>
 
           <div className = "barChart-left-sub-pane">
@@ -55,7 +55,7 @@ class TimePerLevel extends Component {
         <div>
 
           <div className = "pane-title">
-            Relative Time Spent Per Code Combat Level
+            RELATIVE TIME SPENT PER CODE COMBAT LEVEL
           </div>
 
           <div className = "barChart-left-sub-pane">
@@ -74,7 +74,7 @@ class TimePerLevel extends Component {
         <div>
 
           <div className = "pane-title">
-            Relative Time Spent Per Code Combat Level
+            RELATIVE TIME SPENT PER CODE COMBAT LEVEL
           </div>
 
           <div className = "barChart-left-sub-pane">

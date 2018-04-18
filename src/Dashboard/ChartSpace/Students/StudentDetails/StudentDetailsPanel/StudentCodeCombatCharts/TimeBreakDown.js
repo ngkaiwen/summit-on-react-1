@@ -22,7 +22,7 @@ class TimeBreakDown extends Component {
             <div>
 
               <div className = "pane-title">
-              Breakdown of Time Spent on Code Combat
+              BREAKDOWN OF TIME SPENT ON CODE COMBAT
               </div>
 
               <div className = "third-row-upper-divider">
@@ -79,7 +79,7 @@ class TimeBreakDown extends Component {
               <div>
 
                 <div className = "pane-title">
-                  Breakdown of Time Spent on Code Combat
+                  BREAKDOWN OF TIME SPENT ON CODE COMBAT
                 </div>
 
                 <div className = "third-row-upper-divider">
@@ -127,7 +127,7 @@ class TimeBreakDown extends Component {
           <div>
 
             <div className = "pane-title">
-              Breakdown of Time Spent on CodeCombat
+              BREAKDOWN OF TIME SPENT ON CODE COMBAT
             </div>
 
             <div className = "third-row-upper-divider">
@@ -175,7 +175,7 @@ class TimeBreakDown extends Component {
           <div>
 
             <div className = "pane-title">
-            Breakdown of Time Spent on CodeCombat
+            BREAKDOWN OF TIME SPENT ON CODE COMBAT
             </div>
 
             <div className = "third-row-upper-divider">
