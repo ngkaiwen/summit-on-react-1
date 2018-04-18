@@ -49,7 +49,7 @@ class Login extends Component {
     firebaseStudentsDataset.on("value", Snapshot => {
 
       this.props.setData(Snapshot.val()['courses']); //Store data in Redux store
-      this.props.setCCData(Snapshot.val()['CodeCombat']);
+      this.props.setCCData(Snapshot.val()['courseCodeCombat']);
       this.props.setCourse("-L5cmwU2yj2HRmfDvIUP");
       this.props.setLastUpdated(Snapshot.val()["lastUpdatedDatetime"]["updateTime"])
       console.log('firebase mounted');
