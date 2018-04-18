@@ -68,7 +68,6 @@ function MainAppReducer(state = initialState, action) {
 				role: mapping[action.payload.uid][1]
 			}
 		case "FILTER_DATA":
-		console.log(state)
 			return {
 				...state,
 				all_raw_data: dataFilter(state.user ,state.all_raw_data)
