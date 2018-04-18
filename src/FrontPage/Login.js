@@ -36,9 +36,9 @@ class Login extends Component {
     const promise = auth.signInWithEmailAndPassword(uname,pass);
     promise
       .then(user => {
-        this.loadData(user);
+        this.loadData(user); //if authenticated then sign in the user
       })
-      .catch(e => window.alert(e.message));
+      .catch(e => window.alert(e.message)); //else show the error
   }
 
   loadData = (user) => {
@@ -48,9 +48,9 @@ class Login extends Component {
     var firebaseStudentsDataset = firebaseHandle.database().ref(dataLocation);
     firebaseStudentsDataset.on("value", Snapshot => {
       this.props.setData(Snapshot.val()); //Store data in Redux store
-      this.props.setCourse("-L5cmwU2yj2HRmfDvIUP");
+      this.props.setCourse("-L5cmwU2yj2HRmfDvIUP"); //set default course to BT3103
       console.log('firebase mounted');
-      this.props.filterData();
+      this.props.filterData(); //filter the data so that only the courses specific to instructor show
     });
   };
 
