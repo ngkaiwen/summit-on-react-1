@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
 
-class BarChartTimePerLevel extends Component {
+class BarChartLevelPerStudent extends Component {
   render(){
 
     const data = this.props.data
@@ -14,11 +14,11 @@ class BarChartTimePerLevel extends Component {
           <XAxis dataKey="Course" tick={false}/>
           <YAxis />
           <Tooltip />
-          <Bar dataKey="value" fill="#40f985" />
+          <Bar dataKey="value" fill="#146834" />
           </BarChart>
       </ResponsiveContainer>
     );
   }
 }
 
-export default BarChartTimePerLevel;
+export default BarChartLevelPerStudent;

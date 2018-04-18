@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tooltip,Legend, BarChart, Bar, XAxis, YAxis, Line, ComposedChart} from "recharts";
+import { Tooltip,Legend, Bar, XAxis, YAxis, Line, ComposedChart} from "recharts";
 
 class TimePerLevelChart extends Component {
   render(){
