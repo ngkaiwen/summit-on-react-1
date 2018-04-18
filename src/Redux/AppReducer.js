@@ -41,17 +41,15 @@ function MainAppReducer(state = initialState, action) {
 				...state,
 				all_raw_data: action.payload
 			}
-<<<<<<< HEAD
 		case "SET_LAST_UPDATED":
 			return {
 				...state,
 				last_updated_datetime: action.payload
-=======
+			}
 		case "SET_CC_DATA":
 			return {
 				...state,
 				cc_data: action.payload
->>>>>>> upstream/master
 			}
 		case "ON_AUTH":
 			return {
