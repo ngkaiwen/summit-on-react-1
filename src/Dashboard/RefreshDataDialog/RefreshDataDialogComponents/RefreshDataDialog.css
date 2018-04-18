@@ -1,0 +1,24 @@
+.refresh-data-content{
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	height:35vh;
+	width:25vw;
+}
+
+.refresh-data-dialog {
+	height:400;
+	width:400;
+}
+
+.horizontal-span {
+	text-align: center;
+	width:100%;
+	padding-bottom: 40px;
+}
+
+.last-refresh {
+	font-size: 20px;
+}
