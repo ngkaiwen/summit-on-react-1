@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Spinner from '../../../Misc/Spinner';
 import BarChartTimePerLevel from './Charts/BarChartTimePerLevel'
 import BestTimePerLevel from './Charts/BestTimePerLevel'
 import WorstTimePerLevel from './Charts/WorstTimePerLevel'
 import BarChartTimePerStudent from './Charts/BarChartTimePerStudent'
+
 
 class Courses extends Component {
 

@@ -5,7 +5,8 @@ const initialState = {
 	auth: false,
 	user: null,
 	role: null,
-	cc_data: null
+	cc_data: null,
+	cohort_data: null
 }
 
 function dataFilter(id,data) {
@@ -50,6 +51,11 @@ function MainAppReducer(state = initialState, action) {
 			return {
 				...state,
 				cc_data: action.payload
+			}
+		case "SET_COHORT_DATA":
+			return {
+				...state,
+				cohort_data: action.payload
 			}
 		case "ON_AUTH":
 			return {

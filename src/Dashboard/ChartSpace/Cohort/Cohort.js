@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Spinner from '../../../Misc/Spinner';
 
 class Cohort extends Component {
 
   render() {
-    const CCdata = this.props.data;
-    
+    const cohortdata = this.props.data;
+    console.log(cohortdata)
     return (
-      CCdata ?
+      cohortdata ?
       <div className='cohort-main-container'>
           <h1>Cohort Comparison</h1>
           <div className='cohort-grid-container'>
@@ -51,14 +52,14 @@ class Cohort extends Component {
             </div>
              
           </div>
-      </div> : null
+      </div> : <div style={{marginTop:"50vh"}}><Spinner /></div>
     );
   }
 }
 
 function mapStateToProps(state){
   return {
-    data: state["cc_data"]
+    data: state["cohort_data"]
   };
 };
 
