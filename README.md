@@ -436,6 +436,13 @@ For **optimal viewing** experience, we have tested our application on the follow
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
+## Documentation
+Summit Analytics documentation is hosted on Google Docs, accessible via the link below.
+[Summit Analytics Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing)
+
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
+
 ## Data Source
 Data for Summit Analytics was generously provided by Prof Chris Boesch, using data collected from his Achievements application as part of the project requirement for BT3103 AY 17/18.
 
