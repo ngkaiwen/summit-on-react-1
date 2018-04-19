@@ -7,12 +7,12 @@ class SubmissionsOverTime extends Component {
     //console.log(this.props.selectedStudentData)
   	const chartData = this.props.selectedStudentData["displayData"]["submissionsVStime"]
 
-  	return ( 
+  	return (
   		<div>
   			<div className = "pane-title">
-  				Submissions over time 
+  				SUBMISSIONS OVER TIME 
   			</div>
-  			<div className = "central-sub-pane">  			
+  			<div className = "central-sub-pane">
   				<SubmissionsOverTimeChart chartData = {chartData}/>
   			</div>
   		</div>

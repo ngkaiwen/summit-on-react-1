@@ -50,6 +50,7 @@ class Login extends Component {
 
       this.props.setData(Snapshot.val()['courses']); //Store data in Redux store
       this.props.setCCData(Snapshot.val()['courseCodeCombat']);
+      this.props.setCohortData(Snapshot.val()['cohortCharts']);
       this.props.setCourse("-L5cmwU2yj2HRmfDvIUP");
       this.props.setLastUpdated(Snapshot.val()["lastUpdatedDatetime"]["updateTime"])
       console.log('firebase mounted');
@@ -80,7 +81,8 @@ const mapDispatchToProps = dispatch => {
     setData: (data) => dispatch({type:"SET_DATA", payload:data}),
     setCourse: (course) => dispatch({type:"SET_SELECTED_COURSE", payload:course}),
     setLastUpdated: (datetime) => dispatch({type:"SET_LAST_UPDATED", payload:datetime}),
-    setCCData: (data) => dispatch({type:"SET_CC_DATA", payload:data })
+    setCCData: (data) => dispatch({type:"SET_CC_DATA", payload:data }),
+    setCohortData: (data) => dispatch({type:"SET_COHORT_DATA", payload:data })
   };
 };
 

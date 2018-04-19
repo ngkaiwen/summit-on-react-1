@@ -27,13 +27,13 @@ class dashboard extends Component {
   }
 
   dialogDisplayToggle = (dialogName) => {
-    if (dialogName =="courseSelection"){
+    if (dialogName ==="courseSelection"){
       var bool = (this.state.displayCourseSelectionDialog) ? false : true
       this.setState({displayCourseSelectionDialog:bool})
     }
-    else if (dialogName == "dataRefresh"){
-      var bool = (this.state.displayDataRefreshDialog) ? false : true
-      this.setState({displayDataRefreshDialog:bool})
+    else if (dialogName === "dataRefresh"){
+      var bool1 = (this.state.displayDataRefreshDialog) ? false : true
+      this.setState({displayDataRefreshDialog:bool1})
     }
   }
 

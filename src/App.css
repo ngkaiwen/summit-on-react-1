@@ -469,7 +469,6 @@ a:visited {
   padding: 1rem;
 }
 
-
 .Overview-CC-grid-item1 {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -672,6 +671,58 @@ a:visited {
 
 
 /* Internal Cohort Comparisons================================================*/
+
+.cohort-main-container {
+  margin: 4rem 3rem;
+  box-sizing: border-box;
+}
+
+.cohort-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1.3rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.cohort-grid-item {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 40vh;
+  box-sizing: border-box;
+}
+
+.cohort-grid-item-joint {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 60vh;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1rem;
+}
+
+.cohort-grid-item-joint-inner {
+  padding: 1rem;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cohort-pane-title {
+	height:40px;
+	border: 1px solid grey;
+	background:rgba(0, 0, 0, 0.7);
+  	padding-left: 10px;
+  	padding-top: 5px;
+  	color: #FFFFFF;
+}
+
 
 /* Misc ================================================*/
 .csfixed {

@@ -13,7 +13,7 @@ class AssignmentCompletionStatus extends Component {
   	return (
   		<div>
 			<div className = "pane-title">
-				Assignment submission status
+				ASSIGNMENT SUBMISSION STATUS
 			</div>
 			<div className = "left-sub-pane">
   				<AssignmentCompletionPieChart pieData = {pieData}/>

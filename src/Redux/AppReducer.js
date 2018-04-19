@@ -1,11 +1,12 @@
 //define the initial state
 const initialState = {
 	all_raw_data: {},
-	selected_course: "",
+	selected_course: "-L5cmwU2yj2HRmfDvIUP",
 	auth: false,
 	user: null,
 	role: null,
-	cc_data: null
+	cc_data: null,
+	cohort_data: null
 }
 
 function dataFilter(id,data) {
@@ -51,6 +52,11 @@ function MainAppReducer(state = initialState, action) {
 				...state,
 				cc_data: action.payload
 			}
+		case "SET_COHORT_DATA":
+			return {
+				...state,
+				cohort_data: action.payload
+			}
 		case "ON_AUTH":
 			return {
 				...state,
@@ -68,7 +74,6 @@ function MainAppReducer(state = initialState, action) {
 				role: mapping[action.payload.uid][1]
 			}
 		case "FILTER_DATA":
-		console.log(state)
 			return {
 				...state,
 				all_raw_data: dataFilter(state.user ,state.all_raw_data)
