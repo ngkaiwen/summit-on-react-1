@@ -8,6 +8,7 @@
 ## Content Page
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
+2. [Deployed Application](https://github.com/TheIanSim/summit-on-react#deployed-application)
 2. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
 2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
 3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
@@ -457,6 +458,9 @@ For **optimal viewing** experience, we have tested our application on the follow
 Summit Analytics documentation is hosted on Google Docs, accessible via the link below.
 [Summit Analytics Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing)
 
+Presentation slides for our presentation can be viewed here.
+[Summit Analytics Presentation](https://drive.google.com/open?id=1hlAG5x_cV3lNawTSIw3aQLM0hBDb4Vk3okr5_dvSH78)
+
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 
@@ -467,7 +471,7 @@ Data for Summit Analytics was generously provided by Prof Chris Boesch, using da
 
 ## Summit Analytics Team
 
-![PeoplePage](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/PeoplePage.png?raw=true)
+[![PeoplePage](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/PeoplePage.png?raw=true)](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
 
 Signing Off
 
