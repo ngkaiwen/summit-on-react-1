@@ -20,6 +20,8 @@ View our video guide with this link.
 
 [Click Here!](https://youtu.be/8lr1Yhy4clE)
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
 ## User Guide for Administrators
 
 1. [Login and Authentication](https://github.com/TheIanSim/summit-on-react#login-and-authentication)
