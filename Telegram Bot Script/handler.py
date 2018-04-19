@@ -9,7 +9,7 @@ sys.path.append(os.path.join(here, "./vendored"))
 
 TOKEN = os.environ['TELEGRAM_TOKEN']
 BASE_URL = "https://api.telegram.org/bot{}".format(TOKEN)
-FB_URL="#YOURFIREBASEHERE"
+FB_URL="YOURFIREBASEHERE"
 GET_URL =  "YOURFIREBASEHERE"
 users = {}
 
