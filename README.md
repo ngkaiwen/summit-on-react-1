@@ -28,6 +28,8 @@ By pressing the login button, you will arrive at the login screen. You must ente
 
 ![LoginScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/LoginScreen.png?raw=true)
 
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
 ### Overview Screen
 
 After logging in with your  <font color= 00ced1> credentials </font>, you will arrive at this screen below:
@@ -83,6 +85,8 @@ Since the **Cross Level Comparison** chart may be a bit dense due to so much inf
 
 ![OverviewPage3Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3Chart.png?raw=true)
 
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
 ### Students Screen
 
 Clicking on the **Students** tab then selecting a student would load the following screen.
@@ -122,6 +126,8 @@ Intepreting the **Relative Time Spent per Code Combat Level** chart:
 >The blue curve signifies the performance of the student with time as a metric. If the student is the slowest performer for the level, then the blue curve would touch the top of the red bar.
 >Vice versa, if the student is the fastest performer for the level, then the blue curve would touch the top of the green bar.
 
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
 ### Assignments Screen
 
 Clicking on the **Assignments** tab would load the following screen.
@@ -143,7 +149,9 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 ## Compatability
 
@@ -165,10 +173,12 @@ For **optimal viewing** experience, we have tested our application on the follow
 | XPS 13 9350 | 13.3-inch (3200 x 1800) | Chrome | 65.0.3325.181 (64-bit) | 100% |
 | XPS 13 9350 | 13.3-inch (3200 x 1800) | Firefox Quantum | 59.0.2 (64-bit) | 100% |
 
-
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 ## Data Source
 Data for Summit Analytics was generously provided by Prof Chris Boesch, using data collected from his Achievements application as part of the project requirement for BT3103 AY 17/18.
+
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 ## Summit Analytics Team
 
@@ -182,3 +192,4 @@ Signing Off
 * NG KAIWEN
 * SUEN WAI LUN
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
