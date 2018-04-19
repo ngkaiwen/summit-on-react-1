@@ -89,7 +89,20 @@ Clicking on the students tab would load the following screen.
 
 ![AssignmentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage1.png?raw=true)
 
+![AssignmentsPage2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage2.png?raw=true)
 
+Clicking on an assignment would load the assignment specific data as seen:
+
+* Details, which loads the visibility, released date, deadline, and type of problem
+* Submission rate pie chart for assignment
+* List of students who have submitted and not submitted the assignment
+* Submission rate time series
+* Youtube Video Analysis of Student Pause Timings
+
+
+
+Intepreting the Youtube Analysis of Student Pause Timings chart:
+>A peak in the chart
 
 
 ## Compatability
