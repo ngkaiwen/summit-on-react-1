@@ -42,7 +42,7 @@ class AssignmentDetailsPanel extends Component {
             assignmentClickHandler = {this.assignmentClickHandler}/>
           </div> : null }
 
-          {this.props.selectedAssignmentData['Charts'] ? <div className="assignmentRate">
+          {this.props.selectedAssignmentData['Charts'] && this.props.selectedAssignmentData['Charts']['YoutubeCharts'] ? <div className="assignmentRate">
           <YoutubeChart
             selectedData = {this.props.selectedAssignmentData['Charts']['YoutubeCharts']}/>
           </div> : null }
