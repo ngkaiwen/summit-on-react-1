@@ -221,13 +221,13 @@ Clicking on any of the courses and then pressing **save** will load the course d
 
 ## User Guide for Educators
 
-1. [Login and Authentication](https://github.com/TheIanSim/summit-on-react#login-and-authentication)
-2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen)
-3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen)
-4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen)
-5. [Cohorts Screen (Administrator Only)]
-7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data)
-8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection)
+1. [Login and Authentication](https://github.com/TheIanSim/summit-on-react#login-and-authentication-1)
+2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen-1)
+3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen-1)
+4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen-1)
+5. [Realtime Questions (Educator Only)]
+7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data-1)
+8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection-1)
 
 ### Login and Authentication
 
@@ -359,6 +359,12 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
+
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
+
+### Realtime Questions (Educator Only)
+
+Clicking on the **Realtime Questions** tab would load the following screen.
 
 [Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
