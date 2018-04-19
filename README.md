@@ -118,9 +118,9 @@ Data for Summit Analytics was generously provided by Prof Chris Boesch, using da
 
 Signing Off
 
-TAY JIAHUI
-IAN SIM
-LI XUANGUANG
-NG KAIWEN
-SUEN WAI LUN
+* TAY JIAHUI
+* IAN SIM
+* LI XUANGUANG
+* NG KAIWEN
+* SUEN WAI LUN
 
