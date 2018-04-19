@@ -4,11 +4,15 @@ import CompletionRatePieChart from "./CompletionRatePieChart.js"
 class CompletionRateStatus extends Component {
 
   render() {
-    const pieData2 = this.props.selectedAssignmentData["displayData"]["pie"]
 
-    if ( Object.keys(pieData2).length === 0){ return null } //Check whether an assignment has been selected in assignment list - do not render anything if nothing has been selected
+
+
+    if (!this.props.selectedAssignmentData["displayData"] || Object.keys(this.props.selectedAssignmentData["displayData"]["pie"]).length === 0){
+       return null
+     } //Check whether an assignment has been selected in assignment list - do not render anything if nothing has been selected
 
   else {
+      const pieData2 = this.props.selectedAssignmentData["displayData"]["pie"];
     const completed = pieData2["data"][0]["Value"]
   	const notCompleted = pieData2["data"][1]["Value"]
   	const total = completed + notCompleted
