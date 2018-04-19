@@ -9,9 +9,8 @@ sys.path.append(os.path.join(here, "./vendored"))
 
 TOKEN = os.environ['TELEGRAM_TOKEN']
 BASE_URL = "https://api.telegram.org/bot{}".format(TOKEN)
-FB_URL="https://babayetusummit.firebaseio.com/courses/"
-#FB_URL="https://dashboard-4ac38.firebaseio.com/chats"
-GET_URL =  "https://babayetusummit.firebaseio.com/courses.json"
+FB_URL="#YOURFIREBASEHERE"
+GET_URL =  "YOURFIREBASEHERE"
 users = {}
 
 def get_course_data():
