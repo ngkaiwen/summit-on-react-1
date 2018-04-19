@@ -752,6 +752,14 @@ a:visited {
   margin-top: 40vh;
 }
 
+.custom-tooltip {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #00ced1;
+  text-transform: capitalize;
+}
+
 /* Spinner ================================================*/
 .sk-cube-grid {
   width: 40px;
