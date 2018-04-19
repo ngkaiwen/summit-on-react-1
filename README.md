@@ -21,7 +21,7 @@
 
 Visit our application with this delopyed link. You must have login credentials.
 
-Dear Professor Boesch, you can [contact our team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team) for your login credentials, and on the config files for our github in order to run the application offline on local host on your computer.
+Dear Professor Boesch, you can [contact our team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team) for your login credentials, and on the config files for our github in order to run the application on your computer.
 
 [![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)](https://summit-analytics.firebaseapp.com)
 
@@ -55,7 +55,7 @@ View our video guide with this link.
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
 
-![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)
+[![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)](#)
 
 By pressing the login button, you will arrive at the login screen. You must enter your **credentials** to access the application.
 
