@@ -121,8 +121,7 @@ class Cohort extends Component {
                 <p style={{fontSize:20 ,color: "#FFFFFF"}}>  <b> RELATIVE TIME SPENT FOR EACH CODE COMBAT LEVEL BY STUDENTS</b></p>
               </div>
 
-              <div className = "cohort-pane-content">
-                <div className = "cohort-pane-content-sub">
+                <div className = "cohort-pane-content">
                   <p style={{fontSize:15 ,color: "#020202"}}>
                     <ComposedChart width={700} height={300} data={cohortdata["timeComparisonChart"]}
                       margin={{top: 25, right: 10, left: 10, bottom: 10}}>
@@ -138,7 +137,6 @@ class Cohort extends Component {
                     </p>
                   <p style={{fontSize:17 ,color: "#020202"}}> COHORT COMPARISON OF DISTRIBUTION OF TIME SPENT ON CODE COMBAT LEVELS</p>
                 </div>
-              </div>
             </div>
 
           </div>
