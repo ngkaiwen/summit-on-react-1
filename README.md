@@ -8,11 +8,11 @@
 ## Content Page
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
-2. [User Guide](https://github.com/TheIanSim/summit-on-react#user-guide)
+2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
 
 
 
-## User Guide
+## User Guide for Administrators
 
 1. [Login and Authentication](https://github.com/TheIanSim/summit-on-react#login-and-authentication)
 2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen)
@@ -87,6 +87,12 @@ Since the cross level comparison chart may be a bit dense due to so much informa
 
 Clicking on the students tab would load the following screen.
 
+
+
+### Assignments Screen
+
+Clicking on the assignments tab would load the following screen.
+
 ![AssignmentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage1.png?raw=true)
 
 ![AssignmentsPage2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage2.png?raw=true)
@@ -103,6 +109,7 @@ Clicking on an assignment would load the assignment specific data as seen:
 
 Intepreting the Youtube Analysis of Student Pause Timings chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
+
 
 
 ## Compatability
