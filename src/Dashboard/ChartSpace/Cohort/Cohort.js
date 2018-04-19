@@ -7,8 +7,6 @@ class Cohort extends Component {
 
   render() {
     const cohortdata = this.props.data;
-    console.log(cohortdata);
-    //const cohortCharts = cohortdata["timeComparisonChart"];
     return (
       cohortdata ?
       <div className='cohort-main-container'>
@@ -122,7 +120,7 @@ class Cohort extends Component {
               </div>
 
                 <div className = "cohort-pane-content">
-                  <p style={{fontSize:15 ,color: "#020202"}}>
+                  <p style={{fontSize:15 ,color: "#020202"}} />
                     <ComposedChart width={700} height={300} data={cohortdata["timeComparisonChart"]}
                       margin={{top: 25, right: 10, left: 10, bottom: 10}}>
                      <XAxis dataKey="Label" tick = {false} padding={{ left: 75, right: 75 }}/>
@@ -134,7 +132,6 @@ class Cohort extends Component {
                      <Line type='monotone' dataKey='Cohort Average Time Per Level' stroke='#07B4B6' />
                      <Line type='monotone' dataKey='Cohort Median Time Per Level' stroke='#f24d05' />
                     </ComposedChart>
-                    </p>
                   <p style={{fontSize:17 ,color: "#020202"}}> COHORT COMPARISON OF DISTRIBUTION OF TIME SPENT ON CODE COMBAT LEVELS</p>
                 </div>
             </div>
