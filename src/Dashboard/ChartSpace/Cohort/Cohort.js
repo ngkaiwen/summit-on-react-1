@@ -50,84 +50,95 @@ class Cohort extends Component {
             </div>
 
             <div className='cohort-grid-item-joint'>
-                <div className='cohort-grid-item-joint-inner'>
-                <p style={{fontSize:20 ,color:"#142b9d"}}>  <b> COHORT PERFORMANCE AND EFFORT METRICS </b></p>
-                <br/>
-                <p style={{fontSize:18}}>  <b> Maximum Levels Completed by >=75% of Cohort</b></p>
-                <br/>
-                <p style={{fontSize:18}}>  <b> Average Time Spent Per Student in Cohort</b></p>
-                <br/>
-                <p style={{fontSize:18}}>  <b> Median Time Spent Per Student in Cohort</b></p>
+                <div className="cohort-table-item">
+                  <p style={{fontSize:20 ,color:"#142b9d"}}>  <b> COHORT PERFORMANCE AND EFFORT METRICS </b></p>
                 </div>
 
-                <div className='cohort-grid-item-joint-inner'>
-                  <br/>
+                <div className="cohort-table-item">
                   <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["name"]}</b></p>
-                  <br/>
-                  <br/>
-                  <br/>
+                </div>
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["name"]}</b></p>
+                </div>
+
+                <div className="cohort-table-item">
+                    <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["name"]}</b></p>
+                </div>
+
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:18}}>  <b> Maximum Levels Completed by >=75% of Cohort</b></p>
+                </div>
+
+                <div className="cohort-table-item">
                   <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["maxLevel75"]}</b></u></p>
-                  <br/>
-                  <br/>
+                </div>
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["maxLevel75"]}</b></u></p>
+                </div>
+
+                <div className="cohort-table-item">
+                    <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["maxLevel75"]}</b></u></p>
+                </div>
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:18}}>  <b> Average Time Spent Per Student in Cohort</b></p>
+                </div>
+
+                <div className="cohort-table-item">
                   <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["AverageTime"]} Hours</b></u></p>
-                  <br/>
-                  <br/>
+                </div>
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["AverageTime"]} Hours</b></u></p>
+                </div>
+
+                <div className="cohort-table-item">
+                    <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["AverageTime"]} Hours</b></u></p>
+                </div>
+
+                <div className="cohort-table-item">
+                  <p style={{fontSize:18}}>  <b> Median Time Spent Per Student in Cohort</b></p>
+                </div>
+
+                <div className="cohort-table-item">
                   <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60ng0QZnIUq5u3w3kU"]["MedianTime"]} Hours</b></u></p>
                 </div>
 
-                <div className='cohort-grid-item-joint-inner'>
-                  <br/>
-                  <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["name"]}</b></p>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["maxLevel75"]}</b></u></p>
-                  <br/>
-                  <br/>
-                  <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["AverageTime"]} Hours</b></u></p>
-                  <br/>
-                  <br/>
+                <div className="cohort-table-item">
                   <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60nbB_SwQIdvjEEIp7"]["MedianTime"]} Hours</b></u></p>
                 </div>
 
-                  <div className='cohort-grid-item-joint-inner'>
-                    <br/>
-                    <p style={{fontSize:17 ,color: "#07B4B6"}}>  <b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["name"]}</b></p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <p style={{fontSize:25}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["maxLevel75"]}</b></u></p>
-                    <br/>
-                    <br/>
-                    <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["AverageTime"]} Hours</b></u></p>
-                    <br/>
-                    <br/>
+                <div className ="cohort-table-item">
                     <p style={{fontSize:22}}>  <u><b> {cohortdata["timeComparisonStats"]["-L60lMb7QBWxMsd0aIHE"]["MedianTime"]} Hours</b></u></p>
-                  </div>
+                </div>
             </div>
 
             <div className='cohort-grid-item-joint1'>
               <div className='cohort-pane-title'>
                 <p style={{fontSize:20 ,color: "#FFFFFF"}}>  <b> RELATIVE TIME SPENT FOR EACH CODE COMBAT LEVEL BY STUDENTS</b></p>
-                <br/>
-                <br/>
-                <p style={{fontSize:15 ,color: "#020202"}}>
-                  <ComposedChart width={700} height={300} data={cohortdata["timeComparisonChart"]}
-                    margin={{top: 25, right: 10, left: 10, bottom: 10}}>
-                   <XAxis dataKey="Label" tick = {false} padding={{ left: 75, right: 75 }}/>
-                   <YAxis/>
-                   <Tooltip/>
-                   <Legend />
-                   <Bar dataKey="Cohort Minimum Time Per Level" stackId="a" fill="#AED581" />
-                   <Bar dataKey="Cohort Maximum Time Per Level" stackId="a" fill="#e79db6" />
-                   <Line type='monotone' dataKey='Cohort Average Time Per Level' stroke='#07B4B6' />
-                   <Line type='monotone' dataKey='Cohort Median Time Per Level' stroke='#f24d05' />
-                  </ComposedChart>
-                  <p style={{fontSize:17 ,color: "#020202"}}> COHORT COMPARISON OF DISTRIBUTION OF TIME SPENT ON CODE COMBAT LEVELS</p>
-                  </p>
-                <h2>All courses</h2>
               </div>
 
+              <div className = "cohort-pane-content">
+                <div className = "cohort-pane-content-sub">
+                  <p style={{fontSize:15 ,color: "#020202"}}>
+                    <ComposedChart width={700} height={300} data={cohortdata["timeComparisonChart"]}
+                      margin={{top: 25, right: 10, left: 10, bottom: 10}}>
+                     <XAxis dataKey="Label" tick = {false} padding={{ left: 75, right: 75 }}/>
+                     <YAxis/>
+                     <Tooltip/>
+                     <Legend />
+                     <Bar dataKey="Cohort Minimum Time Per Level" stackId="a" fill="#AED581" />
+                     <Bar dataKey="Cohort Maximum Time Per Level" stackId="a" fill="#e79db6" />
+                     <Line type='monotone' dataKey='Cohort Average Time Per Level' stroke='#07B4B6' />
+                     <Line type='monotone' dataKey='Cohort Median Time Per Level' stroke='#f24d05' />
+                    </ComposedChart>
+                    </p>
+                  <p style={{fontSize:17 ,color: "#020202"}}> COHORT COMPARISON OF DISTRIBUTION OF TIME SPENT ON CODE COMBAT LEVELS</p>
+                </div>
+              </div>
             </div>
 
           </div>
