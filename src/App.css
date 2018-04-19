@@ -690,19 +690,31 @@ a:visited {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
-  height: 40vh;
+  height: 65vh;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .cohort-grid-item-joint {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
-  height: 60vh;
+  height: 55vh;
   grid-column-start: 1;
   grid-column-end: 5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-sizing: border-box;
+  grid-gap: 1rem;
+}
+
+.cohort-grid-item-joint1 {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
+  padding: 1rem;
+  height: 80vh;
+  grid-column-start: 1;
+  grid-column-end: 5;
   box-sizing: border-box;
   grid-gap: 1rem;
 }
@@ -715,7 +727,7 @@ a:visited {
 }
 
 .cohort-pane-title {
-	height:40px;
+	height:30px;
 	border: 1px solid grey;
 	background:rgba(0, 0, 0, 0.7);
   	padding-left: 10px;
