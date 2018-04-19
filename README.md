@@ -85,9 +85,21 @@ Since the cross level comparison chart may be a bit dense due to so much informa
 
 ### Students Screen
 
-Clicking on the students tab would load the following screen.
+Clicking on the students tab then selecting a student would load the following screen.
 
+![StudentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1.png?raw=true)
 
+The students page loads the following data regarding assigments:
+ 
+ * Submissions of assignment over time
+ * Assignment submission status pie chart indicating percentage of assignments submitted
+ * Completion time percentile per assignment
+
+ ![StudentsPages1Chart2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1Chart2.png?raw=true)
+ 
+ Intepreting the Submissions of Assignment over Time chart:
+>The orange timeseries represents the course average rate of submission over time, while the green timeseries represents the student's submission of assignment over time. If the green timeseries is higher than the orange timeseries, then it meant that the student has submitted the assignments earlier than majority of the cohort.
+>Vice Versa, if the green timeseries is lower than the orange timeseries, then it meant that the student has submitted the assignments later than majority of the cohort.
 
 ### Assignments Screen
 
@@ -105,7 +117,7 @@ Clicking on an assignment would load the assignment specific data as seen:
 * Submission rate time series
 * Youtube Video Analysis of Student Pause Timings
 
-![StudentsPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage2Chart.png?raw=true)
+![AssignmentsPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage2Chart.png?raw=true)
 
 Intepreting the Youtube Analysis of Student Pause Timings chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
