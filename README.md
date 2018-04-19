@@ -20,6 +20,8 @@
 4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen)
 5. [Cohorts Screen (Administrator Only)](https://github.com/TheIanSim/summit-on-react#cohorts-screen-administrators-only)
 6. [Courses Screen (Administrators Only)](https://github.com/TheIanSim/summit-on-react#courses-screen-administrators-only)
+7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data)
+8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection)
 
 ### Login and Authentication
 
@@ -209,7 +211,7 @@ You can continue viewing the application while the data refreshes in the backgro
 
 Clicking on the **Bottom Right (Bottom) Buttom** would load the following screen.
 
-![CourseSelectionDialogue](https://github.com/TheIanSim/summit-on-react/blob/master/CourseSelectionDialogue.png?raw=true)
+![CourseSelectionDialogue](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CourseSelectionDialogue.png?raw=true)
 
 Clicking on any of the courses and then pressing **save** will load the course data.
 
