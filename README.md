@@ -15,7 +15,7 @@
 ## User Guide
 
 
-###Login and Authentication
+### Login and Authentication
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
 
@@ -25,7 +25,7 @@ By pressing the login button, you will arrive at the login screen. You must ente
 
 ![LoginScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/LoginScreen.png?raw=true)
 
-###Overview Screen
+### Overview Screen
 
 After logging in with your  <font color= 00ced1> credentials </font>, you will arrive at this screen below:
 
