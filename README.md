@@ -263,7 +263,7 @@ Intepreting the **Overall Assignment Data per Student** chart:
 
 By scrolling down, you will now arrive at the **Assignment Overview Screen**.
 
-![OverviewPage2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2.png?raw=true)
+![OverviewPage2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2.png?raw=true)
 
 The **Assignment Overview Screen** loads the overall data specific to the course. The following data are loaded:
 
@@ -271,7 +271,7 @@ The **Assignment Overview Screen** loads the overall data specific to the course
 * The assignment release time series
 * Overall student data per assignment scatter diagram
 
-![OverviewPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true)
+![OverviewPage2ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2Chart.png?raw=true)
 
 Intepreting the **Overall Student per Assignment** chart:
 >An assignment that appears on the top left corner of the chart may be a more diffucult assignment, as it takes longer to complete on average, and that there is a lower completion rate as well, indicating that less students has completed it.
@@ -280,11 +280,11 @@ Intepreting the **Overall Student per Assignment** chart:
 
 Scroling down further, we reach the **Code Combat Overview Data**, with this loading screen.
 
-![OverviewPage3](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3.png?raw=true)
+![OverviewPage3](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage3.png?raw=true)
 
 Select a level to load the data. 
 
-![OverviewPage3b](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3b.png?raw=true)
+![OverviewPage3bE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage3b.png?raw=true)
 
 The following data are now loaded:
 
@@ -294,7 +294,7 @@ The following data are now loaded:
 
 Since the **Cross Level Comparison** chart may be a bit dense due to so much information, we may hover our mouse to view the number of students who completed the codecombat level, as seen in the chart below.
 
-![OverviewPage3Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3Chart.png?raw=true)
+![OverviewPage3ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage3Chart.png?raw=true)
 
 [Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
@@ -302,7 +302,7 @@ Since the **Cross Level Comparison** chart may be a bit dense due to so much inf
 
 Clicking on the **Students** tab then selecting a student would load the following screen.
 
-![StudentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1.png?raw=true)
+![StudentsPage1E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage1.png?raw=true)
 
 The **Students Page** loads the following data regarding assigments:
  
@@ -310,20 +310,20 @@ The **Students Page** loads the following data regarding assigments:
  * Assignment submission status pie chart indicating percentage of assignments submitted
  * Completion time percentile per assignment
 
-![StudentsPages1Chart2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1Chart2.png?raw=true)
+![StudentsPages1Chart2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage1Chart2.png?raw=true)
  
 Intepreting the **Submissions (of Assignment) over Time** chart:
 >The orange timeseries represents the course average rate of submission over time, while the green timeseries represents the student's submission of assignment over time. If the green timeseries is higher than the orange timeseries, then it meant that the student has submitted the assignments earlier than majority of the cohort.
 >Vice versa, if the green timeseries is lower than the orange timeseries, then it meant that the student has submitted the assignments later than majority of the cohort.
 
-![StudentsPages1Chart1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1Chart1.png?raw=true)
+![StudentsPages1Chart1E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage1Chart1.png?raw=true)
  
 Intepreting the **Completion Time Percentile per Assignment** chart:
 >If the assignment submission percentile point is above the 50% completion time percentile, this meant that the student has submitted the assignment ahead of majority of the cohort
 >Vice versa, if the assigment submission percentile point is below the 50% completion time percentile, then the student has submitted the assignment behind majority of the cohort.
 >The percentile metric by the side of the graph indicates the overall performance of the student. A higher percentile metric meant the student submits all the assignments on a faster time than their peers.
 
-![StudentsPage2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage2.png?raw=true)
+![StudentsPage2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage2.png?raw=true)
 
 Scrolling down, the **Students Page** loads the following data regarding Code Combat:
  
@@ -331,7 +331,7 @@ Scrolling down, the **Students Page** loads the following data regarding Code Co
  * Breakdown of time (efficiency) spent on code combat, with comparison to similar students
  * Relative Time Spent per Code Combat Level
 
-![StudentsPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage2Charts.png?raw=true)
+![StudentsPage2ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage2Charts.png?raw=true)
 
 Intepreting the **Relative Time Spent per Code Combat Level** chart:
 >The blue curve signifies the performance of the student with time as a metric. If the student is the slowest performer for the level, then the blue curve would touch the top of the red bar.
@@ -343,9 +343,9 @@ Intepreting the **Relative Time Spent per Code Combat Level** chart:
 
 Clicking on the **Assignments** tab would load the following screen.
 
-![AssignmentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage1.png?raw=true)
+![AssignmentsPage1E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/AssignmentsPage1.png?raw=true)
 
-![AssignmentsPage2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage2.png?raw=true)
+![AssignmentsPage2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/AssignmentsPage2.png?raw=true)
 
 Clicking on an assignment would load the **Assignment Specific** data as seen:
 
@@ -355,7 +355,7 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 * Submission rate time series
 * Youtube Video Analysis of Student Pause Timings
 
-![AssignmentsPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage2Chart.png?raw=true)
+![AssignmentsPage2ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/AssignmentsPage2Chart.png?raw=true)
 
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
@@ -366,11 +366,11 @@ Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 
 Clicking on the **Bottom Right (Top) Buttom** would load the following screen.
 
-![RefreshData1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/RefreshData1.png?raw=true)
+![RefreshData1E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/RefreshData1.png?raw=true)
 
 Clicking on the **Red Button** will reload the data.
 
-![RefreshData2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/RefreshData2.png?raw=true)
+![RefreshData2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/RefreshData2.png?raw=true)
 
 You can continue viewing the application while the data refreshes in the background.
 
@@ -380,7 +380,7 @@ You can continue viewing the application while the data refreshes in the backgro
 
 Clicking on the **Bottom Right (Bottom) Buttom** would load the following screen.
 
-![CourseSelectionDialogue](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CourseSelectionDialogue.png?raw=true)
+![CourseSelectionDialogueE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/CourseSelectionDialogue.png?raw=true)
 
 Clicking on any of the courses and then pressing **save** will load the course data.
 
