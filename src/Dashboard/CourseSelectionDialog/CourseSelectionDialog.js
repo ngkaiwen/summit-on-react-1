@@ -17,6 +17,9 @@ class CourseSelectionDialog extends Component {
     if (status === "save") {
     	this.props.dispatch({type:"SET_SELECTED_COURSE",payload:selectedCourse}); //Set course
     }
+    else if (status === "cancel") { //Revert to original selection if cancel button is pressed
+      this.setState({selectedCourse:this.props.selectedCourse})
+    }
   }
 
   componentWillMount(){

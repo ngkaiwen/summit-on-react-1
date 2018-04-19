@@ -61,7 +61,7 @@ class Courses extends Component {
               </div>
           </div>
 
-      </div> : null
+      </div> : <div style={{marginTop:"50vh"}}><Spinner /></div>
     );
   }
 }

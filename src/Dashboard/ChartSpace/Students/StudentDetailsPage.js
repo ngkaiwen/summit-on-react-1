@@ -24,7 +24,7 @@ class StudentDetailsPage extends Component {
   */
   studentClickHandler(key) { 
     this.setState({ selectedStudent:key });
-    console.log("Selected student with student ID: " + key);
+    //console.log("Selected student with student ID: " + key);
     this.setState({ selectedStudentData:this.props.studentData[key] });
   }
 
