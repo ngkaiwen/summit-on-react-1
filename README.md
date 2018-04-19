@@ -225,8 +225,7 @@ Clicking on any of the courses and then pressing **save** will load the course d
 2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen)
 3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen)
 4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen)
-5. [Cohorts Screen (Administrator Only)](https://github.com/TheIanSim/summit-on-react#cohorts-screen-administrators-only)
-6. [Courses Screen (Administrators Only)](https://github.com/TheIanSim/summit-on-react#courses-screen-administrators-only)
+5. [Cohorts Screen (Administrator Only)]
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection)
 
@@ -240,7 +239,7 @@ By pressing the login button, you will arrive at the login screen. You must ente
 
 ![LoginScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/LoginScreen.png?raw=true)
 
-[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 ### Overview Screen
 
@@ -297,7 +296,7 @@ Since the **Cross Level Comparison** chart may be a bit dense due to so much inf
 
 ![OverviewPage3Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3Chart.png?raw=true)
 
-[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 ### Students Screen
 
@@ -338,7 +337,7 @@ Intepreting the **Relative Time Spent per Code Combat Level** chart:
 >The blue curve signifies the performance of the student with time as a metric. If the student is the slowest performer for the level, then the blue curve would touch the top of the red bar.
 >Vice versa, if the student is the fastest performer for the level, then the blue curve would touch the top of the green bar.
 
-[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 ### Assignments Screen
 
@@ -361,7 +360,7 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
-[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 ### Refeshing Data
 
@@ -375,7 +374,7 @@ Clicking on the **Red Button** will reload the data.
 
 You can continue viewing the application while the data refreshes in the background.
 
-[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 ### Course Selection
 
@@ -385,7 +384,7 @@ Clicking on the **Bottom Right (Bottom) Buttom** would load the following screen
 
 Clicking on any of the courses and then pressing **save** will load the course data.
 
-[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+[Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
