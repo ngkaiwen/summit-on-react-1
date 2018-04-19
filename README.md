@@ -99,10 +99,10 @@ Clicking on an assignment would load the assignment specific data as seen:
 * Submission rate time series
 * Youtube Video Analysis of Student Pause Timings
 
-
+![StudentsPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage2Chart.png?raw=true)
 
 Intepreting the Youtube Analysis of Student Pause Timings chart:
->A peak in the chart
+>A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
 
 ## Compatability
