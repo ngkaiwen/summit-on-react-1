@@ -18,6 +18,8 @@
 2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen)
 3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen)
 4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen)
+5. [Cohorts Screen (Administrator Only)](https://github.com/TheIanSim/summit-on-react#cohorts-screen-administrators-only)
+6. [Courses Screen (Administrators Only)](https://github.com/TheIanSim/summit-on-react#courses-screen-administrators-only)
 
 ### Login and Authentication
 
@@ -186,6 +188,30 @@ Each graph contains information on the individual courses, ranked from best perf
 ![CoursesGraph3](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph3.png?raw=true)
 
 ![CoursesGraph4](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph4.png?raw=true)
+
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
+### Refeshing Data
+
+Clicking on the **Bottom Right (Top) Buttom** would load the following screen.
+
+![RefreshData1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/RefreshData1.png?raw=true)
+
+Clicking on the **Red Button** will reload the data.
+
+![RefreshData2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/RefreshData2.png?raw=true)
+
+You can continue viewing the application while the data refreshes in the background.
+
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
+### Course Selection
+
+Clicking on the **Bottom Right (Bottom) Buttom** would load the following screen.
+
+![CourseSelectionDialogue](https://github.com/TheIanSim/summit-on-react/blob/master/CourseSelectionDialogue.png?raw=true)
+
+Clicking on any of the courses and then pressing **save** will load the course data.
 
 [Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
