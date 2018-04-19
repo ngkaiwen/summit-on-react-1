@@ -149,6 +149,10 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
+### Cohorts Screen
+
+Clicking on the **Assignments** tab would load the following screen.
+
 [Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
