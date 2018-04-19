@@ -1,7 +1,7 @@
 //define the initial state
 const initialState = {
 	all_raw_data: {},
-	selected_course: "",
+	selected_course: "-L5cmwU2yj2HRmfDvIUP",
 	auth: false,
 	user: null,
 	role: null,

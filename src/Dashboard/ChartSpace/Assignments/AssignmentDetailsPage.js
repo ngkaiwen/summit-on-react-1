@@ -24,7 +24,7 @@ class AssignmentDetailsPage extends Component {
   */
   assignmentClickHandler(key) {
     this.setState({ selectedAssignment:key });
-    console.log("Selected assignment with assignment ID: " + key);
+    //console.log("Selected assignment with assignment ID: " + key);
     this.setState({ selectedAssignmentData:this.props.assignmentData[key] });
   }
 

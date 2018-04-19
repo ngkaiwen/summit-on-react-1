@@ -27,9 +27,6 @@ class RefreshDataDialog extends Component {
 		const timerIncrementStep = howOftenToUpdateProgressSpinner/1000; //How much to increment the timer per step
 		this.setState({dataUpdateTimer:this.state.howLongToRefreshInSeconds}) //Initialise timer to the necessary time
 
-		console.log(howOftenToUpdateProgressSpinner)
-		console.log(timerIncrementStep)
-
 		this.timer = setInterval( () => {
 			var dataUpdatePercentage = (this.state.howLongToRefreshInSeconds - this.state.dataUpdateTimer)/this.state.howLongToRefreshInSeconds*100
 			this.setState(
