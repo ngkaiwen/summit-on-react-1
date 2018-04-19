@@ -245,7 +245,7 @@ By pressing the login button, you will arrive at the login screen. You must ente
 
 After logging in with your  <font color= 00ced1> credentials </font>, you will arrive at this screen below:
 
-![OverviewPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1.png?raw=true)
+![OverviewPage1E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage1.png?raw=true)
 
 This is the **Overview Screen**. The inital data loaded is the **Students Overall Data**. This screen loads the following data: 
 
@@ -253,7 +253,7 @@ This is the **Overview Screen**. The inital data loaded is the **Students Overal
 * The weakest performers <font color= CCCC00> (bottom 5) </font> of the course
 * Overall assignment data per student scatter diagram
 
-![OverviewPage1Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true)
+![OverviewPage1ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage1Chart.png?raw=true)
 
 Intepreting the **Overall Assignment Data per Student** chart:
 >A student who appears on the top left corner of the chart is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
