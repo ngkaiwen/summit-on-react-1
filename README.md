@@ -35,14 +35,14 @@ This is the overview screen. The inital data loaded is the students overall data
 
 * Total number of students in the course
 * The weakest performers <font color= CCCC00> (bottom 5) </font> of the course
-* Overall assignment data per student. 
+* Overall assignment data per student scatter diagram
 
 ![OverviewPage1Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true)
 
-Intepreting the assignment data per student chart:
->A student who appears on the top left corner of the screen is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
+Intepreting the overall assignment data per student chart:
+>A student who appears on the top left corner of the chart is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
 
->Vice versa, a student who appears on the bottom right corner of the scren is a stronger student as he completes more assignments, and at a faster completion time.
+>Vice versa, a student who appears on the bottom right corner of the chart is a stronger student as he completes more assignments, and at a faster completion time.
 
 
 By scrolling down, you will now arrive at the assignment overview screen.
@@ -53,7 +53,14 @@ The assignment overview screen loads the overall data specific to the course. Th
 
 * Total number of assignments in the course
 *  The assignment release time series
-*  Overall student data per assignment
+*  Overall student data per assignment scatter diagram
+
+![OverviewPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true)
+
+Intepreting the overall student per assignment chart:
+>An assignment that appears on the top left corner of the chart may be a more diffucult assignment, as it takes longer to complete on average, and that there is a lower completion rate as well, indicating that less students has completed it.
+
+>Vice versa, an assignment that appears on the bottom right corner of the chart may be an easier assignment, as it takes shorter to complete on average, and that there is a higher completion rate as well, indicating that more students has completed it.
 
 ## Data Source
 Data for Summit Analytics was generously provided by Prof Chris Boesch, using data collected from his Achievements application as part of the project requirement for BT3103 AY 17/18.
