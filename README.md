@@ -8,7 +8,7 @@
 ## Content Page
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
-2. [Video Guide]
+2. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
 2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
 3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
@@ -16,7 +16,9 @@
 
 View our video guide with this link.
 
-[Video Guide](https://youtu.be/8lr1Yhy4clE)
+[![Video Guide](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/Video%20Guide.png?raw=true)](https://youtu.be/8lr1Yhy4clE)
+
+[Click Here!](https://youtu.be/8lr1Yhy4clE)
 
 ## User Guide for Administrators
 
