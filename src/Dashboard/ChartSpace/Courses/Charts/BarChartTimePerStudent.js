@@ -9,12 +9,11 @@ class BarChartTimePerStudent extends Component {
     return (
       <ResponsiveContainer width="100%" height="90%">
           <BarChart data={data}
-                  margin={{top: 20, right: 10, left: 10, bottom: 20}}>
-          <CartesianGrid strokeDasharray="3 3"/>
+          margin={{top: 20, right: 10, left: 10, bottom: 20}}>
           <XAxis dataKey="Course" tick={false}/>
           <YAxis />
           <Tooltip />
-          <Bar dataKey="value" fill="#82ca9d" />
+          <Bar dataKey="value" fill="#130792" />
           </BarChart>
       </ResponsiveContainer>
     );

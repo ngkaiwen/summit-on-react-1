@@ -36,12 +36,11 @@ class AssignmentDetailsPanel extends Component {
             <CompletionLists selectedAssignmentData = {this.props.selectedAssignmentData}/>
           </div>
 
-          <div className= "assignmentRate">
-          <h4 className="assignments-title">Submissions Rate</h4>
-            <SubmissionsRateChart
-                  selectedData = {this.props.selectedAssignmentData['Charts']['StudentsByTime']}
-                  assignmentClickHandler = {this.assignmentClickHandler}/>
-          </div>
+          {this.props.selectedAssignmentData['Charts']['StudentsByTime'] ? <div className="assignmentRate">
+          <SubmissionsRateChart
+            selectedData = {this.props.selectedAssignmentData['Charts']['StudentsByTime']}
+            assignmentClickHandler = {this.assignmentClickHandler}/>
+          </div> : null }
 
           {this.props.selectedAssignmentData['Charts']['YoutubeCharts'] ? <div className="assignmentRate">
           <YoutubeChart
