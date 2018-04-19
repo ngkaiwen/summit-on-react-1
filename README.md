@@ -11,6 +11,10 @@
 2. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
 2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
 3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
+4. [Compatability](https://github.com/TheIanSim/summit-on-react#compatability)
+5. [Documentation Link](https://github.com/TheIanSim/summit-on-react#documentation)
+6. [Data Source](https://github.com/TheIanSim/summit-on-react#data-source)
+7. [Summit Analytics Team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
 
 ## Video Guide
 
