@@ -149,6 +149,29 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
+### Cohorts Screen (Administrators Only)
+
+Clicking on the **Cohorts** tab would load the following screen.
+
+![CohortPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CohortPage1.png?raw=true)
+
+The first segment of this screen loads the comparison between all the cohorts, providing information such as the number of courses in the cohort, the average number of students per course, and the instructor of the course.
+
+![CohortGraph1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CohortGraph1.png?raw=true)
+
+Scolling down, we would be able to view the cohort performance and effort metrics. The adminstrator would be able to view the number of levels completed by majority of the cohort, the average time spent per student in the cohort, and the median time spent per student in the cohort.
+
+![CohortGraph2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CohortGraph2.png?raw=true)
+
+Intepreting **Relative Time Spent for Each Code Combat Level by Students** chart:
+>Each individual bar chart refers to a cohort, with metrics such as minimum time and maximum time spent per level, and average and median time spent per level, specific to each cohort. Hence, the adminstrator can easily compare the performances across the cohorts.
+
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
+### Courses Screen (Administrators Only)
+
+Clicking on the **Courses** tab would load the following screen.
+
 [Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
