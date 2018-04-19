@@ -17,6 +17,7 @@
 1. [Login and Authentication](https://github.com/TheIanSim/summit-on-react#login-and-authentication)
 2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen)
 3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen)
+4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen)
 
 ### Login and Authentication
 
@@ -149,6 +150,8 @@ Clicking on an assignment would load the **Assignment Specific** data as seen:
 Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 >A peak in the chart indicates the more students has paused the video at this timing, hence this might indicate content covered that is tougher to digest for students. Hence, the instructor may cover content that the video covers with more pause attemps during class in order to explain the more difficult content.
 
+[Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
+
 ### Cohorts Screen (Administrators Only)
 
 Clicking on the **Cohorts** tab would load the following screen.
@@ -171,6 +174,18 @@ Intepreting **Relative Time Spent for Each Code Combat Level by Students** chart
 ### Courses Screen (Administrators Only)
 
 Clicking on the **Courses** tab would load the following screen.
+
+![CoursesPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesPage1.png?raw=true)
+
+Each graph contains information on the individual courses, ranked from best performing to worst performing (left to right) of the graph. The median school and their performance, as well as the standard deviation of each metric.The individual bar charts can be moused over in order to view more specific data, as can be seen below.
+
+![CoursesGraph1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph1.png?raw=true)
+
+![CoursesGraph2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph2.png?raw=true)
+
+![CoursesGraph3](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph3.png?raw=true)
+
+![CoursesGraph4](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/CoursesGraph4.png?raw=true)
 
 [Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
