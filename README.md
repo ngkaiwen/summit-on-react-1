@@ -85,7 +85,12 @@ Since the cross level comparison chart may be a bit dense due to so much informa
 
 ### Students Screen
 
-Clicking on the students tab, the following 
+Clicking on the students tab would load the following screen.
+
+![AssignmentsPage1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/AssignmentsPage1.png?raw=true)
+
+
+
 
 ## Compatability
 
