@@ -8,6 +8,7 @@
 ## Content Page
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
+2. [Deployed Application](https://github.com/TheIanSim/summit-on-react#deployed-application)
 2. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
 2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
 3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
@@ -15,6 +16,19 @@
 5. [Documentation Link](https://github.com/TheIanSim/summit-on-react#documentation)
 6. [Data Source](https://github.com/TheIanSim/summit-on-react#data-source)
 7. [Summit Analytics Team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
+
+## Deployed Application
+
+Visit our application with this delopyed link. You must have login credentials.
+
+Dear Professor Boesch, you can [contact our team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team) for your login credentials, and on the config files for our github in order to run the application on your computer.
+
+[![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)](https://summit-analytics.firebaseapp.com)
+
+[Summit Analytics](https://summit-analytics.firebaseapp.com)
+
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
 
 ## Video Guide
 
@@ -442,7 +456,12 @@ For **optimal viewing** experience, we have tested our application on the follow
 
 ## Documentation
 Summit Analytics documentation is hosted on Google Docs, accessible via the link below.
+
 [Summit Analytics Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing)
+
+Presentation slides for our presentation can be viewed here.
+
+[Summit Analytics Presentation](https://drive.google.com/open?id=1hlAG5x_cV3lNawTSIw3aQLM0hBDb4Vk3okr5_dvSH78)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
@@ -454,14 +473,14 @@ Data for Summit Analytics was generously provided by Prof Chris Boesch, using da
 
 ## Summit Analytics Team
 
-![PeoplePage](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/PeoplePage.png?raw=true)
+[![PeoplePage](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/PeoplePage.png?raw=true)](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
 
 Signing Off
 
-* TAY JIAHUI
-* IAN SIM
-* LI XUANGUANG
-* NG KAIWEN
-* SUEN WAI LUN
+* [TAY JIAHUI](jiahuitay@u.nus.edu)
+* [IAN SIM](e0031628@u.nus.edu)
+* [LI XUANGUANG](lxg@u.nus.edu)
+* [NG KAIWEN](ngkaiwen@u.nus.edu)
+* [SUEN WAI LUN](suenwailun@u.nus.edu)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
