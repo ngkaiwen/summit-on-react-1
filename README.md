@@ -55,7 +55,7 @@ View our video guide with this link.
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
 
-![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)
+[![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)](#)
 
 By pressing the login button, you will arrive at the login screen. You must enter your **credentials** to access the application.
 
