@@ -456,9 +456,11 @@ For **optimal viewing** experience, we have tested our application on the follow
 
 ## Documentation
 Summit Analytics documentation is hosted on Google Docs, accessible via the link below.
+
 [Summit Analytics Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing)
 
 Presentation slides for our presentation can be viewed here.
+
 [Summit Analytics Presentation](https://drive.google.com/open?id=1hlAG5x_cV3lNawTSIw3aQLM0hBDb4Vk3okr5_dvSH78)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
