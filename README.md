@@ -9,7 +9,7 @@
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
 2. [User Guide](https://github.com/TheIanSim/summit-on-react#user-guide)
-3. 
+
 
 
 ## User Guide
