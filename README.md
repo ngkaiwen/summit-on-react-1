@@ -235,7 +235,7 @@ Clicking on any of the courses and then pressing **save** will load the course d
 2. [Overview Screen](https://github.com/TheIanSim/summit-on-react#overview-screen-1)
 3. [Students Screen](https://github.com/TheIanSim/summit-on-react#students-screen-1)
 4. [Assignments Screen](https://github.com/TheIanSim/summit-on-react#assignments-screen-1)
-5. [Realtime Questions (Educator Only)]
+5. [Realtime Questions (Educator Only)](https://github.com/TheIanSim/summit-on-react#realtime-questions-educator-only)
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data-1)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection-1)
 
@@ -374,7 +374,17 @@ Intepreting the **Youtube Analysis of Student Pause Timings** chart:
 
 ### Realtime Questions (Educator Only)
 
-Clicking on the **Realtime Questions** tab would load the following screen.
+Clicking on the **Realtime Questions** tab would load the following screen, with the first post uploaded.
+
+![RealtimeQuestion](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/RealtimeQuestion.png?raw=true)
+
+You can utlise the **Summit-bot** to upload question, by adding **@summit_analytics_bot** via telegram. 
+
+Use **/start "CourseCode"** to select course, and **/q "message"** to post.
+
+![SummitBot1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot1.png?raw=true)
+
+![SummitBot2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot2.png?raw=true)
 
 [Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
