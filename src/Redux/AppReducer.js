@@ -23,9 +23,9 @@ function dataFilter(id,data) {
 }
 
 const mapping = {
-	'koThLjSzltZLjZsBSohCCaQjpW53': ['admin','ADMINISTRATOR'], //admins
+	'2DRYtqS33yeiFHyNS8HWALNMxQh1': ['admin','ADMINISTRATOR'], //admins
 	'akD92Zz4hONCPibCqC48furBPmz1':['R6nSbDVly8PUnC6jQFcseDS9sgJ3','EDUCATOR'], //boesch
-	"2DRYtqS33yeiFHyNS8HWALNMxQh1" : ['Ab947q6H2eQ1DjJzhu4GwQXQ9vz1','EDUCATOR'] //venu
+	"koThLjSzltZLjZsBSohCCaQjpW53" : ['Ab947q6H2eQ1DjJzhu4GwQXQ9vz1','EDUCATOR'] //venu
 }
 
 //define a reducer with an initialized state action
