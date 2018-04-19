@@ -9,7 +9,7 @@
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
 2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
-3. [User Guide for Educators]
+3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
 
 ## User Guide for Administrators
