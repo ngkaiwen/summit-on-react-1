@@ -15,10 +15,10 @@ from pytz import timezone
 
 def run():
 
-##################CONFIG###########################
-    ### Put your url and config here
-##################CONFIG###########################
-    
+#################CONFIG SECTION#########################
+    ## ASK US FOR MORE DETAILS ##
+#################CONFIG SECTION#########################
+ 
     start_time = time.time()
     
     ### Commonly Used Functions
@@ -2149,7 +2149,14 @@ def run():
         courseMaxLevelAchievement = DictToChartArray(courseMaxLevelAchievementDict,prevData)
         cohortMaxLevelAchievement = compileMaximimumLevelPerCohort(courseMaxLevelAchievementDict)
         CCJsonData["MaxLevels75Course"] = courseMaxLevelAchievement
-        
+        MLSmid = round(len(courseMaxLevelAchievementDict.keys()) / 2)
+        averageMLS = CCJsonData["MaxLevels75Course"][MLSmid]
+        SDcalculationArray = []
+        for item in CCJsonData["MaxLevels75Course"]:
+            value = item["value"]
+            SDcalculationArray.append(value)
+        sdMLS = round(statistics.stdev(SDcalculationArray),2)
+        CCJsonData["MaxLevels75CourseSummaryStats"] ={"AverageData":{"AverageSchool": averageMLS["Course"], "Level": averageMLS["value"]},"StandardDeviationStats":{"Standard Deviation": sdMLS}}
         
         def addCohortCharts(cohortMaxLevelAchievement,timeCohortCharts, cohortData):
             print("Adding cohort charts and write to firebase")
