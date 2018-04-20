@@ -74,6 +74,8 @@ We hope that these features will improve the efficiency of educators in managing
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection)
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
 ### Login and Authentication
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
@@ -98,7 +100,7 @@ This is the **Overview Screen**. The inital data loaded is the **Students Overal
 * The weakest performers <font color= CCCC00> (bottom 5) </font> of the course
 * Overall assignment data per student scatter diagram
 
-![OverviewPage1Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true" height="400"> 
 
 Intepreting the **Overall Assignment Data per Student** chart:
 >A student who appears on the top left corner of the chart is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
@@ -116,7 +118,7 @@ The **Assignment Overview Screen** loads the overall data specific to the course
 * The assignment release time series
 * Overall student data per assignment scatter diagram
 
-![OverviewPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true" height="400"> 
 
 Intepreting the **Overall Student per Assignment** chart:
 >An assignment that appears on the top left corner of the chart may be a more diffucult assignment, as it takes longer to complete on average, and that there is a lower completion rate as well, indicating that less students has completed it.
@@ -139,7 +141,7 @@ The following data are now loaded:
 
 Since the **Cross Level Comparison** chart may be a bit dense due to so much information, we may hover our mouse to view the number of students who completed the codecombat level, as seen in the chart below.
 
-![OverviewPage3Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage3Chart.png?raw=true" height="250"> 
 
 [Return to User Guide for Administrators Head](https://github.com/TheIanSim/summit-on-react#user-guide-for-administrators)
 
@@ -154,8 +156,9 @@ The **Students Page** loads the following data regarding assigments:
  * Submissions of assignment over time
  * Assignment submission status pie chart indicating percentage of assignments submitted
  * Completion time percentile per assignment
+ 
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1Chart2.png?raw=true" height="200"> 
 
-![StudentsPages1Chart2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/StudentsPage1Chart2.png?raw=true)
  
 Intepreting the **Submissions (of Assignment) over Time** chart:
 >The orange timeseries represents the course average rate of submission over time, while the green timeseries represents the student's submission of assignment over time. If the green timeseries is higher than the orange timeseries, then it meant that the student has submitted the assignments earlier than majority of the cohort.
@@ -280,6 +283,8 @@ Clicking on any of the courses and then pressing **save** will load the course d
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data-1)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection-1)
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
 ### Login and Authentication
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
@@ -304,7 +309,7 @@ This is the **Overview Screen**. The inital data loaded is the **Students Overal
 * The weakest performers <font color= CCCC00> (bottom 5) </font> of the course
 * Overall assignment data per student scatter diagram
 
-![OverviewPage1ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage1Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage1Chart.png?raw=true" height="400"> 
 
 Intepreting the **Overall Assignment Data per Student** chart:
 >A student who appears on the top left corner of the chart is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
@@ -314,7 +319,7 @@ Intepreting the **Overall Assignment Data per Student** chart:
 
 By scrolling down, you will now arrive at the **Assignment Overview Screen**.
 
-![OverviewPage2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2.png?raw=true" height="400"> 
 
 The **Assignment Overview Screen** loads the overall data specific to the course. The following data are loaded:
 
@@ -345,7 +350,7 @@ The following data are now loaded:
 
 Since the **Cross Level Comparison** chart may be a bit dense due to so much information, we may hover our mouse to view the number of students who completed the codecombat level, as seen in the chart below.
 
-![OverviewPage3ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage3Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage3Chart.png?raw=true" height="250"> 
 
 [Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
@@ -361,7 +366,7 @@ The **Students Page** loads the following data regarding assigments:
  * Assignment submission status pie chart indicating percentage of assignments submitted
  * Completion time percentile per assignment
 
-![StudentsPages1Chart2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage1Chart2.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/StudentsPage1Chart2.png?raw=true" height="200"> 
  
 Intepreting the **Submissions (of Assignment) over Time** chart:
 >The orange timeseries represents the course average rate of submission over time, while the green timeseries represents the student's submission of assignment over time. If the green timeseries is higher than the orange timeseries, then it meant that the student has submitted the assignments earlier than majority of the cohort.
@@ -423,9 +428,9 @@ You can utlise the **Summit-bot** to upload question, by adding **@summit_analyt
 
 Use **/start "CourseCode"** to select course, and **/q "message"** to post.
 
-![SummitBot1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot1.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot1.png?raw=true" height="300"> 
 
-![SummitBot2](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot2.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/SummitBot2.png?raw=true" height="300"> 
 
 [Return to User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
 
@@ -500,10 +505,10 @@ Data for Summit Analytics was generously provided by Prof Chris Boesch, using da
 
 Signing Off
 
-* [TAY JIAHUI](jiahuitay@u.nus.edu)
-* [IAN SIM](e0031628@u.nus.edu)
-* [LI XUANGUANG](lxg@u.nus.edu)
-* [NG KAIWEN](ngkaiwen@u.nus.edu)
-* [SUEN WAI LUN](suenwailun@u.nus.edu)
+*  TAY JIAHUI: <jiahuitay@u.nus.edu>
+*  IAN SIM: <e0031628@u.nus.edu>
+*  LI XUANGUANG: <lxg@u.nus.edu>
+*  NG KAIWEN: <ngkaiwen@u.nus.edu>
+*  SUEN WAI LUN: <suenwailun@u.nus.edu>
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
