@@ -19,7 +19,7 @@ class Courses extends Component {
           <div className='courses-grid-container'>
 
           <div className='course-grid-item-joint'>
-              <h2>Distribution of average time spent per level<h5> for students in each Course (Minutes)</h5></h2>
+              <h2>Distribution of average time spent per level</h2><h5> for students in each Course (Minutes)</h5>
               <BarChartTimePerLevel data = {CCdata["AverageTimePerLevel"]}/>
           </div>
               <div className='course-grid-item'>
@@ -34,7 +34,7 @@ class Courses extends Component {
 
           <div className='courses-grid-container'>
           <div className='course-grid-item-joint'>
-              <h2>Distribution of average time spent<h5> for students in each Course (Minutes)</h5></h2>
+              <h2>Distribution of average time spent</h2><h5> for students in each Course (Minutes)</h5>
               <BarChartTimePerStudent data = {CCdata["AverageTimePerStudent"]}/>
           </div>
               <div className='course-grid-item'>
@@ -49,7 +49,7 @@ class Courses extends Component {
 
           <div className='courses-grid-container'>
           <div className='course-grid-item-joint'>
-              <h2>Distribution of average levels completed<h5> for students in each course</h5></h2>
+              <h2>Distribution of average Code Combat levels completed</h2><h5> for students in each course</h5>
               <LineChartLevelPerStudent data = {CCdata["AverageLevelPerStudent"]}/>
           </div>
               <div className='course-grid-item'>
@@ -64,7 +64,7 @@ class Courses extends Component {
 
           <div className='courses-grid-container'>
           <div className='course-grid-item-joint'>
-              <h2>Maximum Number of Levels Completed (>=75% Completion Rate)<h5> for each Course</h5></h2>
+              <h2>Maximum Number of Code Combat Levels Completed </h2><h5> >=75% Completion Rate for each Course</h5>
               <LineChartLevels75 data = {CCdata["MaxLevels75Course"]}/>
           </div>
           <div className='course-grid-item'>

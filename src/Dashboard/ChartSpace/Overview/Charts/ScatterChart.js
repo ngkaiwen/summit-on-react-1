@@ -1,5 +1,6 @@
 import React from 'react';
 import {ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
+import CustomTooltipStudent from './CustomTooltipStudent';
 
 const scatterChart = (props) => {
     return (
@@ -19,12 +20,10 @@ const scatterChart = (props) => {
 								name='Average Time' 
 								label={{ value: 'Average Time (Seconds)', angle: -90,  offset: 0, position: 'left' }}/>
 
-				<Tooltip cursor={{ strokeDasharray: '3 3' }}
-									label={'name'} />
+				<Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltipStudent />} />
+
 
         <Scatter name='ScatterStu' data={props.data} fill='#8884d8'>
-					{//<LabelList dataKey="name" position="top" />
-					}
 				</Scatter>
       </ScatterChart>
 			</ResponsiveContainer>

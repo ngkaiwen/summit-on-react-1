@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
+import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts';
 
 class BarChartTimePerStudent extends Component {
   render(){
