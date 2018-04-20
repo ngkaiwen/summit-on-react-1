@@ -16,7 +16,7 @@
 7. [Compatability](https://github.com/TheIanSim/summit-on-react#compatability)
 8. [Documentation Link](https://github.com/TheIanSim/summit-on-react#documentation)
 9. [Data Source](https://github.com/TheIanSim/summit-on-react#data-source)
-10. [Summit Analytics Team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
+10. [Summit Analytics Team & Licensing](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
 
 ## Deployed Application
 
@@ -510,5 +510,7 @@ Signing Off
 *  LI XUANGUANG: <lxg@u.nus.edu>
 *  NG KAIWEN: <ngkaiwen@u.nus.edu>
 *  SUEN WAI LUN: <suenwailun@u.nus.edu>
+
+Licensed
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
