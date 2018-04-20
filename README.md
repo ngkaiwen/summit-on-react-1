@@ -25,21 +25,22 @@ Visit our application with this delopyed link. You must have login credentials.
 Dear Professor Boesch, you can [contact our team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team) for your login credentials, and on the config files for our github in order to run the application on your computer.
 
 We have two types of authentication, one for administrator, and one for course head.
+Click on the picture or the link below to access our live application.
 
 [![SplashScreen](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/SplashScreen.png?raw=true)](https://summit-analytics.firebaseapp.com)
 
-[Summit Analytics](https://summit-analytics.firebaseapp.com)
+##### Live Application: [Summit Analytics](https://summit-analytics.firebaseapp.com)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 
 ## Video Guide
 
-View our video guide with this link.
+Click on the picture or the link below to access our video guide.
 
 [![Video Guide](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/Video%20Guide.png?raw=true)](https://youtu.be/8lr1Yhy4clE)
 
-[Click Here!](https://youtu.be/8lr1Yhy4clE)
+##### Video Guide: [Click Here!](https://youtu.be/8lr1Yhy4clE)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
@@ -49,7 +50,7 @@ Summit Analytics' UI is designed with the user in mind, adhering to the [3-click
 
 <img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/UI.png?raw=true" height="150"> 
 
-Summit analytics is user tested, with feedback from professors in National University of Singapore to improve our application (interview log in [Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing) for reference). Insights from data are displayed in the form of charts and statistics after extensive data exploration and analysis to aid educators in managing their courses, and administrators in managing their cohort. Detailed analysis specific to individual students and assignments can be accessed by the user. Updates on the data can be pushed through our [AWS Lambda](https://aws.amazon.com/lambda/features/) implementation as well in the application.
+Summit analytics is user tested, with feedback from professors in National University of Singapore to improve our application (interview log in [Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing) for reference). Insights from data are displayed in the form of charts and statistics after extensive data exploration and analysis to aid educators in managing their courses, and administrators in managing their cohort. Detailed analysis specific to individual students and assignments can be accessed by the user. Updates on the data can be pushed through our [AWS Lambda](https://aws.amazon.com/lambda/features/) implementation as well in the application. Specific to Administrators, now users can compare across both cohorts and courses.
 
 <img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/Security.png?raw=true" height="48"> 
 
