@@ -9,13 +9,14 @@
 
 1. [About](https://github.com/TheIanSim/summit-on-react#about)
 2. [Deployed Application](https://github.com/TheIanSim/summit-on-react#deployed-application)
-2. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
-2. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
-3. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
-4. [Compatability](https://github.com/TheIanSim/summit-on-react#compatability)
-5. [Documentation Link](https://github.com/TheIanSim/summit-on-react#documentation)
-6. [Data Source](https://github.com/TheIanSim/summit-on-react#data-source)
-7. [Summit Analytics Team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
+3. [Video Guide](https://github.com/TheIanSim/summit-on-react#video-guide)
+4. [Application Advantages](https://github.com/TheIanSim/summit-on-react#application-advantages)
+5. [User Guide for Administrators](https://github.com/TheIanSim/summit-on-react#user-guide)
+6. [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#user-guide-for-educators)
+7. [Compatability](https://github.com/TheIanSim/summit-on-react#compatability)
+8. [Documentation Link](https://github.com/TheIanSim/summit-on-react#documentation)
+9. [Data Source](https://github.com/TheIanSim/summit-on-react#data-source)
+10. [Summit Analytics Team](https://github.com/TheIanSim/summit-on-react#summit-analytics-team)
 
 ## Deployed Application
 
@@ -48,17 +49,19 @@ Summit Analytics' UI is designed with the user in mind, adhering to the [3-click
 
 <img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/UI.png?raw=true" height="150"> 
 
-Summit analytics is user tested, with feedback from professors in National University of Singapore to improve our application (interview log in [Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing) for reference). Insights from data are displayed in the form of charts and statistics after extensive data exploration and analysis to aid educators in managing their courses, and administrators in managing their cohort. Detailed analysis specific to individual students and assignments can be accessed by the user. Updates on the data can be pushed through our AWS Lambda implementation as well in the application.
+Summit analytics is user tested, with feedback from professors in National University of Singapore to improve our application (interview log in [Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing) for reference). Insights from data are displayed in the form of charts and statistics after extensive data exploration and analysis to aid educators in managing their courses, and administrators in managing their cohort. Detailed analysis specific to individual students and assignments can be accessed by the user. Updates on the data can be pushed through our [AWS Lambda](https://aws.amazon.com/lambda/features/) implementation as well in the application.
 
 <img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/Security.png?raw=true" height="48"> 
 
-Security is enforced through Firebase user authentication.
+Security is enforced through [Firebase user authentication](https://firebase.google.com/docs/auth/).
 
 <img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/Telegram1.jpeg?raw=true" height="100"> 
 
-Application also includes telegram interaction for real-time classroom interaction and centralised communication.
+Application also includes telegram interaction for real-time classroom interaction and centralised communication (Refer to [User Guide for Educators](https://github.com/TheIanSim/summit-on-react#realtime-questions-educator-only) for guide).
 
 We hope that these features will improve the efficiency of educators in managing their courses.
+
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 ## User Guide for Administrators
 
