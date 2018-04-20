@@ -74,6 +74,8 @@ We hope that these features will improve the efficiency of educators in managing
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection)
 
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
+
 ### Login and Authentication
 
 When you first access <font color= 00ced1> **Summit Analytics** </font>, this is the front page of our application.
@@ -280,6 +282,8 @@ Clicking on any of the courses and then pressing **save** will load the course d
 5. [Realtime Questions (Educator Only)](https://github.com/TheIanSim/summit-on-react#realtime-questions-educator-only)
 7. [Refreshing Data](https://github.com/TheIanSim/summit-on-react#refeshing-data-1)
 8. [Course Selection](https://github.com/TheIanSim/summit-on-react#course-selection-1)
+
+[Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
 
 ### Login and Authentication
 
