@@ -98,7 +98,7 @@ This is the **Overview Screen**. The inital data loaded is the **Students Overal
 * The weakest performers <font color= CCCC00> (bottom 5) </font> of the course
 * Overall assignment data per student scatter diagram
 
-![OverviewPage1Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage1Chart.png?raw=true" height="275"> 
 
 Intepreting the **Overall Assignment Data per Student** chart:
 >A student who appears on the top left corner of the chart is weaker, as this meant that he spent a lot of time on finishing the assignments, and he also did not complete much assignments. 
@@ -116,7 +116,7 @@ The **Assignment Overview Screen** loads the overall data specific to the course
 * The assignment release time series
 * Overall student data per assignment scatter diagram
 
-![OverviewPage2Chart](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/OverviewPage2Chart.png?raw=true" height="275"> 
 
 Intepreting the **Overall Student per Assignment** chart:
 >An assignment that appears on the top left corner of the chart may be a more diffucult assignment, as it takes longer to complete on average, and that there is a lower completion rate as well, indicating that less students has completed it.
