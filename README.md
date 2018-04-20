@@ -44,7 +44,17 @@ View our video guide with this link.
 
 ## Application Advantages
 
-Summit Analytics' UI is designed with the user in mind, adhering to the [3-click rule](https://blog.prototypr.io/breaking-design-rules-the-3-click-rule-of-ux-a70404909a45) of user experience.
+Summit Analytics' UI is designed with the user in mind, adhering to the [3-click rule](https://blog.prototypr.io/breaking-design-rules-the-3-click-rule-of-ux-a70404909a45) of user experience. Combined with our simplistic and clean UI in accordance to [Gesalt's principle of simplicity](https://www.canva.com/learn/gestalt-theory/), this meant a [lower cognitive load](https://www.nngroup.com/articles/minimize-cognitive-load/) for our educators using the platform.
+
+![UI1](https://github.com/TheIanSim/summit-on-react/blob/master/readMePics/UI.png?raw=true)
+
+Summit analytics is user tested, with feedback from professors in National University of Singapore to improve our application (interview log in [Documentation](https://docs.google.com/document/d/123uOvguJXvnF3VK8amGNs6yYFu523jZ_rpMOY7a3M8E/edit?usp=sharing) for reference). Insights from data are displayed in the form of charts and statistics after extensive data exploration and analysis to aid educators in managing their courses, and administrators in managing their cohort. Detailed analysis specific to individual students and assignments can be accessed by the user.
+
+
+
+
+
+
 
 ## User Guide for Administrators
 
