@@ -320,7 +320,7 @@ Intepreting the **Overall Assignment Data per Student** chart:
 
 By scrolling down, you will now arrive at the **Assignment Overview Screen**.
 
-<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2.png?raw=true" height="400"> 
+![OverviewPage2E](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2.png?raw=true)
 
 The **Assignment Overview Screen** loads the overall data specific to the course. The following data are loaded:
 
@@ -328,7 +328,7 @@ The **Assignment Overview Screen** loads the overall data specific to the course
 * The assignment release time series
 * Overall student data per assignment scatter diagram
 
-![OverviewPage2ChartE](https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2Chart.png?raw=true)
+<img src="https://github.com/TheIanSim/summit-on-react/blob/master/readMePicsEduca/OverviewPage2Chart.png?raw=true" height="400"> 
 
 Intepreting the **Overall Student per Assignment** chart:
 >An assignment that appears on the top left corner of the chart may be a more diffucult assignment, as it takes longer to complete on average, and that there is a lower completion rate as well, indicating that less students has completed it.
