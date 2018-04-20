@@ -511,6 +511,6 @@ Signing Off
 *  NG KAIWEN: <ngkaiwen@u.nus.edu>
 *  SUEN WAI LUN: <suenwailun@u.nus.edu>
 
-Licensed
+[Licensed](https://github.com/TheIanSim/summit-on-react/blob/master/LICENSE.txt) under [Apache 2.0](http://www.apache.org/licenses/)
 
 [Return to Top](https://github.com/TheIanSim/summit-on-react#welcome-to-summit-analytics)
