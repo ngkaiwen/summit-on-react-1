@@ -310,8 +310,8 @@ a:visited {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width:5vw;
-  height:15vh;
+  width:4.6vw;
+  height:17vh;
   right:0;
   bottom:0;
   padding-right: 0.5rem;
@@ -658,6 +658,10 @@ a:visited {
   grid-column-end: 3;
 }
 
+.course-grid-item-joint h5 {
+  text-transform: uppercase;
+}
+
 .course-grid-item-vert {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
@@ -690,15 +694,16 @@ a:visited {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
-  height: 40vh;
+  height: 65vh;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .cohort-grid-item-joint {
   border: 1.5px solid #00ced1;
   border-radius: 20px;
   padding: 1rem;
-  height: 60vh;
+  height: 57vh;
   grid-column-start: 1;
   grid-column-end: 5;
   display: grid;
@@ -707,22 +712,40 @@ a:visited {
   grid-gap: 1rem;
 }
 
-.cohort-grid-item-joint-inner {
+
+.cohort-grid-item-joint1 {
+  border: 1.5px solid #00ced1;
+  border-radius: 20px;
   padding: 1rem;
-  height: 100%;
+  height: 65vh;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  box-sizing: border-box;
+  grid-gap: 1rem;
+}
+
+.cohort-table-item {
+  padding: 0.1rem;
   text-align: center;
   box-sizing: border-box;
 }
 
 .cohort-pane-title {
-	height:40px;
+	height:30px;
 	border: 1px solid grey;
 	background:rgba(0, 0, 0, 0.7);
   	padding-left: 10px;
   	padding-top: 5px;
   	color: #FFFFFF;
+
 }
 
+.cohort-pane-content{
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Misc ================================================*/
 .csfixed {
@@ -732,6 +755,14 @@ a:visited {
 .selectSomething {
   text-align: center;
   margin-top: 40vh;
+}
+
+.custom-tooltip {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #00ced1;
+  text-transform: capitalize;
 }
 
 /* Spinner ================================================*/

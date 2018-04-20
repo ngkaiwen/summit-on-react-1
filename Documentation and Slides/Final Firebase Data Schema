@@ -1,0 +1,1099 @@
+
+  "type": "object",
+  "required": [],
+  "properties": {
+    "cohortCharts": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "timeComparisonChart": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Cohort Average Time Per Level": {
+                "type": "number"
+              },
+              "Cohort Maximum Time Per Level": {
+                "type": "number"
+              },
+              "Cohort Median Time Per Level": {
+                "type": "number"
+              },
+              "Cohort Minimum Time Per Level": {
+                "type": "number"
+              },
+              "Label": {
+                "type": "string"
+              },
+              "Order": {
+                "type": "number"
+              },
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "timeComparisonStats": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            cohortID: {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AverageTime": {
+                  "type": "number"
+                },
+                "MedianTime": {
+                  "type": "number"
+                },
+                "averageSizePerCourse": {
+                  "type": "number"
+                },
+                "instructor": {
+                  "type": "string"
+                },
+                "maxLevel75": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                }
+              }
+            },
+          }
+        }
+      }
+    },
+    "cohorts": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        cohortID: {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "administratorID": {
+              "type": "string"
+            },
+            "averageSizePerCourse": {
+              "type": "number"
+            },
+            "cohortName": {
+              "type": "string"
+            },
+            "cohortSize": {
+              "type": "number"
+            },
+            "courses": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "instructor": {
+              "type": "string"
+            },
+            "instructorID": {
+              "type": "string"
+            },
+            "studentsSize": {
+              "type": "number"
+            }
+          }
+        },
+      }
+    },
+    "courseCodeCombat": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "AverageLevelPerStudent": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageLevelPerStudentStrongest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageLevelPerStudentSummaryStats": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "AverageData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AverageSchool": {
+                  "type": "string"
+                },
+                "Levels": {
+                  "type": "number"
+                }
+              }
+            },
+            "StandardDeviationStats": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Standard Deviation": {
+                  "type": "number"
+                },
+                "Variance": {
+                  "type": "number"
+                }
+              }
+            },
+            "StrongestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Levels": {
+                  "type": "number"
+                },
+                "StrongestSchool": {
+                  "type": "string"
+                }
+              }
+            },
+            "WeakestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Levels": {
+                  "type": "string"
+                },
+                "WeakestSchool": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "AverageLevelPerStudentWeakest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerLevel": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerLevelStrongest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerLevelSummaryStats": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "AverageData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AverageSchool": {
+                  "type": "string"
+                },
+                "Time": {
+                  "type": "number"
+                }
+              }
+            },
+            "StandardDeviationStats": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Standard Deviation": {
+                  "type": "number"
+                },
+                "Variance": {
+                  "type": "number"
+                }
+              }
+            },
+            "StrongestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "StrongestSchool": {
+                  "type": "string"
+                },
+                "Time": {
+                  "type": "number"
+                }
+              }
+            },
+            "WeakestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Time": {
+                  "type": "string"
+                },
+                "WeakestSchool": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "AverageTimePerLevelWeakest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerStudent": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerStudentStrongest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "AverageTimePerStudentSummaryStats": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "AverageData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AverageSchool": {
+                  "type": "string"
+                },
+                "Timing": {
+                  "type": "number"
+                }
+              }
+            },
+            "StandardDeviationStats": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Standard Deviation": {
+                  "type": "number"
+                },
+                "Variance": {
+                  "type": "number"
+                }
+              }
+            },
+            "StrongestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "StrongestSchool": {
+                  "type": "string"
+                },
+                "Timing": {
+                  "type": "number"
+                }
+              }
+            },
+            "WeakestData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Timing": {
+                  "type": "string"
+                },
+                "WeakestSchool": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "AverageTimePerStudentWeakest5": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "MaxLevels75Course": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Course": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "MaxLevels75CourseSummaryStats": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "AverageData": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AverageSchool": {
+                  "type": "string"
+                },
+                "Level": {
+                  "type": "number"
+                }
+              }
+            },
+            "StandardDeviationStats": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Standard Deviation": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "courses": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        courseID: {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "CodeCombat": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "AcrossLevelsChart": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [],
+                    "properties": {
+                      "Completed": {
+                        "type": "number"
+                      },
+                      "LevelID": {
+                        "type": "string"
+                      },
+                      "levelName": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "CompletionChartIdvAs": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    level name: {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "Completed": {
+                          "type": "number"
+                        },
+                        "Uncompleted": {
+                          "type": "number"
+                        },
+                        "levelName": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    }
+                  }
+                },
+                "Overall Course Data": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "Easiest Level": {
+                      "type": "string"
+                    },
+                    "Hardest Level": {
+                      "type": "string"
+                    },
+                    "Maximum Overall": {
+                      "type": "number"
+                    },
+                    "Minimum Overall": {
+                      "type": "number"
+                    },
+                    "Total Time Spend": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "totalUsers": {
+                  "type": "number"
+                },
+                "usersList": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "assignments": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                assignmentID: {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "Charts": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "StudentsByTime": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "required": [],
+                            "properties": {
+                              "Date": {
+                                "type": "string"
+                              },
+                              "Students": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "completed student ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "completed student names": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "count": {
+                      "type": "number"
+                    },
+                    "deadline": {
+                      "type": "string"
+                    },
+                    "details": {
+                      "type": "string"
+                    },
+                    "displayData": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "pie": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Value": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "level": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "not completed student ids": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "0boKfhUEGLgGIPyiQmieBmDIoW82": {
+                          "type": "boolean"
+                        }
+                      }
+                    },
+                    "not completed student names": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "open": {
+                      "type": "string"
+                    },
+                    "orderIndex": {
+                      "type": "number"
+                    },
+                    "questionType": {
+                      "type": "string"
+                    },
+                    "solutionVisible": {
+                      "type": "boolean"
+                    },
+                    "visible": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                  }
+                },
+            "courseInfo": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Charts": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "AssignmentsByTime": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "Assignment Figure": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "ScatterAss": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "Average Time": {
+                            "type": "number"
+                          },
+                          "Completion Rate": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ScatterStudent": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "CompletionRate": {
+                            "type": "number"
+                          },
+                          "assignmentAvgTime": {
+                            "type": "number"
+                          },
+                          "name": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "courseSize": {
+                  "type": "number"
+                },
+                "instructorName": {
+                  "type": "string"
+                },
+                "isPublic": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                }
+              }
+            },
+            "students": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                studentID: {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                    "displayData": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "assignmentPercentiles": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "average": {
+                              "type": "number"
+                            },
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Order": {
+                                    "type": "number"
+                                  },
+                                  "Percentile": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "pie": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Value": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "submissionsVStime": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Completed assignments": {
+                                    "type": "string"
+                                  },
+                                  "Course average": {
+                                    "type": "string"
+                                  },
+                                  "Label": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "profile": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "acceptedEULA": {
+                          "type": "boolean"
+                        },
+                        "codeCombatUser": {
+                          "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "joinedDate": {
+                          "type": "string"
+                        },
+                        "photoURL": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "submittedSolutions": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        solutionsId: {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "createdAt": {
+                              "type": "number"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "codeCombatData": {
+                  "type": "object",
+                  "required": [],
+                  "properties": {
+                     "achievements": {
+                        "type": "object",
+                         "required": [],
+                          "properties": {
+                            levelID: {
+                            "type": "object",
+                            "required": [],
+                            "properties": {
+                                "attempts": {
+                                  "type": "object",
+                                  "required": [],
+                                  "properties": {
+                                    "complete": {
+                                      "type": "boolean"
+                                    },
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "playtime": {
+                                      "type": "number"
+                                    }
+                                  }
+                                },
+                                "levelPlayTime": {
+                                  "type": "number"
+                                },
+                                "numAttempts": {
+                                  "type": "number"
+                                },
+                                "playTimeList": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            },
+                          }
+                        },
+                        "lastUpdate": {
+                          "type": "string"
+                        },
+                        "medianAttempts": {
+                          "type": "number"
+                        },
+                        "totalAchievements": {
+                          "type": "number"
+                        },
+                        "totalPlayTime": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                "codeCombatDisplayData": {
+                  "type": "object",
+                    "required": [],
+                      "properties": {
+                        "courseRankingChart": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "Course Percentile": {
+                              "type": "string"
+                            },
+                            "Course Rank": {
+                              "type": "number"
+                            },
+                            "Maximum Attained Level": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "timeBreakdown": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "medianAttempts": {
+                              "type": "number"
+                            },
+                            "ownChart": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Value": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            },
+                            "total": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "timePerLevel": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "Average": {
+                              "type": "number"
+                            },
+                            "Median": {
+                              "type": "number"
+                            },
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Course Maximum": {
+                                    "type": "number"
+                                  },
+                                  "Course Minimum": {
+                                    "type": "number"
+                                  },
+                                  "Label": {
+                                    "type": "string"
+                                  },
+                                  "Order": {
+                                    "type": "number"
+                                  },
+                                  "Time Taken": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "displayData": {
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "assignmentPercentiles": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "average": {
+                              "type": "number"
+                            },
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Order": {
+                                    "type": "number"
+                                  },
+                                  "Percentile": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "pie": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "Value": {
+                                    "type": "number"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "submissionsVStime": {
+                          "type": "object",
+                          "required": [],
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "required": [],
+                                "properties": {
+                                  "Completed assignments": {
+                                    "type": "string"
+                                  },
+                                  "Course average": {
+                                    "type": "string"
+                                  },
+                                  "Label": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "title": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                  }
+                },
